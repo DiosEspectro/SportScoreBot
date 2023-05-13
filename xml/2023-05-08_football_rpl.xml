@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tournament>
+    <tourid>football-4987</tourid>
+    <touridshort>4987</touridshort>
+    <tourname>МИР Российская Премьер-лига</tourname>
+    <matches>
+        <match>
+            <type>match</type>
+            <id>football-1040475</id>
+            <round>group/27409</round>
+            <tour>26</tour>
+            <month>2023_05</month>
+            <team1id>231233</team1id>
+            <team2id>231225</team2id>
+            <played>0</played>
+            <link>/football/_russiapl/tournament/4987/match/1040475/</link>
+            <group>Премьер-Лига</group>
+            <tourstr>26</tourstr>
+            <date>2023-05-08</date>
+            <time>17:00</time>
+            <team1>Локомотив М</team1>
+            <team2>Сочи</team2>
+            <score1/>
+            <score2/>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+        </match>
+    </matches>
+</tournament>

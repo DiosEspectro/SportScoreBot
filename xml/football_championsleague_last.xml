@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tournament>
+    <tourid>football-4993</tourid>
+    <touridshort>4993</touridshort>
+    <tourname>Лига чемпионов</tourname>
+    <matches>
+        <match>
+            <type>match</type>
+            <id>football-1034597</id>
+            <played>1</played>
+            <link>/football/_ucl/tournament/4993/match/1034597/</link>
+            <group>1/2 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-05-10</date>
+            <time>22:00</time>
+            <team1>Милан</team1>
+            <team2>Интер М</team2>
+            <score1>0</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034595</id>
+            <played>1</played>
+            <link>/football/_ucl/tournament/4993/match/1034595/</link>
+            <group>1/2 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-05-09</date>
+            <time>22:00</time>
+            <team1>Реал Мадрид</team1>
+            <team2>Манчестер Сити</team2>
+            <score1>1</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034587</id>
+            <played>1</played>
+            <link>/football/_ucl/tournament/4993/match/1034587/</link>
+            <group>1/4 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-04-19</date>
+            <time>22:00</time>
+            <team1>Бавария</team1>
+            <team2>Манчестер Сити</team2>
+            <score1>1</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034593</id>
+            <played>1</played>
+            <link>/football/_ucl/tournament/4993/match/1034593/</link>
+            <group>1/4 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-04-19</date>
+            <time>22:00</time>
+            <team1>Интер М</team1>
+            <team2>Бенфика</team2>
+            <score1>3</score1>
+            <score2>3</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034589</id>
+            <played>1</played>
+            <link>/football/_ucl/tournament/4993/match/1034589/</link>
+            <group>1/4 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-04-18</date>
+            <time>22:00</time>
+            <team1>Наполи</team1>
+            <team2>Милан</team2>
+            <score1>1</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034591</id>
+            <played>1</played>
+            <link>/football/_ucl/tournament/4993/match/1034591/</link>
+            <group>1/4 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-04-18</date>
+            <time>22:00</time>
+            <team1>Челси</team1>
+            <team2>Реал Мадрид</team2>
+            <score1>0</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034581</id>
+            <played>1</played>
+            <link>/football/_ucl/tournament/4993/match/1034581/</link>
+            <group>1/4 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-04-12</date>
+            <time>22:00</time>
+            <team1>Милан</team1>
+            <team2>Наполи</team2>
+            <score1>1</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034583</id>
+            <played>1</played>
+            <link>/football/_ucl/tournament/4993/match/1034583/</link>
+            <group>1/4 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-04-12</date>
+            <time>22:00</time>
+            <team1>Реал Мадрид</team1>
+            <team2>Челси</team2>
+            <score1>2</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034579</id>
+            <played>1</played>
+            <link>/football/_ucl/tournament/4993/match/1034579/</link>
+            <group>1/4 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-04-11</date>
+            <time>22:00</time>
+            <team1>Манчестер Сити</team1>
+            <team2>Бавария</team2>
+            <score1>3</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034585</id>
+            <played>1</played>
+            <link>/football/_ucl/tournament/4993/match/1034585/</link>
+            <group>1/4 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-04-11</date>
+            <time>22:00</time>
+            <team1>Бенфика</team1>
+            <team2>Интер М</team2>
+            <score1>0</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+        </match>
+    </matches>
+</tournament>

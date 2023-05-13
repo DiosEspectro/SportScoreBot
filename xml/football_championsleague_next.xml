@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tournament>
+    <tourid>football-4993</tourid>
+    <touridshort>4993</touridshort>
+    <tourname>Лига чемпионов</tourname>
+    <matches>
+        <match>
+            <type>match</type>
+            <id>football-1034601</id>
+            <played>0</played>
+            <link>/football/_ucl/tournament/4993/match/1034601/</link>
+            <group>1/2 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-05-16</date>
+            <time>22:00</time>
+            <team1>Интер М</team1>
+            <team2>Милан</team2>
+            <score1/>
+            <score2/>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034599</id>
+            <played>0</played>
+            <link>/football/_ucl/tournament/4993/match/1034599/</link>
+            <group>1/2 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-05-17</date>
+            <time>22:00</time>
+            <team1>Манчестер Сити</team1>
+            <team2>Реал Мадрид</team2>
+            <score1/>
+            <score2/>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034603</id>
+            <played>0</played>
+            <link>/football/_ucl/tournament/4993/match/1034603/</link>
+            <group>Финал</group>
+            <tourstr>1</tourstr>
+            <date>2023-06-10</date>
+            <time>22:00</time>
+            <team1>SF2</team1>
+            <team2>SF1</team2>
+            <score1/>
+            <score2/>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+        </match>
+    </matches>
+</tournament>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tournament>
+    <tourid>football-4987</tourid>
+    <touridshort>4987</touridshort>
+    <tourname>МИР Российская Премьер-лига</tourname>
+    <matches>
+        <match>
+            <type>match</type>
+            <id>football-1040437</id>
+            <round>group/27409</round>
+            <tour>24</tour>
+            <month>2023_04</month>
+            <team1id>231241</team1id>
+            <team2id>231229</team2id>
+            <played>0</played>
+            <link>/football/_russiapl/tournament/4987/match/1040437/</link>
+            <group>Премьер-Лига</group>
+            <tourstr>24</tourstr>
+            <date>2023-04-24</date>
+            <time>19:00</time>
+            <team1>Спартак М</team1>
+            <team2>Краснодар</team2>
+            <score1>0</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live>1</live>
+            <liveperiod>2-й тайм, 52'</liveperiod>
+        </match>
+    </matches>
+</tournament>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tournament>
+    <tourid>football-4987</tourid>
+    <touridshort>4987</touridshort>
+    <tourname>МИР Российская Премьер-лига</tourname>
+    <matches>
+        <match>
+            <type>match</type>
+            <id>football-1040479</id>
+            <round>group/27409</round>
+            <tour>26</tour>
+            <month>2023_05</month>
+            <team1id>231243</team1id>
+            <team2id>231245</team2id>
+            <played>1</played>
+            <link>/football/_russiapl/tournament/4987/match/1040479/</link>
+            <group>Премьер-Лига</group>
+            <tourstr>26</tourstr>
+            <date>2023-05-07</date>
+            <time>14:00</time>
+            <team1>Пари Нижний Новгород</team1>
+            <team2>Урал</team2>
+            <score1>0</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1040473</id>
+            <round>group/27409</round>
+            <tour>26</tour>
+            <month>2023_05</month>
+            <team1id>231231</team1id>
+            <team2id>231303</team2id>
+            <played>1</played>
+            <link>/football/_russiapl/tournament/4987/match/1040473/</link>
+            <group>Премьер-Лига</group>
+            <tourstr>26</tourstr>
+            <date>2023-05-07</date>
+            <time>16:30</time>
+            <team1>ЦСКА</team1>
+            <team2>Оренбург</team2>
+            <score1>2</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1040467</id>
+            <round>group/27409</round>
+            <tour>26</tour>
+            <month>2023_05</month>
+            <team1id>231223</team1id>
+            <team2id>231241</team2id>
+            <played>0</played>
+            <link>/football/_russiapl/tournament/4987/match/1040467/</link>
+            <group>Премьер-Лига</group>
+            <tourstr>26</tourstr>
+            <date>2023-05-07</date>
+            <time>18:00</time>
+            <team1>Зенит</team1>
+            <team2>Спартак М</team2>
+            <score1>2</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live>1</live>
+            <liveperiod>2-й тайм, 90+2'</liveperiod>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1040471</id>
+            <round>group/27409</round>
+            <tour>26</tour>
+            <month>2023_05</month>
+            <team1id>231229</team1id>
+            <team2id>231237</team2id>
+            <played>0</played>
+            <link>/football/_russiapl/tournament/4987/match/1040471/</link>
+            <group>Премьер-Лига</group>
+            <tourstr>26</tourstr>
+            <date>2023-05-07</date>
+            <time>19:00</time>
+            <team1>Краснодар</team1>
+            <team2>Крылья Советов</team2>
+            <score1>1</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live>1</live>
+            <liveperiod>Перерыв</liveperiod>
+        </match>
+    </matches>
+</tournament>
