@@ -1,7 +1,9 @@
+package org.diosespectro;
+
 public enum TournamentEnum {
     RPL,
-    KHL,
     CHAMPIONSLEAGUE,
     WORLDCUP,
+    KHL,
     WHC
 }

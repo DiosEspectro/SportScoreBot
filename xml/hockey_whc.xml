@@ -12,7 +12,7 @@
             <month>2023_05</month>
             <team1id>232191</team1id>
             <team2id>232209</team2id>
-            <played>0</played>
+            <played>1</played>
             <link>/hockey/_whc/tournament/5033/match/1073271/</link>
             <group>Группа A</group>
             <tourstr/>
@@ -20,8 +20,8 @@
             <time>16:20</time>
             <team1>Финляндия</team1>
             <team2>США</team2>
-            <score1/>
-            <score2/>
+            <score1>1</score1>
+            <score2>4</score2>
             <score1ext/>
             <score2ext/>
             <live/>
@@ -35,7 +35,7 @@
             <month>2023_05</month>
             <team1id>232203</team1id>
             <team2id>232189</team2id>
-            <played>0</played>
+            <played>1</played>
             <link>/hockey/_whc/tournament/5033/match/1073335/</link>
             <group>Группа B</group>
             <tourstr/>
@@ -43,8 +43,8 @@
             <time>16:20</time>
             <team1>Словакия</team1>
             <team2>Чехия</team2>
-            <score1/>
-            <score2/>
+            <score1>2</score1>
+            <score2>3</score2>
             <score1ext/>
             <score2ext/>
             <live/>
@@ -58,7 +58,7 @@
             <month>2023_05</month>
             <team1id>232193</team1id>
             <team2id>232183</team2id>
-            <played>0</played>
+            <played>1</played>
             <link>/hockey/_whc/tournament/5033/match/1073273/</link>
             <group>Группа A</group>
             <tourstr/>
@@ -66,8 +66,8 @@
             <time>20:20</time>
             <team1>Швеция</team1>
             <team2>Германия</team2>
-            <score1/>
-            <score2/>
+            <score1>1</score1>
+            <score2>0</score2>
             <score1ext/>
             <score2ext/>
             <live/>
@@ -81,7 +81,7 @@
             <month>2023_05</month>
             <team1id>232205</team1id>
             <team2id>232207</team2id>
-            <played>0</played>
+            <played>1</played>
             <link>/hockey/_whc/tournament/5033/match/1073337/</link>
             <group>Группа B</group>
             <tourstr/>
@@ -89,8 +89,8 @@
             <time>20:20</time>
             <team1>Латвия</team1>
             <team2>Канада</team2>
-            <score1/>
-            <score2/>
+            <score1>0</score1>
+            <score2>6</score2>
             <score1ext/>
             <score2ext/>
             <live/>
@@ -104,7 +104,7 @@
             <month>2023_05</month>
             <team1id>232187</team1id>
             <team2id>232179</team2id>
-            <played>0</played>
+            <played>1</played>
             <link>/hockey/_whc/tournament/5033/match/1073275/</link>
             <group>Группа A</group>
             <tourstr/>
@@ -112,10 +112,10 @@
             <time>12:20</time>
             <team1>Франция</team1>
             <team2>Австрия</team2>
-            <score1/>
-            <score2/>
-            <score1ext/>
-            <score2ext/>
+            <score1>2</score1>
+            <score2>1</score2>
+            <score1ext>ОТ</score1ext>
+            <score2ext>ОТ</score2ext>
             <live/>
             <liveperiod/>
         </match>
@@ -127,7 +127,7 @@
             <month>2023_05</month>
             <team1id>232201</team1id>
             <team2id>232199</team2id>
-            <played>0</played>
+            <played>1</played>
             <link>/hockey/_whc/tournament/5033/match/1073339/</link>
             <group>Группа B</group>
             <tourstr/>
@@ -135,8 +135,8 @@
             <time>12:20</time>
             <team1>Швейцария</team1>
             <team2>Словения</team2>
-            <score1/>
-            <score2/>
+            <score1>7</score1>
+            <score2>0</score2>
             <score1ext/>
             <score2ext/>
             <live/>
@@ -150,7 +150,7 @@
             <month>2023_05</month>
             <team1id>232181</team1id>
             <team2id>232185</team2id>
-            <played>0</played>
+            <played>1</played>
             <link>/hockey/_whc/tournament/5033/match/1073277/</link>
             <group>Группа A</group>
             <tourstr/>
@@ -158,8 +158,8 @@
             <time>16:20</time>
             <team1>Венгрия</team1>
             <team2>Дания</team2>
-            <score1/>
-            <score2/>
+            <score1>1</score1>
+            <score2>3</score2>
             <score1ext/>
             <score2ext/>
             <live/>
@@ -173,7 +173,7 @@
             <month>2023_05</month>
             <team1id>232195</team1id>
             <team2id>232197</team2id>
-            <played>0</played>
+            <played>1</played>
             <link>/hockey/_whc/tournament/5033/match/1073341/</link>
             <group>Группа B</group>
             <tourstr/>
@@ -181,10 +181,10 @@
             <time>16:20</time>
             <team1>Норвегия</team1>
             <team2>Казахстан</team2>
-            <score1/>
-            <score2/>
-            <score1ext/>
-            <score2ext/>
+            <score1>3</score1>
+            <score2>4</score2>
+            <score1ext>Б</score1ext>
+            <score2ext>Б</score2ext>
             <live/>
             <liveperiod/>
         </match>
@@ -196,7 +196,7 @@
             <month>2023_05</month>
             <team1id>232183</team1id>
             <team2id>232191</team2id>
-            <played>0</played>
+            <played>1</played>
             <link>/hockey/_whc/tournament/5033/match/1073279/</link>
             <group>Группа A</group>
             <tourstr/>
@@ -204,8 +204,8 @@
             <time>20:20</time>
             <team1>Германия</team1>
             <team2>Финляндия</team2>
-            <score1/>
-            <score2/>
+            <score1>3</score1>
+            <score2>4</score2>
             <score1ext/>
             <score2ext/>
             <live/>
@@ -219,7 +219,7 @@
             <month>2023_05</month>
             <team1id>232203</team1id>
             <team2id>232205</team2id>
-            <played>0</played>
+            <played>1</played>
             <link>/hockey/_whc/tournament/5033/match/1073343/</link>
             <group>Группа B</group>
             <tourstr/>
@@ -227,8 +227,8 @@
             <time>20:20</time>
             <team1>Словакия</team1>
             <team2>Латвия</team2>
-            <score1/>
-            <score2/>
+            <score1>2</score1>
+            <score2>1</score2>
             <score1ext/>
             <score2ext/>
             <live/>
@@ -242,7 +242,7 @@
             <month>2023_05</month>
             <team1id>232209</team1id>
             <team2id>232181</team2id>
-            <played>0</played>
+            <played>1</played>
             <link>/hockey/_whc/tournament/5033/match/1073281/</link>
             <group>Группа A</group>
             <tourstr/>
@@ -250,8 +250,8 @@
             <time>12:20</time>
             <team1>США</team1>
             <team2>Венгрия</team2>
-            <score1/>
-            <score2/>
+            <score1>7</score1>
+            <score2>1</score2>
             <score1ext/>
             <score2ext/>
             <live/>
@@ -265,7 +265,7 @@
             <month>2023_05</month>
             <team1id>232199</team1id>
             <team2id>232207</team2id>
-            <played>0</played>
+            <played>1</played>
             <link>/hockey/_whc/tournament/5033/match/1073345/</link>
             <group>Группа B</group>
             <tourstr/>
@@ -273,8 +273,8 @@
             <time>12:20</time>
             <team1>Словения</team1>
             <team2>Канада</team2>
-            <score1/>
-            <score2/>
+            <score1>2</score1>
+            <score2>5</score2>
             <score1ext/>
             <score2ext/>
             <live/>
@@ -288,7 +288,7 @@
             <month>2023_05</month>
             <team1id>232187</team1id>
             <team2id>232185</team2id>
-            <played>0</played>
+            <played>1</played>
             <link>/hockey/_whc/tournament/5033/match/1073283/</link>
             <group>Группа A</group>
             <tourstr/>
@@ -296,10 +296,10 @@
             <time>16:20</time>
             <team1>Франция</team1>
             <team2>Дания</team2>
-            <score1/>
-            <score2/>
-            <score1ext/>
-            <score2ext/>
+            <score1>3</score1>
+            <score2>4</score2>
+            <score1ext>ОТ</score1ext>
+            <score2ext>ОТ</score2ext>
             <live/>
             <liveperiod/>
         </match>
@@ -311,7 +311,7 @@
             <month>2023_05</month>
             <team1id>232195</team1id>
             <team2id>232201</team2id>
-            <played>0</played>
+            <played>1</played>
             <link>/hockey/_whc/tournament/5033/match/1073347/</link>
             <group>Группа B</group>
             <tourstr/>
@@ -319,8 +319,8 @@
             <time>16:20</time>
             <team1>Норвегия</team1>
             <team2>Швейцария</team2>
-            <score1/>
-            <score2/>
+            <score1>0</score1>
+            <score2>3</score2>
             <score1ext/>
             <score2ext/>
             <live/>
@@ -334,7 +334,7 @@
             <month>2023_05</month>
             <team1id>232193</team1id>
             <team2id>232179</team2id>
-            <played>0</played>
+            <played>1</played>
             <link>/hockey/_whc/tournament/5033/match/1073285/</link>
             <group>Группа A</group>
             <tourstr/>
@@ -342,8 +342,8 @@
             <time>20:20</time>
             <team1>Швеция</team1>
             <team2>Австрия</team2>
-            <score1/>
-            <score2/>
+            <score1>5</score1>
+            <score2>0</score2>
             <score1ext/>
             <score2ext/>
             <live/>
@@ -357,7 +357,7 @@
             <month>2023_05</month>
             <team1id>232189</team1id>
             <team2id>232197</team2id>
-            <played>0</played>
+            <played>1</played>
             <link>/hockey/_whc/tournament/5033/match/1073349/</link>
             <group>Группа B</group>
             <tourstr/>
@@ -365,8 +365,8 @@
             <time>20:20</time>
             <team1>Чехия</team1>
             <team2>Казахстан</team2>
-            <score1/>
-            <score2/>
+            <score1>5</score1>
+            <score2>1</score2>
             <score1ext/>
             <score2ext/>
             <live/>

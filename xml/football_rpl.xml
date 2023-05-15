@@ -4773,7 +4773,7 @@
             <month>2023_05</month>
             <team1id>231233</team1id>
             <team2id>231225</team2id>
-            <played>0</played>
+            <played>1</played>
             <link>/football/_russiapl/tournament/4987/match/1040475/</link>
             <group/>
             <tourstr>26</tourstr>
@@ -4781,8 +4781,8 @@
             <time>17:00</time>
             <team1>Локомотив М</team1>
             <team2>Сочи</team2>
-            <score1/>
-            <score2/>
+            <score1>3</score1>
+            <score2>0</score2>
             <score1ext/>
             <score2ext/>
             <live/>
@@ -4796,7 +4796,7 @@
             <month>2023_05</month>
             <team1id>231245</team1id>
             <team2id>231303</team2id>
-            <played>0</played>
+            <played>1</played>
             <link>/football/_russiapl/tournament/4987/match/1040495/</link>
             <group/>
             <tourstr>27</tourstr>
@@ -4804,8 +4804,8 @@
             <time>12:00</time>
             <team1>Урал</team1>
             <team2>Оренбург</team2>
-            <score1/>
-            <score2/>
+            <score1>2</score1>
+            <score2>1</score2>
             <score1ext/>
             <score2ext/>
             <live/>
@@ -4819,7 +4819,7 @@
             <month>2023_05</month>
             <team1id>231301</team1id>
             <team2id>231241</team2id>
-            <played>0</played>
+            <played>1</played>
             <link>/football/_russiapl/tournament/4987/match/1040497/</link>
             <group/>
             <tourstr>27</tourstr>
@@ -4827,8 +4827,8 @@
             <time>14:00</time>
             <team1>Химки</team1>
             <team2>Спартак М</team2>
-            <score1/>
-            <score2/>
+            <score1>1</score1>
+            <score2>1</score2>
             <score1ext/>
             <score2ext/>
             <live/>
@@ -4842,7 +4842,7 @@
             <month>2023_05</month>
             <team1id>231223</team1id>
             <team2id>231229</team2id>
-            <played>0</played>
+            <played>1</played>
             <link>/football/_russiapl/tournament/4987/match/1040483/</link>
             <group/>
             <tourstr>27</tourstr>
@@ -4850,8 +4850,8 @@
             <time>16:30</time>
             <team1>Зенит</team1>
             <team2>Краснодар</team2>
-            <score1/>
-            <score2/>
+            <score1>2</score1>
+            <score2>2</score2>
             <score1ext/>
             <score2ext/>
             <live/>
@@ -4865,7 +4865,7 @@
             <month>2023_05</month>
             <team1id>231231</team1id>
             <team2id>231247</team2id>
-            <played>0</played>
+            <played>1</played>
             <link>/football/_russiapl/tournament/4987/match/1040487/</link>
             <group/>
             <tourstr>27</tourstr>
@@ -4873,8 +4873,8 @@
             <time>19:00</time>
             <team1>ЦСКА</team1>
             <team2>Торпедо М</team2>
-            <score1/>
-            <score2/>
+            <score1>3</score1>
+            <score2>0</score2>
             <score1ext/>
             <score2ext/>
             <live/>
@@ -4888,7 +4888,7 @@
             <month>2023_05</month>
             <team1id>231237</team1id>
             <team2id>231233</team2id>
-            <played>0</played>
+            <played>1</played>
             <link>/football/_russiapl/tournament/4987/match/1040485/</link>
             <group/>
             <tourstr>27</tourstr>
@@ -4896,8 +4896,8 @@
             <time>14:00</time>
             <team1>Крылья Советов</team1>
             <team2>Локомотив М</team2>
-            <score1/>
-            <score2/>
+            <score1>1</score1>
+            <score2>1</score2>
             <score1ext/>
             <score2ext/>
             <live/>
@@ -4911,7 +4911,7 @@
             <month>2023_05</month>
             <team1id>231227</team1id>
             <team2id>231235</team2id>
-            <played>0</played>
+            <played>1</played>
             <link>/football/_russiapl/tournament/4987/match/1040489/</link>
             <group/>
             <tourstr>27</tourstr>
@@ -4919,8 +4919,8 @@
             <time>16:30</time>
             <team1>Динамо М</team1>
             <team2>Ахмат</team2>
-            <score1/>
-            <score2/>
+            <score1>0</score1>
+            <score2>3</score2>
             <score1ext/>
             <score2ext/>
             <live/>
@@ -4934,7 +4934,7 @@
             <month>2023_05</month>
             <team1id>231225</team1id>
             <team2id>231239</team2id>
-            <played>0</played>
+            <played>1</played>
             <link>/football/_russiapl/tournament/4987/match/1040491/</link>
             <group/>
             <tourstr>27</tourstr>
@@ -4942,8 +4942,8 @@
             <time>19:00</time>
             <team1>Сочи</team1>
             <team2>Ростов</team2>
-            <score1/>
-            <score2/>
+            <score1>1</score1>
+            <score2>0</score2>
             <score1ext/>
             <score2ext/>
             <live/>
@@ -4957,7 +4957,7 @@
             <month>2023_05</month>
             <team1id>231249</team1id>
             <team2id>231243</team2id>
-            <played>0</played>
+            <played>1</played>
             <link>/football/_russiapl/tournament/4987/match/1040493/</link>
             <group/>
             <tourstr>27</tourstr>
@@ -4965,8 +4965,8 @@
             <time>19:00</time>
             <team1>Факел</team1>
             <team2>Пари Нижний Новгород</team2>
-            <score1/>
-            <score2/>
+            <score1>1</score1>
+            <score2>0</score2>
             <score1ext/>
             <score2ext/>
             <live/>

@@ -1,3 +1,5 @@
+package org.diosespectro;
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -5,6 +7,8 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -13,21 +17,39 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
+import javax.xml.xpath.*;
 import java.io.File;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.*;
 
 public class SportScoreParser {
+    static Integer curYear = getCurYear();
+    public static Map<TournamentEnum, String> TourNames = new HashMap<>();
+
+    public SportScoreParser() {
+        initTourNames();
+    }
+
     static String getBasicUrl(){ return "https://www.championat.com/"; }
-    static String getTodayDate(){
+    public static String getTodayDate(){
         Date dateNow = new Date();
         SimpleDateFormat formatForDate = new SimpleDateFormat("yyyy-MM-dd");
         return formatForDate.format(dateNow);
     }
+    static Integer getCurYear(){
+        Integer ret;
+        String today = getTodayDate();
+        String[] todayA = today.split("-");
+        return ret = Integer.parseInt(todayA[0]);
+    }
+
     static URL getTodayUrl(){
         //Date dateNow = new Date();
         //SimpleDateFormat formatForDate = new SimpleDateFormat("yyyy-MM-dd");
@@ -42,23 +64,51 @@ public class SportScoreParser {
         return url;
     }
 
-    public static void main(String[] args) {
-        for (TournamentEnum tour : TournamentEnum.values()) {
-            parseTourAllMatches(tour);
-            parseTourTodayMatches(tour);
+    public void startParsingLastNext(){
+        curYear = getCurYear();
+        for(TournamentEnum tour : TournamentEnum.values()){
+            parseTourAllMatches(tour, CalendarDataType.LAST);
+            parseTourAllMatches(tour, CalendarDataType.NEXT);
         }
-
-        //parseTourTodayMatches(TournamentEnum.CHAMPIONSLEAGUE);
-        //System.out.println(getTodayUrl());
     }
 
-    static void parseTourAllMatches(TournamentEnum tour){
+    public void startParsingAllMatches(){
+        for (TournamentEnum tour : TournamentEnum.values()) {
+            parseTourAllMatches(tour, CalendarDataType.ALL);
+        }
+    }
+
+    public void startParsingTodayMatches(){
+        for (TournamentEnum tour : TournamentEnum.values()) {
+            parseTourTodayMatches(tour);
+        }
+    }
+
+    static void parseTourAllMatches(TournamentEnum tour, CalendarDataType dType){
         String[] tourInfo = getCurTourInfo(tour); // Получаем информацию о турнире
-        String url = getBasicUrl()+getSportNameByTour(tour).toString().toLowerCase()+"/"+getTourChampId(tour)+"/tournament/"+tourInfo[1]+"/calendar/";
+        //String url = getBasicUrl()+getSportNameByTour(tour).toString().toLowerCase()+"/"+getTourChampId(tour)+"/tournament/"+tourInfo[1]+"/calendar/";
+
+        String url = "";
+        String dataType = "";
+
+        if(dType == CalendarDataType.ALL)
+            url = getBasicUrl()+getSportNameByTour(tour).toString().toLowerCase()+"/"+getTourChampId(tour)+"/tournament/"+tourInfo[1]+"/calendar/";
+        else {
+            url = getBasicUrl() + getSportNameByTour(tour).toString().toLowerCase() + "/" + getTourChampId(tour) + ".html";
+            dataType = dType.toString().toLowerCase();
+        }
 
         try {
             Document doc = Jsoup.connect(url).get();
-            Elements elms = doc.select("table.stat-results__table > tbody > tr"); // Получаем список матчей
+            //Elements elms = doc.select("table.stat-results__table > tbody > tr"); // Получаем список матчей
+
+            Elements elms;
+
+            // Получаем список матчей
+            if(dType == CalendarDataType.ALL)
+                elms = doc.select("table.stat-results__table > tbody > tr");
+            else
+                elms = doc.select("div._accordion[data-type="+dataType+"] > table.stat-results__table > tbody > tr"); // Получаем список матчей
 
             int matchesCount = elms.size();
             String[][] matches = new String[matchesCount][21];
@@ -70,12 +120,14 @@ public class SportScoreParser {
                 Element matchRaw = elms.get(i); // Необработанная строка с матчем
                 //System.out.println(matchRaw.attributes().get("data-team"));
 
-                // Сперва запишем параметры, которые можем получить из аттрибутов заглавной строки матча
-                matches[i][2] = matchRaw.attributes().get("data-round"); // ID этапа турнира
-                matches[i][3] = matchRaw.attributes().get("data-tour"); // № тура
-                matches[i][4] = matchRaw.attributes().get("data-month"); // Год_месяц матча
-                matches[i][5] = matchRaw.attributes().get("data-team").split("/")[0]; // Id домашней команды
-                matches[i][6] = matchRaw.attributes().get("data-team").split("/")[1]; // Id гостевой команды
+                if(dType == CalendarDataType.ALL) {
+                    // Сперва запишем параметры, которые можем получить из аттрибутов заглавной строки матча
+                    matches[i][2] = matchRaw.attributes().get("data-round"); // ID этапа турнира
+                    matches[i][3] = matchRaw.attributes().get("data-tour"); // № тура
+                    matches[i][4] = matchRaw.attributes().get("data-month"); // Год_месяц матча
+                    matches[i][5] = matchRaw.attributes().get("data-team").split("/")[0]; // Id домашней команды
+                    matches[i][6] = matchRaw.attributes().get("data-team").split("/")[1]; // Id гостевой команды
+                }
                 matches[i][7] = matchRaw.attributes().get("data-played"); // Признак - сыгран ли матч (0 - нет, 1 - да)
 
                 // Теперь идём вглубь, в столбцы
@@ -137,20 +189,34 @@ public class SportScoreParser {
                 }
             }
 
-            saveMatchesToXML(tour, tourInfo, matches, false);
+            saveMatchesToXML(tour, tourInfo, matches, false, dType);
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    static void saveMatchesToXML(TournamentEnum tour, String[] tourInfo, String[][] matches, boolean onlyToday){
+    static String getFilePath(TournamentEnum tour, boolean onlyToday, CalendarDataType dType){
+        String fileName = SportScoreParser.getSportNameByTour(tour).toString().toLowerCase() + "_" + tour.toString().toLowerCase();
+        if(onlyToday) fileName += "_" + getTodayDate(); // getTodayDate()+"_"+fileName;
+        if(dType != CalendarDataType.ALL) fileName += "_" + dType.toString().toLowerCase();
+        fileName +=  ".xml";
+
+        //fileName = SportScoreParser.getSportNameByTour(tour).toString().toLowerCase() + "_" + tour.toString().toLowerCase() + ".xml";
+        String filePath = "xml/" + fileName;
+
+        return filePath;
+    }
+
+    static void saveMatchesToXML(TournamentEnum tour, String[] tourInfo, String[][] matches, boolean onlyToday, CalendarDataType dType){
+        /*
         String fileName = SportScoreParser.getSportNameByTour(tour).toString().toLowerCase() + "_" + tour.toString().toLowerCase();
         if(onlyToday) fileName = getTodayDate()+"_"+fileName;
         fileName +=  ".xml";
 
-            //fileName = SportScoreParser.getSportNameByTour(tour).toString().toLowerCase() + "_" + tour.toString().toLowerCase() + ".xml";
-
-        String filePath = "src/xml/" + fileName;
+        //fileName = SportScoreParser.getSportNameByTour(tour).toString().toLowerCase() + "_" + tour.toString().toLowerCase() + ".xml";
+        String filePath = "xml/" + fileName;
+        */
+        String filePath = getFilePath(tour, onlyToday, dType);
 
         org.w3c.dom.Element elmnt;
         org.w3c.dom.Element matchesroot;
@@ -185,15 +251,16 @@ public class SportScoreParser {
             // Далее добавляем каждый матч в отдельную группу
             int matchesCount = matches.length;
             for (String[] strings : matches) {
-                if (strings[5].equals("0") || strings[6].equals("0"))
+                if (dType == CalendarDataType.ALL && (strings[5].equals("0") || strings[6].equals("0")))
                     continue; // Если хотя бы одна команда не указана, то не записываем
 
                 // Создаём матч
                 match = doc.createElement("match");
                 matchesroot.appendChild(match);
 
-                // Далее добавляем все параметры матча вовнутрь матча
+                // Далее добавляем все параметры матча внутрь матча
                 for (int j = 0; j < 21; j++) {
+                    if(dType != CalendarDataType.ALL && j >= 2 && j <= 6) continue;
                     String tagName = switch (j) {
                         case 0 -> "type";
                         case 1 -> "id";
@@ -219,11 +286,11 @@ public class SportScoreParser {
                         default -> "";
                     };
 
-                    if (strings[j] != null) {
+                    //if (strings[j] != null) {
                         elmnt = doc.createElement(tagName);
-                        elmnt.appendChild(doc.createTextNode(strings[j])); // ID
+                        elmnt.appendChild(doc.createTextNode(strings[j] != null ? strings[j] : "")); // ID
                         match.appendChild(elmnt);
-                    }
+                    //}
                 }
             }
 
@@ -292,7 +359,12 @@ public class SportScoreParser {
                                     matches[i][2] = match_more.get("stage").toString() + "/" + match_more.get("id").toString(); // round
                                     matches[i][9] = match_more.get("name").toString(); // group
 
-                                    matches[i][3] = match.get("tour").toString(); // tour
+                                    try {
+                                        matches[i][3] = match.get("tour").toString(); // tour
+                                    }catch(NullPointerException e){
+
+                                    }
+
                                     matches[i][10] = matches[i][3]; // tourstr
 
                                     match_arr = (JSONArray) match.get("teams");
@@ -334,7 +406,7 @@ public class SportScoreParser {
                                     }
                                 }
 
-                                saveMatchesToXML(tour, tourInfo, matches, true);
+                                saveMatchesToXML(tour, tourInfo, matches, true, CalendarDataType.ALL);
                             }
                         }
                     }
@@ -370,13 +442,14 @@ public class SportScoreParser {
             elms = doc.select("div.entity-header__title-name a");
             ret[2] = elms.get(0).text(); // Название турнира
         } catch (Exception e) {
+            System.out.println("ErrorURL: " + url);
             e.printStackTrace();
         }
 
         return ret;
     }
 
-    static SportNameEnum getSportNameByTour(TournamentEnum tournament){
+    public static SportNameEnum getSportNameByTour(TournamentEnum tournament){
         return switch (tournament) {
             case RPL, CHAMPIONSLEAGUE, WORLDCUP -> SportNameEnum.FOOTBALL;
             case KHL, WHC -> SportNameEnum.HOCKEY;
@@ -396,5 +469,318 @@ public class SportScoreParser {
     static String transformDate(String date){
         String[] e = date.split("\\.");
         return e[2] + "-" + e[1] + "-" + e[0];
+    }
+
+    static String getNormDate(String date){
+        String[] e = date.split("-");
+        Calendar d = new GregorianCalendar(Integer.parseInt(e[0]), Integer.parseInt(e[1])-1, Integer.parseInt(e[2]));
+        String month = d.getDisplayName(Calendar.MONTH, Calendar.LONG, new Locale("ru"));
+
+        String showYear = "";
+        int year = Integer.parseInt(e[0]);
+        if(curYear != year) showYear = " " + year;
+
+        DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+        Date Ddate = null;
+
+        try {
+            Ddate = df.parse(date);
+        } catch (ParseException j) {
+            j.printStackTrace();
+        }
+
+       df = new SimpleDateFormat("EEEE", new Locale("ru"));
+       String dayOfWeek = df.format(Ddate);
+
+        return Integer.parseInt(e[2]) + " " + month + showYear + ", " + dayOfWeek;
+    }
+
+    public String getLiveMatches(){
+        LocalTime localTime = LocalTime.now();
+        String ret = "\uD83D\uDD34 <b>LIVE-результаты</b>";
+        String file;
+        String[][] matches;
+        int mcount = 0;
+
+        for (TournamentEnum tour : TournamentEnum.values()) {
+            file = getFilePath(tour, true, CalendarDataType.ALL);
+
+            if(!file.isEmpty()) {
+                matches = getMatches(file, tour, true);
+                int matchesCount = matches.length;
+
+                if(matchesCount > 0) {
+                    if(!ret.isEmpty()) ret += "\n\n";
+                    ret += getTourName(tour, true);
+
+                    for (String[] match : matches) {
+                        mcount++;
+                        ret += "\n " + getMatchLine(match);
+                    }
+                }
+            }
+        }
+
+        if(mcount == 0) ret += "\n\n<i>В данный момент нет активных матчей</i>";
+        return ret;
+    }
+
+    public ArrayList<Object> getTournamentActualMatches(String tourNameStr){
+        String ret = "";
+        String option = tourNameStr.split("-")[1];
+        TournamentEnum tour = null;
+        String todayDate = getTodayDate();
+        String file = "";
+        String[][] matches;
+        String caption = "";
+
+        tourNameStr = tourNameStr.split("-")[0];
+
+        try {
+            tour = TournamentEnum.valueOf(tourNameStr);
+        }catch(IllegalArgumentException e){
+            ret = "Ошибка выбора турнира";
+        }
+
+        if(tour != null) {
+            switch(option){
+                case "today": case "main":
+                        file = getFilePath(tour, true, CalendarDataType.ALL);
+                        caption = "Сегодняшняя программа";
+                    break;
+                case "last": case "mainlast":
+                        file = getFilePath(tour, false, CalendarDataType.LAST);
+                        caption = "Последние игры";
+                    break;
+                case "next": case "mainnext":
+                        file = getFilePath(tour, false, CalendarDataType.NEXT);
+                        caption = "Ближайшие игры";
+                    break;
+            }
+
+            if(!file.isEmpty()) {
+                matches = getMatches(file, tour, false);
+                int matchesCount = matches.length;
+
+                // Если матчей нет в разделе, то подгружаем сразу другой
+                if(matchesCount == 0) {
+                    String nomatchTxt = "Нет матчей для отображения";
+                    ArrayList<Object> info;
+
+                    switch (option){
+                        case "main":
+                                info = getTournamentActualMatches(tour.name()+"-mainlast");
+                                ret = info.get(1).toString();
+                            break;
+                        case "mainlast":
+                                info = getTournamentActualMatches(tour.name()+"-mainnext");
+                                ret = info.get(1).toString();
+                            break;
+                        case "mainnext":
+                                ret = getTourName(tour, true) + "\n<i>"+nomatchTxt+"</i>\n";
+                            break;
+                        default:
+                            ret = getTourName(tour, true) + "\n<i>" + caption + "</i>\n\n<i>"+nomatchTxt+"</i>\n";
+                            break;
+                    }
+                }
+                else {
+                    ret = "<b>" + getTourName(tour, true) + "</b>\n<i>" + caption + "</i>\n";
+
+                    String oldDate = "";
+
+                    for (String[] match : matches) {
+                        if (!oldDate.equals(match[2])) {
+                            if (!oldDate.isEmpty()) ret += "\n";
+                            oldDate = match[2];
+                            ret += "\n\uD83D\uDCC6  <b>" + (oldDate.equals(todayDate) ? "СЕГОДНЯ" : getNormDate(oldDate)) + "</b>";
+                        }
+
+                        ret += "\n " + getMatchLine(match);
+                    }
+                }
+            }
+        }
+
+        ArrayList<Object> retlist = new ArrayList <>();
+        retlist.add(tour);
+        retlist.add(ret);
+
+        return retlist;
+    }
+
+    static String[][] getMatches(String filePath, TournamentEnum tourE, boolean getOnlyLive){
+        File f = new File(filePath);
+        String[][] ret = new String[0][0];
+
+        if(f.exists() && !f.isDirectory()) {
+            org.w3c.dom.Document calendar = getXMLDocument(filePath);
+
+            String tName = TourNames.get(tourE);
+            if(tName == null) {
+                NodeList tournameNodes = calendar.getElementsByTagName("tourname");
+                String fileTName = tournameNodes.item(0).getTextContent();
+                TourNames.put(tourE, fileTName);
+            }
+
+            NodeList nodeList = calendar.getElementsByTagName("match");
+
+            ret = new String[nodeList.getLength()][12];
+
+            int m = -1;
+            for (int i = 0; i < nodeList.getLength(); i++) {
+                Node node = nodeList.item(i);
+                if (node.getNodeType() == Node.ELEMENT_NODE) {
+                    org.w3c.dom.Element element = (org.w3c.dom.Element) node;
+
+                    String isLive =  element.getElementsByTagName("live").item(0).getTextContent();
+                    if(getOnlyLive && isLive.isEmpty()) continue;
+
+                    m++;
+
+                    ret[m][0] = element.getElementsByTagName("id").item(0).getTextContent();
+                    ret[m][1] = element.getElementsByTagName("group").item(0).getTextContent();
+                    ret[m][2] = element.getElementsByTagName("date").item(0).getTextContent();
+                    ret[m][3] = element.getElementsByTagName("time").item(0).getTextContent();
+                    ret[m][4] = element.getElementsByTagName("team1").item(0).getTextContent();
+                    ret[m][5] = element.getElementsByTagName("team2").item(0).getTextContent();
+                    ret[m][6] = element.getElementsByTagName("score1").item(0).getTextContent();
+                    ret[m][7] = element.getElementsByTagName("score2").item(0).getTextContent();
+                    ret[m][8] = element.getElementsByTagName("score1ext").item(0).getTextContent();
+                    ret[m][9] = element.getElementsByTagName("score2ext").item(0).getTextContent();
+                    ret[m][10] = element.getElementsByTagName("live").item(0).getTextContent();
+                    ret[m][11] = element.getElementsByTagName("liveperiod").item(0).getTextContent();
+                }
+            }
+
+            if(getOnlyLive){
+                // Создадим массив только для live-результатов
+                String[][] liveMatches = new String[m+1][12];
+                System.arraycopy(ret, 0, liveMatches, 0, m + 1);
+
+                ret = liveMatches;
+            }
+        }
+
+        return ret;
+    }
+
+    static String getMatchLine(String[] match){
+        String ret = "";
+
+        if(!match[10].isEmpty()) ret += "\uD83D\uDD34 "; // Live-иконка
+
+        if(!match[3].isEmpty()) // Время матча
+            ret += match[3] + " | ";
+        else
+            ret += "--:-- | ";
+
+        if(!match[1].isEmpty()) ret += match[1] + ", "; // Группа
+
+        String score = " - ";
+
+        if(!match[6].isEmpty() && !match[7].isEmpty()) { // Счёт
+            score = "<code>" + match[6] + ":" + match[7] + "</code>";
+
+            if(!match[8].isEmpty()) {
+                if(!match[8].equals(match[9])){
+                    score += " <i>(" + match[8] + ":"+ match[9] + ")</i>";
+                } else score += " <i>(" + match[8] + ")</i>";
+            }
+
+            score = "  " + score + "  ";
+        }
+
+        ret += "<b>" + match[4] + "</b>" + score + "<b>" + match[5] + "</b>";
+
+        if(!match[11].isEmpty()) ret += ", " + match[11];
+
+        return ret;
+    }
+
+    static org.w3c.dom.Document getXMLDocument(String filePath){
+        org.w3c.dom.Document ret = null;
+
+        try{
+            File inputFile = new File(filePath);
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+            ret = dBuilder.parse(inputFile);
+            ret.getDocumentElement().normalize();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return ret;
+    }
+
+/*
+    static List<String> getAllDates(org.w3c.dom.Document calendar, String today){
+        List<String> retList = new ArrayList<>();
+        LocalDate prevDate = LocalDate.MIN;
+        LocalDate nextDate = LocalDate.MAX;
+        LocalDate todayDate = LocalDate.parse(today);
+
+        boolean hasPrev = false;
+        boolean hasNext = false;
+        boolean hasToday = false;
+
+        NodeList nodeList = calendar.getElementsByTagName("date");
+        for(int i=0;i<nodeList.getLength();i++){
+            Node node = nodeList.item(i);
+            if(node.getNodeType() == Node.ELEMENT_NODE) {
+                String text = node.getTextContent();
+                LocalDate date = LocalDate.parse(text);
+
+                if(date.equals(todayDate)){
+                    hasToday = true;
+                }else if(date.isBefore(todayDate) && date.isAfter(prevDate)){
+                    prevDate = date;
+                    hasPrev = true;
+                }else if(date.isAfter(todayDate) && date.isBefore(nextDate)){
+                    nextDate = date;
+                    hasNext = true;
+                }
+            }
+        }
+
+        retList.add(hasPrev ? prevDate.toString() : "NA");
+        retList.add(hasToday ? todayDate.toString() : "NA");
+        retList.add(hasNext ? nextDate.toString() : "NA");
+
+        return retList;
+    }
+*/
+    static void initTourNames(){
+        for(TournamentEnum tour : TournamentEnum.values()) {
+            String filePath = getFilePath(tour, false, CalendarDataType.LAST);
+
+            File f = new File(filePath);
+            if(f.exists() && !f.isDirectory()) {
+                org.w3c.dom.Document xmldoc = getXMLDocument(filePath);
+                NodeList tournameNodes = xmldoc.getElementsByTagName("tourname");
+                String fileTName = tournameNodes.item(0).getTextContent();
+                TourNames.put(tour, fileTName);
+            }
+        }
+    }
+
+    public String getTourName(TournamentEnum tour, boolean withEmo){
+        String ret = TourNames.get(tour);
+
+        if(ret == null) ret = tour.toString();
+
+        // Определим иконку для турнира
+        if(withEmo) {
+            String emo = "";
+            SportNameEnum sport = getSportNameByTour(tour);
+
+            if (sport == SportNameEnum.FOOTBALL) emo = "⚽";
+                else emo = "\uD83C\uDFD2";
+
+            ret = emo + "   " + ret;
+        }
+
+        return ret;
     }
 }

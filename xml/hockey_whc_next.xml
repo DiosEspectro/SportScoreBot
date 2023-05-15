@@ -6,87 +6,15 @@
     <matches>
         <match>
             <type>match</type>
-            <id>hockey-1073275</id>
+            <id>hockey-1073287</id>
             <played>0</played>
-            <link>/hockey/_whc/tournament/5033/match/1073275/</link>
+            <link>/hockey/_whc/tournament/5033/match/1073287/</link>
             <group>Группа A</group>
             <tourstr/>
-            <date>2023-05-13</date>
-            <time>12:20</time>
-            <team1>Франция</team1>
-            <team2>Австрия</team2>
-            <score1/>
-            <score2/>
-            <score1ext/>
-            <score2ext/>
-            <live/>
-            <liveperiod/>
-        </match>
-        <match>
-            <type>match</type>
-            <id>hockey-1073339</id>
-            <played>0</played>
-            <link>/hockey/_whc/tournament/5033/match/1073339/</link>
-            <group>Группа B</group>
-            <tourstr/>
-            <date>2023-05-13</date>
-            <time>12:20</time>
-            <team1>Швейцария</team1>
-            <team2>Словения</team2>
-            <score1/>
-            <score2/>
-            <score1ext/>
-            <score2ext/>
-            <live/>
-            <liveperiod/>
-        </match>
-        <match>
-            <type>match</type>
-            <id>hockey-1073277</id>
-            <played>0</played>
-            <link>/hockey/_whc/tournament/5033/match/1073277/</link>
-            <group>Группа A</group>
-            <tourstr/>
-            <date>2023-05-13</date>
+            <date>2023-05-15</date>
             <time>16:20</time>
-            <team1>Венгрия</team1>
-            <team2>Дания</team2>
-            <score1/>
-            <score2/>
-            <score1ext/>
-            <score2ext/>
-            <live/>
-            <liveperiod/>
-        </match>
-        <match>
-            <type>match</type>
-            <id>hockey-1073341</id>
-            <played>0</played>
-            <link>/hockey/_whc/tournament/5033/match/1073341/</link>
-            <group>Группа B</group>
-            <tourstr/>
-            <date>2023-05-13</date>
-            <time>16:20</time>
-            <team1>Норвегия</team1>
-            <team2>Казахстан</team2>
-            <score1/>
-            <score2/>
-            <score1ext/>
-            <score2ext/>
-            <live/>
-            <liveperiod/>
-        </match>
-        <match>
-            <type>match</type>
-            <id>hockey-1073279</id>
-            <played>0</played>
-            <link>/hockey/_whc/tournament/5033/match/1073279/</link>
-            <group>Группа A</group>
-            <tourstr/>
-            <date>2023-05-13</date>
-            <time>20:20</time>
             <team1>Германия</team1>
-            <team2>Финляндия</team2>
+            <team2>США</team2>
             <score1/>
             <score2/>
             <score1ext/>
@@ -96,50 +24,14 @@
         </match>
         <match>
             <type>match</type>
-            <id>hockey-1073343</id>
+            <id>hockey-1073351</id>
             <played>0</played>
-            <link>/hockey/_whc/tournament/5033/match/1073343/</link>
+            <link>/hockey/_whc/tournament/5033/match/1073351/</link>
             <group>Группа B</group>
             <tourstr/>
-            <date>2023-05-13</date>
-            <time>20:20</time>
+            <date>2023-05-15</date>
+            <time>16:20</time>
             <team1>Словакия</team1>
-            <team2>Латвия</team2>
-            <score1/>
-            <score2/>
-            <score1ext/>
-            <score2ext/>
-            <live/>
-            <liveperiod/>
-        </match>
-        <match>
-            <type>match</type>
-            <id>hockey-1073281</id>
-            <played>0</played>
-            <link>/hockey/_whc/tournament/5033/match/1073281/</link>
-            <group>Группа A</group>
-            <tourstr/>
-            <date>2023-05-14</date>
-            <time>12:20</time>
-            <team1>США</team1>
-            <team2>Венгрия</team2>
-            <score1/>
-            <score2/>
-            <score1ext/>
-            <score2ext/>
-            <live/>
-            <liveperiod/>
-        </match>
-        <match>
-            <type>match</type>
-            <id>hockey-1073345</id>
-            <played>0</played>
-            <link>/hockey/_whc/tournament/5033/match/1073345/</link>
-            <group>Группа B</group>
-            <tourstr/>
-            <date>2023-05-14</date>
-            <time>12:20</time>
-            <team1>Словения</team1>
             <team2>Канада</team2>
             <score1/>
             <score2/>
@@ -150,15 +42,15 @@
         </match>
         <match>
             <type>match</type>
-            <id>hockey-1073283</id>
+            <id>hockey-1073289</id>
             <played>0</played>
-            <link>/hockey/_whc/tournament/5033/match/1073283/</link>
+            <link>/hockey/_whc/tournament/5033/match/1073289/</link>
             <group>Группа A</group>
             <tourstr/>
-            <date>2023-05-14</date>
-            <time>16:20</time>
-            <team1>Франция</team1>
-            <team2>Дания</team2>
+            <date>2023-05-15</date>
+            <time>20:20</time>
+            <team1>Финляндия</team1>
+            <team2>Швеция</team2>
             <score1/>
             <score2/>
             <score1ext/>
@@ -168,15 +60,123 @@
         </match>
         <match>
             <type>match</type>
-            <id>hockey-1073347</id>
+            <id>hockey-1073353</id>
             <played>0</played>
-            <link>/hockey/_whc/tournament/5033/match/1073347/</link>
+            <link>/hockey/_whc/tournament/5033/match/1073353/</link>
             <group>Группа B</group>
             <tourstr/>
-            <date>2023-05-14</date>
+            <date>2023-05-15</date>
+            <time>20:20</time>
+            <team1>Чехия</team1>
+            <team2>Латвия</team2>
+            <score1/>
+            <score2/>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>hockey-1073291</id>
+            <played>0</played>
+            <link>/hockey/_whc/tournament/5033/match/1073291/</link>
+            <group>Группа A</group>
+            <tourstr/>
+            <date>2023-05-16</date>
             <time>16:20</time>
-            <team1>Норвегия</team1>
-            <team2>Швейцария</team2>
+            <team1>Дания</team1>
+            <team2>Австрия</team2>
+            <score1/>
+            <score2/>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>hockey-1073355</id>
+            <played>0</played>
+            <link>/hockey/_whc/tournament/5033/match/1073355/</link>
+            <group>Группа B</group>
+            <tourstr/>
+            <date>2023-05-16</date>
+            <time>16:20</time>
+            <team1>Словения</team1>
+            <team2>Норвегия</team2>
+            <score1/>
+            <score2/>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>hockey-1073293</id>
+            <played>0</played>
+            <link>/hockey/_whc/tournament/5033/match/1073293/</link>
+            <group>Группа A</group>
+            <tourstr/>
+            <date>2023-05-16</date>
+            <time>20:20</time>
+            <team1>Франция</team1>
+            <team2>Венгрия</team2>
+            <score1/>
+            <score2/>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>hockey-1073357</id>
+            <played>0</played>
+            <link>/hockey/_whc/tournament/5033/match/1073357/</link>
+            <group>Группа B</group>
+            <tourstr/>
+            <date>2023-05-16</date>
+            <time>20:20</time>
+            <team1>Швейцария</team1>
+            <team2>Казахстан</team2>
+            <score1/>
+            <score2/>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>hockey-1073295</id>
+            <played>0</played>
+            <link>/hockey/_whc/tournament/5033/match/1073295/</link>
+            <group>Группа A</group>
+            <tourstr/>
+            <date>2023-05-17</date>
+            <time>16:20</time>
+            <team1>США</team1>
+            <team2>Австрия</team2>
+            <score1/>
+            <score2/>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>hockey-1073327</id>
+            <played>0</played>
+            <link>/hockey/_whc/tournament/5033/match/1073327/</link>
+            <group>Группа B</group>
+            <tourstr/>
+            <date>2023-05-17</date>
+            <time>16:20</time>
+            <team1>Латвия</team1>
+            <team2>Норвегия</team2>
             <score1/>
             <score2/>
             <score1ext/>

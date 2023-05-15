@@ -19,10 +19,14 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKe
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 import java.util.*;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 public class SSBot extends TelegramLongPollingBot {
     private boolean screaming = false;
     private InlineKeyboardMarkup keyboardM1;
+    private InlineKeyboardMarkup keyboardMLive;
 
     public static Map<TournamentEnum, InlineKeyboardMarkup> keyboardM2 = new HashMap<>();
     static String mainMenuText = "<b>Sport Score Bot</b>\nВыберите турнир:";
@@ -37,9 +41,30 @@ public class SSBot extends TelegramLongPollingBot {
  //       ssParser.startParsingAllMatches();
 //        ssParser.startParsingTodayMatches();
 
+        ScheduledExecutorService executorService;
+        executorService = Executors.newSingleThreadScheduledExecutor();
+
+        /*
+        executorService.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                ssParser.startParsingTodayMatches();
+            }
+        }, 0, 2, TimeUnit.MINUTES);
+
+        executorService.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                ssParser.startParsingLastNext();
+                ssParser.startParsingAllMatches();
+            }
+        }, 0, 30, TimeUnit.MINUTES);
+        */
+
         setBotCommands();
 
         List<List<InlineKeyboardButton>> buttons = new ArrayList<>();
+        List<List<InlineKeyboardButton>> liveButtons = new ArrayList<>();
 
         List<List<InlineKeyboardButton>> subButtons;
 
@@ -85,8 +110,38 @@ public class SSBot extends TelegramLongPollingBot {
             keyboardM2.put(tour, InlineKeyboardMarkup.builder().keyboard(subButtons).build());
         }
 
+        buttons.add(
+                Arrays.asList(
+                        InlineKeyboardButton.builder()
+                                .text("🔴 LIVE-результаты")
+                                .callbackData("live")
+                                .build()
+                )
+        );
+
         keyboardM1 = InlineKeyboardMarkup.builder()
                 .keyboard(buttons).build();
+
+        liveButtons.add(
+                Arrays.asList(
+                        InlineKeyboardButton.builder()
+                                .text("\uD83D\uDD04   Обновить")
+                                .callbackData("live-refresh")
+                                .build()
+                )
+        );
+
+        liveButtons.add(
+                Arrays.asList(
+                        InlineKeyboardButton.builder()
+                                .text("⬅   Вернуться к списку турниров")
+                                .callbackData("menu")
+                                .build()
+                )
+        );
+
+        keyboardMLive = InlineKeyboardMarkup.builder()
+                .keyboard(liveButtons).build();
 
         System.out.println("Бот запущен");
     }
@@ -187,7 +242,6 @@ public class SSBot extends TelegramLongPollingBot {
     }
 
     private void buttonTap(Long id, String queryId, String data, int msgId, String chatId) {
-
         /*
         EditMessageText newTxt = EditMessageText.builder()
                 .chatId(id.toString())
@@ -215,6 +269,40 @@ public class SSBot extends TelegramLongPollingBot {
                 execute(close);
                 execute(deleteMessage);
                 sendMenu(id, mainMenuText, keyboardM1);
+            }catch(TelegramApiException e){
+                e.printStackTrace();
+            }
+        }
+        else if(data.equals("live")) {
+            try {
+                execute(close);
+                execute(deleteMessage);
+                sendText(id, ssParser.getLiveMatches());
+                sendMenu(id, "Варианты действий:", keyboardMLive);
+            }catch(TelegramApiException e){
+                e.printStackTrace();
+            }
+        }
+        else if(data.equals("live-refresh")) {
+            try {
+                EditMessageText newTxt = EditMessageText.builder()
+                        .chatId(id.toString())
+                        .parseMode("HTML")
+                        .messageId(msgId).text(ssParser.getLiveMatches()).build();
+
+                EditMessageReplyMarkup newKb = EditMessageReplyMarkup.builder()
+                        .chatId(id.toString()).messageId(msgId).build();
+                newKb.setReplyMarkup(keyboardMLive);
+
+                AnswerCallbackQuery answer = new AnswerCallbackQuery();
+                answer.setCallbackQueryId(queryId);
+                answer.setText("Результаты обновлены!");
+                answer.setShowAlert(false);
+
+                execute(newTxt);
+                execute(newKb);
+                execute(answer);
+                execute(close);
             }catch(TelegramApiException e){
                 e.printStackTrace();
             }
