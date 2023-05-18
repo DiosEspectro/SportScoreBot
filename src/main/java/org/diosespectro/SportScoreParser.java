@@ -18,6 +18,8 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -25,14 +27,15 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalTime;
 import java.util.*;
 
 public class SportScoreParser {
     static Integer curYear = getCurYear();
+    public static String baseFolder = "ssb_data/";
     public static Map<TournamentEnum, String> TourNames = new HashMap<>();
 
     public SportScoreParser() {
@@ -46,13 +49,13 @@ public class SportScoreParser {
     static String getBasicUrl(){ return "https://www.championat.com/"; }
 
     static void checkFolder(){
-        String filePathStr = "xml/";
+        String filePathStr = baseFolder;
         Path filePath = Paths.get(filePathStr);
         if (!Files.exists(filePath)) {
             File newDir = new File(filePathStr);
 
             if(newDir.mkdir()){
-                System.out.println("Папка xml создана");
+                System.out.println("Папка " + baseFolder + " создана");
             }
         }
     }
@@ -63,20 +66,17 @@ public class SportScoreParser {
         return formatForDate.format(dateNow);
     }
     static Integer getCurYear(){
-        Integer ret;
         String today = getTodayDate();
         String[] todayA = today.split("-");
-        return ret = Integer.parseInt(todayA[0]);
+        return Integer.parseInt(todayA[0]);
     }
 
-    static URL getTodayUrl(){
-        //Date dateNow = new Date();
-        //SimpleDateFormat formatForDate = new SimpleDateFormat("yyyy-MM-dd");
-        //return getBasicUrl() + "stat/" + formatForDate.format(dateNow) + ".json";
+    static URL getTodayUrl(boolean isLocal){
         URL url = null;
 
         try {
-            url = new URL(getBasicUrl() + "stat/" + getTodayDate() + ".json");
+            if(isLocal) url = new File(baseFolder + "today-matches.json").toURI().toURL();
+                else url = new URL(getBasicUrl() + "stat/" + getTodayDate() + ".json");
         }catch(MalformedURLException e){
             e.printStackTrace();
         }
@@ -100,21 +100,26 @@ public class SportScoreParser {
     }
 
     public void startParsingTodayMatches(){
+        downloadTodayFile();
         for (TournamentEnum tour : TournamentEnum.values()) {
             parseTourTodayMatches(tour);
-            try {
-                Thread.sleep(5 * 1000);
-            }catch (InterruptedException e){
-                e.printStackTrace();
-            }
+        }
+    }
+
+    static void downloadTodayFile(){
+        try {
+            String todayFile = baseFolder + "today-matches.json";
+            URL url = getTodayUrl(false);
+            InputStream inputStream = url.openStream();
+            Files.copy(inputStream, Paths.get(todayFile), StandardCopyOption.REPLACE_EXISTING);
+            inputStream.close();
+        }catch(IOException e){
+            e.printStackTrace();
         }
     }
 
     static void parseTourAllMatches(TournamentEnum tour, CalendarDataType dType, String[] tourInfo){
-        //String[] tourInfo = getCurTourInfo(tour); // Получаем информацию о турнире
-        //String url = getBasicUrl()+getSportNameByTour(tour).toString().toLowerCase()+"/"+getTourChampId(tour)+"/tournament/"+tourInfo[1]+"/calendar/";
-
-        String url = "";
+        String url;
         String dataType = "";
 
         if(dType == CalendarDataType.ALL)
@@ -140,7 +145,7 @@ public class SportScoreParser {
             String[][] matches = new String[matchesCount][21];
 
             for(int i=0;i<matchesCount;i++){
-                String strtmp = "";
+                String strtmp;
                 String[] strsplit;
 
                 Element matchRaw = elms.get(i); // Необработанная строка с матчем
@@ -223,25 +228,15 @@ public class SportScoreParser {
 
     static String getFilePath(TournamentEnum tour, boolean onlyToday, CalendarDataType dType){
         String fileName = SportScoreParser.getSportNameByTour(tour).toString().toLowerCase() + "_" + tour.toString().toLowerCase();
-        if(onlyToday) fileName += "_" + getTodayDate(); // getTodayDate()+"_"+fileName;
+        //if(onlyToday) fileName += "_" + getTodayDate();
+        if(onlyToday) fileName += "_today";
         if(dType != CalendarDataType.ALL) fileName += "_" + dType.toString().toLowerCase();
         fileName +=  ".xml";
 
-        //fileName = SportScoreParser.getSportNameByTour(tour).toString().toLowerCase() + "_" + tour.toString().toLowerCase() + ".xml";
-        String filePath = "xml/" + fileName;
-
-        return filePath;
+        return baseFolder + fileName;
     }
 
     static void saveMatchesToXML(TournamentEnum tour, String[] tourInfo, String[][] matches, boolean onlyToday, CalendarDataType dType){
-        /*
-        String fileName = SportScoreParser.getSportNameByTour(tour).toString().toLowerCase() + "_" + tour.toString().toLowerCase();
-        if(onlyToday) fileName = getTodayDate()+"_"+fileName;
-        fileName +=  ".xml";
-
-        //fileName = SportScoreParser.getSportNameByTour(tour).toString().toLowerCase() + "_" + tour.toString().toLowerCase() + ".xml";
-        String filePath = "xml/" + fileName;
-        */
         String filePath = getFilePath(tour, onlyToday, dType);
 
         org.w3c.dom.Element elmnt;
@@ -275,7 +270,6 @@ public class SportScoreParser {
             rootElement.appendChild(matchesroot);
 
             // Далее добавляем каждый матч в отдельную группу
-            int matchesCount = matches.length;
             for (String[] strings : matches) {
                 if (dType == CalendarDataType.ALL && (strings[5].equals("0") || strings[6].equals("0")))
                     continue; // Если хотя бы одна команда не указана, то не записываем
@@ -336,18 +330,19 @@ public class SportScoreParser {
         }
     }
 
-
     static void parseTourTodayMatches(TournamentEnum tour) {
         String[] tourInfo = getCurTourInfo(tour); // Получаем информацию о турнире
         SportNameEnum sportName = getSportNameByTour(tour);
 
-        URL url = getTodayUrl();
+        URL url = getTodayUrl(true);
 
         try{
-            //Object object = new JSONParser().parse(new FileReader(url));
-            //JSONObject jsonObject = (JSONObject) object;
             JSONParser parser = new JSONParser();
-            Object obj = parser.parse(new InputStreamReader(url.openStream(), StandardCharsets.UTF_8));
+
+            InputStreamReader inputStreamReader = new InputStreamReader(url.openStream(), StandardCharsets.UTF_8);
+            Object obj = parser.parse(inputStreamReader);
+            inputStreamReader.close();
+
             JSONObject jsonObject = (JSONObject) obj;
             JSONObject matchesObj = (JSONObject) jsonObject.get("matches");
             if(matchesObj != null) {
@@ -388,7 +383,7 @@ public class SportScoreParser {
                                     try {
                                         matches[i][3] = match.get("tour").toString(); // tour
                                     }catch(NullPointerException e){
-
+                                        e.printStackTrace();
                                     }
 
                                     matches[i][10] = matches[i][3]; // tourstr
@@ -438,15 +433,6 @@ public class SportScoreParser {
                     }
                 }
             }
-            //JSONArray jsonArray = (JSONArray) jsonObject.get("matches");
-/*
-            for(Object o:jsonArray){
-                JSONObject book = (JSONObject) o;
-                System.out.println("\nТекущий элемент: book");
-                System.out.println("Название книги: " + book.get("title"));
-                System.out.println("Автор: " + book.get("author"));
-                System.out.println("Год издания: " + book.get("year"));
-            }*/
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -524,9 +510,9 @@ public class SportScoreParser {
     }
 
     public String getTodayMatches(boolean getOnlyLive){
-        String pageTitle = "";
-        String pageIcon = "";
-        String pageEmpty = "";
+        String pageTitle;
+        String pageIcon;
+        String pageEmpty;
 
         if(getOnlyLive){
             pageTitle = "Live-результаты";
@@ -707,13 +693,10 @@ public class SportScoreParser {
     }
 
     static String getMatchLine(String[] match){
-        String ret = "";
-        String outputTemplate = "";
-
-        String time = "";
-        String liveMark = "";
+        String time;
+        String liveMark;
         String group = "";
-        String matchTxt = "";
+        String matchTxt;
         String liveTxt = "";
 
         liveMark = !match[10].isEmpty() ? "\uD83D\uDD34" : "|"; // Live-иконка
@@ -750,61 +733,20 @@ public class SportScoreParser {
         String ret = "%1$s %2$s %4$s  <i>%5$s</i>";
 
         if(!group.isEmpty()) {
-            switch(template){
-                case 1:
-                        ret = "%1$s %2$s %3$s\n%4$s";
-                        if(!liveTxt.isEmpty()) ret += "\n<i>%5$s</i>";
-                        ret += "\n";
-                    break;
-
-                case 2:
-                        ret = "%1$s %2$s %4$s  <i>" + (!liveTxt.isEmpty() ? "%5$s " : "") + "(%3$s)</i>";
-                    break;
+            switch (template) {
+                case 1 -> {
+                    ret = "%1$s %2$s %3$s\n%4$s";
+                    if (!liveTxt.isEmpty()) ret += "\n<i>%5$s</i>";
+                    ret += "\n";
+                }
+                case 2 -> ret = "%1$s %2$s %4$s  <i>" + (!liveTxt.isEmpty() ? "%5$s " : "") + "(%3$s)</i>";
             }
         }
 
         return ret;
     }
 
-    static String getMatchLineOld(String[] match){
-        String ret = "";
-        String addLine = "";
 
-        if(!match[10].isEmpty()) ret += "\uD83D\uDD34 "; // Live-иконка
-
-        if(!match[3].isEmpty()) // Время матча
-            ret += match[3] + " | ";
-        else
-            ret += "--:-- | ";
-
-        //if(!match[1].isEmpty()) ret += match[1] + "\n"; // Группа
-        if(!match[1].isEmpty()) addLine += "(" + match[1] + ")";
-
-        String score = " - ";
-
-        if(!match[6].isEmpty() && !match[7].isEmpty()) { // Счёт
-            score = "<code>" + match[6] + ":" + match[7] + "</code>";
-
-            if(!match[8].isEmpty()) {
-                if(!match[8].equals(match[9])){
-                    score += " <i>(" + match[8] + ":"+ match[9] + ")</i>";
-                } else score += " <i>(" + match[8] + ")</i>";
-            }
-
-            score = "  " + score + "  ";
-        }
-
-        ret += "<b>" + match[4] + "</b>" + score + "<b>" + match[5] + "</b>";
-
-        //if(!match[11].isEmpty()) ret += "\n" + match[11];
-        if(!match[11].isEmpty()){
-            addLine = match[11] + (!addLine.isEmpty() ? "  " + addLine : "");
-        }
-
-        if(!addLine.isEmpty()) ret += "   <i>" + addLine + "</i>";
-
-        return ret;
-    }
 
     static org.w3c.dom.Document getXMLDocument(String filePath){
         org.w3c.dom.Document ret = null;
@@ -822,43 +764,6 @@ public class SportScoreParser {
         return ret;
     }
 
-/*
-    static List<String> getAllDates(org.w3c.dom.Document calendar, String today){
-        List<String> retList = new ArrayList<>();
-        LocalDate prevDate = LocalDate.MIN;
-        LocalDate nextDate = LocalDate.MAX;
-        LocalDate todayDate = LocalDate.parse(today);
-
-        boolean hasPrev = false;
-        boolean hasNext = false;
-        boolean hasToday = false;
-
-        NodeList nodeList = calendar.getElementsByTagName("date");
-        for(int i=0;i<nodeList.getLength();i++){
-            Node node = nodeList.item(i);
-            if(node.getNodeType() == Node.ELEMENT_NODE) {
-                String text = node.getTextContent();
-                LocalDate date = LocalDate.parse(text);
-
-                if(date.equals(todayDate)){
-                    hasToday = true;
-                }else if(date.isBefore(todayDate) && date.isAfter(prevDate)){
-                    prevDate = date;
-                    hasPrev = true;
-                }else if(date.isAfter(todayDate) && date.isBefore(nextDate)){
-                    nextDate = date;
-                    hasNext = true;
-                }
-            }
-        }
-
-        retList.add(hasPrev ? prevDate.toString() : "NA");
-        retList.add(hasToday ? todayDate.toString() : "NA");
-        retList.add(hasNext ? nextDate.toString() : "NA");
-
-        return retList;
-    }
-*/
     static void initTourNames(){
         for(TournamentEnum tour : TournamentEnum.values()) {
             String filePath = getFilePath(tour, false, CalendarDataType.LAST);

@@ -1,5 +1,7 @@
 package org.diosespectro;
 
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.AnswerCallbackQuery;
 import org.telegram.telegrambots.meta.api.methods.ParseMode;
@@ -16,29 +18,32 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.InlineKeyboardMa
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKeyboardButton;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
+import java.io.File;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 public class SSBot extends TelegramLongPollingBot {
-    private boolean screaming = false;
+    public String BotName = "";
+    public String BotToken = "";
+
     private InlineKeyboardMarkup keyboardM1;
     private InlineKeyboardMarkup keyboardMLive;
     private InlineKeyboardMarkup keyboardMBack;
 
     public static Map<TournamentEnum, InlineKeyboardMarkup> keyboardM2 = new HashMap<>();
-    static String mainMenuText = "<b>Sport Score Bot</b>\nВыберите турнир:";
-
+    static String mainMenuText;
 
     SportScoreParser ssParser;
 
     public SSBot() {
         ssParser = new SportScoreParser();
-        //ssParser.startParsingLastNext();
- //       ssParser.startParsingTodayMatches();
- //       ssParser.startParsingAllMatches();
-//        ssParser.startParsingTodayMatches();
+        loadSettings();
+        mainMenuText = "<b>" + BotName + "</b>\nВыберите турнир:";
 
         ScheduledExecutorService executorService;
         executorService = Executors.newSingleThreadScheduledExecutor();
@@ -49,7 +54,7 @@ public class SSBot extends TelegramLongPollingBot {
             public void run() {
                 ssParser.startParsingTodayMatches();
             }
-        }, 0, 2, TimeUnit.MINUTES);
+        }, 0, 1, TimeUnit.MINUTES);
 
         executorService.scheduleAtFixedRate(new TimerTask() {
             @Override
@@ -58,7 +63,6 @@ public class SSBot extends TelegramLongPollingBot {
                 ssParser.startParsingAllMatches();
             }
         }, 0, 30, TimeUnit.MINUTES);
-
 
         setBotCommands();
 
@@ -167,6 +171,23 @@ public class SSBot extends TelegramLongPollingBot {
         System.out.println("Bot has started");
     }
 
+    void loadSettings(){
+        try {
+            URL url = new File(SportScoreParser.baseFolder + "bot-settings.json").toURI().toURL();
+            JSONParser parser = new JSONParser();
+
+            InputStreamReader inputStreamReader = new InputStreamReader(url.openStream(), StandardCharsets.UTF_8);
+            Object obj = parser.parse(inputStreamReader);
+            inputStreamReader.close();
+
+            JSONObject jsonObject = (JSONObject) obj;
+            BotName = (String) jsonObject.get("bot-name");
+            BotToken = (String) jsonObject.get("bot-token");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
     public void setBotCommands() {
         List<BotCommand> listOfCommands = new ArrayList<>();
         listOfCommands.add(new BotCommand("/menu", "Отобразить список турниров"));
@@ -179,12 +200,12 @@ public class SSBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return "Sport Score Bot";
+        return BotName;
     }
 
     @Override
     //public String getBotToken() { return "6148974109:AAGGus2GIIykwn6bmSLJyi5sFJJOOdr5npU"; } // Реальный токен
-    public String getBotToken() { return "5885858281:AAETXWUlErRTVmFga-msU4hsxT5F5iOmu7A"; } // Тестовый токен
+    public String getBotToken() { return BotToken; } // Тестовый токен
 
     @Override
     public void onUpdateReceived(Update update) {
