@@ -17,15 +17,17 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-import javax.xml.xpath.*;
 import java.io.File;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.*;
 
@@ -34,10 +36,27 @@ public class SportScoreParser {
     public static Map<TournamentEnum, String> TourNames = new HashMap<>();
 
     public SportScoreParser() {
+        TimeZone.setDefault(TimeZone.getTimeZone("Europe/Moscow"));
+        TimeZone.getDefault();
+
+        checkFolder();
         initTourNames();
     }
 
     static String getBasicUrl(){ return "https://www.championat.com/"; }
+
+    static void checkFolder(){
+        String filePathStr = "xml/";
+        Path filePath = Paths.get(filePathStr);
+        if (!Files.exists(filePath)) {
+            File newDir = new File(filePathStr);
+
+            if(newDir.mkdir()){
+                System.out.println("Папка xml создана");
+            }
+        }
+    }
+
     public static String getTodayDate(){
         Date dateNow = new Date();
         SimpleDateFormat formatForDate = new SimpleDateFormat("yyyy-MM-dd");
@@ -67,25 +86,32 @@ public class SportScoreParser {
     public void startParsingLastNext(){
         curYear = getCurYear();
         for(TournamentEnum tour : TournamentEnum.values()){
-            parseTourAllMatches(tour, CalendarDataType.LAST);
-            parseTourAllMatches(tour, CalendarDataType.NEXT);
+            String[] tourInfo = getCurTourInfo(tour); // Получаем информацию о турнире
+            parseTourAllMatches(tour, CalendarDataType.LAST, tourInfo);
+            parseTourAllMatches(tour, CalendarDataType.NEXT, tourInfo);
         }
     }
 
     public void startParsingAllMatches(){
         for (TournamentEnum tour : TournamentEnum.values()) {
-            parseTourAllMatches(tour, CalendarDataType.ALL);
+            String[] tourInfo = getCurTourInfo(tour); // Получаем информацию о турнире
+            parseTourAllMatches(tour, CalendarDataType.ALL, tourInfo);
         }
     }
 
     public void startParsingTodayMatches(){
         for (TournamentEnum tour : TournamentEnum.values()) {
             parseTourTodayMatches(tour);
+            try {
+                Thread.sleep(5 * 1000);
+            }catch (InterruptedException e){
+                e.printStackTrace();
+            }
         }
     }
 
-    static void parseTourAllMatches(TournamentEnum tour, CalendarDataType dType){
-        String[] tourInfo = getCurTourInfo(tour); // Получаем информацию о турнире
+    static void parseTourAllMatches(TournamentEnum tour, CalendarDataType dType, String[] tourInfo){
+        //String[] tourInfo = getCurTourInfo(tour); // Получаем информацию о турнире
         //String url = getBasicUrl()+getSportNameByTour(tour).toString().toLowerCase()+"/"+getTourChampId(tour)+"/tournament/"+tourInfo[1]+"/calendar/";
 
         String url = "";
@@ -321,7 +347,7 @@ public class SportScoreParser {
             //Object object = new JSONParser().parse(new FileReader(url));
             //JSONObject jsonObject = (JSONObject) object;
             JSONParser parser = new JSONParser();
-            Object obj = parser.parse(new InputStreamReader(url.openStream()));
+            Object obj = parser.parse(new InputStreamReader(url.openStream(), StandardCharsets.UTF_8));
             JSONObject jsonObject = (JSONObject) obj;
             JSONObject matchesObj = (JSONObject) jsonObject.get("matches");
             if(matchesObj != null) {
@@ -426,13 +452,13 @@ public class SportScoreParser {
         }
     }
 
-    static String[] getCurTourInfo(TournamentEnum tour){
+    public static String[] getCurTourInfo(TournamentEnum tour){
         // Возвращает массив строк, 0 - это длинный ID текущего турнира для Live-парсинга; 1 - это короткий ID для ссылок; 2 - Имя турнира
         String[] ret = new String[3];
         String url = getBasicUrl()+getSportNameByTour(tour).toString().toLowerCase()+"/"+getTourChampId(tour)+".html"; // Генерим ссылку
 
         try {
-            Document doc = Jsoup.connect(url).get();
+            Document doc = Jsoup.connect(url).timeout(10 * 10000).get();
             Elements elms = doc.select("div.tournament-top");
             String[] classes = elms.get(0).className().split(" ");
             ret[0] = classes[1].substring(1) ;// Длинный ID
@@ -442,7 +468,9 @@ public class SportScoreParser {
             elms = doc.select("div.entity-header__title-name a");
             ret[2] = elms.get(0).text(); // Название турнира
         } catch (Exception e) {
+            System.out.println();
             System.out.println("ErrorURL: " + url);
+            System.out.println("----");
             e.printStackTrace();
         }
 
@@ -495,9 +523,22 @@ public class SportScoreParser {
         return Integer.parseInt(e[2]) + " " + month + showYear + ", " + dayOfWeek;
     }
 
-    public String getLiveMatches(){
-        LocalTime localTime = LocalTime.now();
-        String ret = "\uD83D\uDD34 <b>LIVE-результаты</b>";
+    public String getTodayMatches(boolean getOnlyLive){
+        String pageTitle = "";
+        String pageIcon = "";
+        String pageEmpty = "";
+
+        if(getOnlyLive){
+            pageTitle = "Live-результаты";
+            pageIcon = "\uD83D\uDD34";
+            pageEmpty = "В данный момент нет активных матчей";
+        } else {
+            pageTitle = "Игры на сегодня";
+            pageIcon = "⚡";
+            pageEmpty = "На сегодня игр не предусмотрено";
+        }
+
+        String ret = pageIcon + " <b>" + pageTitle + "</b>";
         String file;
         String[][] matches;
         int mcount = 0;
@@ -506,7 +547,7 @@ public class SportScoreParser {
             file = getFilePath(tour, true, CalendarDataType.ALL);
 
             if(!file.isEmpty()) {
-                matches = getMatches(file, tour, true);
+                matches = getMatches(file, tour, getOnlyLive);
                 int matchesCount = matches.length;
 
                 if(matchesCount > 0) {
@@ -521,7 +562,7 @@ public class SportScoreParser {
             }
         }
 
-        if(mcount == 0) ret += "\n\n<i>В данный момент нет активных матчей</i>";
+        if(mcount == 0) ret += "\n\n<i>" + pageEmpty + "</i>";
         return ret;
     }
 
@@ -593,7 +634,7 @@ public class SportScoreParser {
                         if (!oldDate.equals(match[2])) {
                             if (!oldDate.isEmpty()) ret += "\n";
                             oldDate = match[2];
-                            ret += "\n\uD83D\uDCC6  <b>" + (oldDate.equals(todayDate) ? "СЕГОДНЯ" : getNormDate(oldDate)) + "</b>";
+                            ret += "\n\uD83D\uDCC5  <u><b>" + (oldDate.equals(todayDate) ? "СЕГОДНЯ" : getNormDate(oldDate)) + "</b></u>";
                         }
 
                         ret += "\n " + getMatchLine(match);
@@ -667,6 +708,67 @@ public class SportScoreParser {
 
     static String getMatchLine(String[] match){
         String ret = "";
+        String outputTemplate = "";
+
+        String time = "";
+        String liveMark = "";
+        String group = "";
+        String matchTxt = "";
+        String liveTxt = "";
+
+        liveMark = !match[10].isEmpty() ? "\uD83D\uDD34" : "|"; // Live-иконка
+
+        if(!match[3].isEmpty()) // Время матча
+            time = match[3];
+        else
+            time = "--:--";
+
+        if(!match[1].isEmpty()) group = match[1]; // Группа
+
+        String score = " - ";
+
+        if(!match[6].isEmpty() && !match[7].isEmpty()) { // Счёт
+            score = "<code>" + match[6] + ":" + match[7] + "</code>";
+
+            if(!match[8].isEmpty()) {
+                if(!match[8].equals(match[9])){
+                    score += " <i>(" + match[8] + ":"+ match[9] + ")</i>";
+                } else score += " <i>(" + match[8] + ")</i>";
+            }
+
+            score = "  " + score + "  ";
+        }
+
+        matchTxt = "<b>" + match[4] + "</b>" + score + "<b>" + match[5] + "</b>"; // Строка с матчем и счётом
+
+        if(!match[11].isEmpty()) liveTxt += match[11]; // Live-текст
+
+        return String.format(getMatchLineTemplate(1, group, liveTxt), time, liveMark, group, matchTxt, liveTxt);
+    }
+
+    static String getMatchLineTemplate(int template, String group, String liveTxt){
+        String ret = "%1$s %2$s %4$s  <i>%5$s</i>";
+
+        if(!group.isEmpty()) {
+            switch(template){
+                case 1:
+                        ret = "%1$s %2$s %3$s\n%4$s";
+                        if(!liveTxt.isEmpty()) ret += "\n<i>%5$s</i>";
+                        ret += "\n";
+                    break;
+
+                case 2:
+                        ret = "%1$s %2$s %4$s  <i>" + (!liveTxt.isEmpty() ? "%5$s " : "") + "(%3$s)</i>";
+                    break;
+            }
+        }
+
+        return ret;
+    }
+
+    static String getMatchLineOld(String[] match){
+        String ret = "";
+        String addLine = "";
 
         if(!match[10].isEmpty()) ret += "\uD83D\uDD34 "; // Live-иконка
 
@@ -675,7 +777,8 @@ public class SportScoreParser {
         else
             ret += "--:-- | ";
 
-        if(!match[1].isEmpty()) ret += match[1] + ", "; // Группа
+        //if(!match[1].isEmpty()) ret += match[1] + "\n"; // Группа
+        if(!match[1].isEmpty()) addLine += "(" + match[1] + ")";
 
         String score = " - ";
 
@@ -693,7 +796,12 @@ public class SportScoreParser {
 
         ret += "<b>" + match[4] + "</b>" + score + "<b>" + match[5] + "</b>";
 
-        if(!match[11].isEmpty()) ret += ", " + match[11];
+        //if(!match[11].isEmpty()) ret += "\n" + match[11];
+        if(!match[11].isEmpty()){
+            addLine = match[11] + (!addLine.isEmpty() ? "  " + addLine : "");
+        }
+
+        if(!addLine.isEmpty()) ret += "   <i>" + addLine + "</i>";
 
         return ret;
     }
