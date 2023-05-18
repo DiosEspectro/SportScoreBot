@@ -383,7 +383,8 @@ public class SportScoreParser {
                                     try {
                                         matches[i][3] = match.get("tour").toString(); // tour
                                     }catch(NullPointerException e){
-                                        e.printStackTrace();
+                                        //e.printStackTrace();
+                                        // do nothing
                                     }
 
                                     matches[i][10] = matches[i][3]; // tourstr
@@ -509,6 +510,15 @@ public class SportScoreParser {
         return Integer.parseInt(e[2]) + " " + month + showYear + ", " + dayOfWeek;
     }
 
+    public String getMessageHeader(String icon, String title, String caption){
+        String ret = "";
+
+        ret = "————————————————\n" + icon + "   <b>" + title + "</b>\n————————————————";
+        if(!caption.isEmpty()) ret += "\n"+caption;
+
+        return ret;
+    }
+
     public String getTodayMatches(boolean getOnlyLive){
         String pageTitle;
         String pageIcon;
@@ -524,7 +534,7 @@ public class SportScoreParser {
             pageEmpty = "На сегодня игр не предусмотрено";
         }
 
-        String ret = pageIcon + " <b>" + pageTitle + "</b>";
+        String ret = getMessageHeader(pageIcon, pageTitle, "");
         String file;
         String[][] matches;
         int mcount = 0;
@@ -612,7 +622,7 @@ public class SportScoreParser {
                     }
                 }
                 else {
-                    ret = "<b>" + getTourName(tour, true) + "</b>\n<i>" + caption + "</i>\n";
+                    ret = getMessageHeader("", getTourName(tour, true), caption);
 
                     String oldDate = "";
 

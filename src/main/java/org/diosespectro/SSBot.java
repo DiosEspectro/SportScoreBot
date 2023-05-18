@@ -33,6 +33,7 @@ public class SSBot extends TelegramLongPollingBot {
 
     private InlineKeyboardMarkup keyboardM1;
     private InlineKeyboardMarkup keyboardMLive;
+    private InlineKeyboardMarkup keyboardMTours;
     private InlineKeyboardMarkup keyboardMBack;
 
     public static Map<TournamentEnum, InlineKeyboardMarkup> keyboardM2 = new HashMap<>();
@@ -43,18 +44,17 @@ public class SSBot extends TelegramLongPollingBot {
     public SSBot() {
         ssParser = new SportScoreParser();
         loadSettings();
-        mainMenuText = "<b>" + BotName + "</b>\nВыберите турнир:";
+        mainMenuText = ssParser.getMessageHeader("⛳", BotName, "Главное меню:");
 
         ScheduledExecutorService executorService;
         executorService = Executors.newSingleThreadScheduledExecutor();
-
 
         executorService.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
                 ssParser.startParsingTodayMatches();
             }
-        }, 0, 1, TimeUnit.MINUTES);
+        }, 0, 2, TimeUnit.MINUTES);
 
         executorService.scheduleAtFixedRate(new TimerTask() {
             @Override
@@ -65,8 +65,14 @@ public class SSBot extends TelegramLongPollingBot {
         }, 0, 30, TimeUnit.MINUTES);
 
         setBotCommands();
+        initMenus();
 
+        System.out.println("Bot has started");
+    }
+
+    void initMenus(){
         List<List<InlineKeyboardButton>> buttons = new ArrayList<>();
+        List<List<InlineKeyboardButton>> tourButtons = new ArrayList<>();
         List<List<InlineKeyboardButton>> liveButtons = new ArrayList<>();
         List<List<InlineKeyboardButton>> backButtons = new ArrayList<>();
 
@@ -74,7 +80,7 @@ public class SSBot extends TelegramLongPollingBot {
 
         for (TournamentEnum tour : TournamentEnum.values()) {
             // Добавляем турниры в меню
-            buttons.add(
+            tourButtons.add(
                     Arrays.asList(
                             InlineKeyboardButton.builder()
                                     .text(ssParser.getTourName(tour, true))
@@ -106,13 +112,34 @@ public class SSBot extends TelegramLongPollingBot {
                     Arrays.asList(
                             InlineKeyboardButton.builder()
                                     .text("⬅   Вернуться к списку турниров")
-                                    .callbackData("menu")
+                                    .callbackData("tours")
                                     .build()
                     )
             );
 
             keyboardM2.put(tour, InlineKeyboardMarkup.builder().keyboard(subButtons).build());
         }
+
+        tourButtons.add(
+                Arrays.asList(
+                        InlineKeyboardButton.builder()
+                                .text("⬅   Вернуться в меню")
+                                .callbackData("menu")
+                                .build()
+                )
+        );
+        keyboardMTours = InlineKeyboardMarkup.builder()
+                .keyboard(tourButtons).build();
+
+
+        buttons.add(
+                Arrays.asList(
+                        InlineKeyboardButton.builder()
+                                .text("\uD83C\uDFC6 Турниры")
+                                .callbackData("tours")
+                                .build()
+                )
+        );
 
         buttons.add(
                 Arrays.asList(
@@ -135,6 +162,7 @@ public class SSBot extends TelegramLongPollingBot {
         keyboardM1 = InlineKeyboardMarkup.builder()
                 .keyboard(buttons).build();
 
+        /*
         liveButtons.add(
                 Arrays.asList(
                         InlineKeyboardButton.builder()
@@ -147,19 +175,31 @@ public class SSBot extends TelegramLongPollingBot {
         liveButtons.add(
                 Arrays.asList(
                         InlineKeyboardButton.builder()
-                                .text("⬅   Вернуться к списку турниров")
+                                .text("⬅   Вернуться в меню")
                                 .callbackData("menu")
                                 .build()
                 )
         );
-
+        */
+        liveButtons.add(
+                Arrays.asList(
+                        InlineKeyboardButton.builder()
+                                .text("⬅   Вернуться в меню")
+                                .callbackData("menu")
+                                .build(),
+                        InlineKeyboardButton.builder()
+                                .text("\uD83D\uDD04   Обновить")
+                                .callbackData("live-refresh")
+                                .build()
+                )
+        );
         keyboardMLive = InlineKeyboardMarkup.builder()
                 .keyboard(liveButtons).build();
 
         backButtons.add(
                 Arrays.asList(
                         InlineKeyboardButton.builder()
-                                .text("⬅   Вернуться к списку турниров")
+                                .text("⬅   Вернуться в меню")
                                 .callbackData("menu")
                                 .build()
                 )
@@ -167,8 +207,6 @@ public class SSBot extends TelegramLongPollingBot {
 
         keyboardMBack = InlineKeyboardMarkup.builder()
                 .keyboard(backButtons).build();
-
-        System.out.println("Bot has started");
     }
 
     void loadSettings(){
@@ -289,6 +327,15 @@ public class SSBot extends TelegramLongPollingBot {
                 execute(close);
                 execute(deleteMessage);
                 sendMenu(id, mainMenuText, keyboardM1);
+            }catch(TelegramApiException e){
+                e.printStackTrace();
+            }
+        }
+        else if(data.equals("tours")) {
+            try {
+                execute(close);
+                execute(deleteMessage);
+                sendMenu(id, ssParser.getMessageHeader("\uD83C\uDFC6", "Турниры", "Выберите турнир:"), keyboardMTours);
             }catch(TelegramApiException e){
                 e.printStackTrace();
             }
