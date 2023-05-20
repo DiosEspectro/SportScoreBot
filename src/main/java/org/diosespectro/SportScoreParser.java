@@ -17,10 +17,7 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
@@ -34,15 +31,18 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class SportScoreParser {
+    public static LinkedHashMap<String, String[]> Tournaments = new LinkedHashMap<>();
     static Integer curYear = getCurYear();
     public static String baseFolder = "ssb_data/";
-    public static Map<TournamentEnum, String> TourNames = new HashMap<>();
+    public static Map<String, String> TourNames = new HashMap<>();
+    public static Map<String, String[]> TourInfo = new HashMap<>();
 
     public SportScoreParser() {
         TimeZone.setDefault(TimeZone.getTimeZone("Europe/Moscow"));
         TimeZone.getDefault();
 
         checkFolder();
+        initTournaments();
         initTourNames();
     }
 
@@ -85,7 +85,7 @@ public class SportScoreParser {
 
     public void startParsingLastNext(){
         curYear = getCurYear();
-        for(TournamentEnum tour : TournamentEnum.values()){
+        for (String tour : Tournaments.keySet()) {
             String[] tourInfo = getCurTourInfo(tour); // Получаем информацию о турнире
             parseTourAllMatches(tour, CalendarDataType.LAST, tourInfo);
             parseTourAllMatches(tour, CalendarDataType.NEXT, tourInfo);
@@ -93,7 +93,7 @@ public class SportScoreParser {
     }
 
     public void startParsingAllMatches(){
-        for (TournamentEnum tour : TournamentEnum.values()) {
+        for (String tour : Tournaments.keySet()) {
             String[] tourInfo = getCurTourInfo(tour); // Получаем информацию о турнире
             parseTourAllMatches(tour, CalendarDataType.ALL, tourInfo);
         }
@@ -101,7 +101,7 @@ public class SportScoreParser {
 
     public void startParsingTodayMatches(){
         downloadTodayFile();
-        for (TournamentEnum tour : TournamentEnum.values()) {
+        for (String tour : Tournaments.keySet()) {
             parseTourTodayMatches(tour);
         }
     }
@@ -118,7 +118,7 @@ public class SportScoreParser {
         }
     }
 
-    static void parseTourAllMatches(TournamentEnum tour, CalendarDataType dType, String[] tourInfo){
+    static void parseTourAllMatches(String tour, CalendarDataType dType, String[] tourInfo){
         String url;
         String dataType = "";
 
@@ -226,8 +226,8 @@ public class SportScoreParser {
         }
     }
 
-    static String getFilePath(TournamentEnum tour, boolean onlyToday, CalendarDataType dType){
-        String fileName = SportScoreParser.getSportNameByTour(tour).toString().toLowerCase() + "_" + tour.toString().toLowerCase();
+    static String getFilePath(String tour, boolean onlyToday, CalendarDataType dType){
+        String fileName = getSportNameByTour(tour).toLowerCase() + "_" + tour.toString().toLowerCase();
         //if(onlyToday) fileName += "_" + getTodayDate();
         if(onlyToday) fileName += "_today";
         if(dType != CalendarDataType.ALL) fileName += "_" + dType.toString().toLowerCase();
@@ -236,7 +236,7 @@ public class SportScoreParser {
         return baseFolder + fileName;
     }
 
-    static void saveMatchesToXML(TournamentEnum tour, String[] tourInfo, String[][] matches, boolean onlyToday, CalendarDataType dType){
+    static void saveMatchesToXML(String tour, String[] tourInfo, String[][] matches, boolean onlyToday, CalendarDataType dType){
         String filePath = getFilePath(tour, onlyToday, dType);
 
         org.w3c.dom.Element elmnt;
@@ -330,9 +330,9 @@ public class SportScoreParser {
         }
     }
 
-    static void parseTourTodayMatches(TournamentEnum tour) {
+    static void parseTourTodayMatches(String tour) {
         String[] tourInfo = getCurTourInfo(tour); // Получаем информацию о турнире
-        SportNameEnum sportName = getSportNameByTour(tour);
+        String sportName = getSportNameByTour(tour);
 
         URL url = getTodayUrl(true);
 
@@ -346,7 +346,7 @@ public class SportScoreParser {
             JSONObject jsonObject = (JSONObject) obj;
             JSONObject matchesObj = (JSONObject) jsonObject.get("matches");
             if(matchesObj != null) {
-                matchesObj = (JSONObject) matchesObj.get(sportName.toString().toLowerCase(Locale.ROOT));
+                matchesObj = (JSONObject) matchesObj.get(sportName.toLowerCase(Locale.ROOT));
 
                 if(matchesObj != null) {
                     matchesObj = (JSONObject) matchesObj.get("tournaments");
@@ -430,6 +430,8 @@ public class SportScoreParser {
 
                                 saveMatchesToXML(tour, tourInfo, matches, true, CalendarDataType.ALL);
                             }
+                        } else {
+                            saveMatchesToXML(tour, tourInfo, new String[0][12], true, CalendarDataType.ALL);
                         }
                     }
                 }
@@ -439,9 +441,10 @@ public class SportScoreParser {
         }
     }
 
-    public static String[] getCurTourInfo(TournamentEnum tour){
+    public static String[] getCurTourInfo(String tour){
         // Возвращает массив строк, 0 - это длинный ID текущего турнира для Live-парсинга; 1 - это короткий ID для ссылок; 2 - Имя турнира
-        String[] ret = new String[3];
+        /*String[] ret = new String[3];
+
         String url = getBasicUrl()+getSportNameByTour(tour).toString().toLowerCase()+"/"+getTourChampId(tour)+".html"; // Генерим ссылку
 
         try {
@@ -460,25 +463,46 @@ public class SportScoreParser {
             System.out.println("----");
             e.printStackTrace();
         }
+        */
 
-        return ret;
+        return TourInfo.get(tour);
     }
 
-    public static SportNameEnum getSportNameByTour(TournamentEnum tournament){
-        return switch (tournament) {
-            case RPL, CHAMPIONSLEAGUE, WORLDCUP -> SportNameEnum.FOOTBALL;
-            case KHL, WHC -> SportNameEnum.HOCKEY;
-        };
+    public void loadTournamentsInfo(){
+        for (String tour : Tournaments.keySet()) {
+            // Возвращает массив строк, 0 - это длинный ID текущего турнира для Live-парсинга; 1 - это короткий ID для ссылок; 2 - Имя турнира
+            String[] ret = new String[3];
+            String url = getBasicUrl()+getSportNameByTour(tour).toLowerCase()+"/"+getTourChampId(tour)+".html"; // Генерим ссылку
+
+            try {
+                Document doc = Jsoup.connect(url).timeout(10 * 10000).get();
+                Elements elms = doc.select("div.tournament-top");
+                String[] classes = elms.get(0).className().split(" ");
+                ret[0] = classes[1].substring(1) ;// Длинный ID
+                String[] values = classes[1].split("-");
+                ret[1] = values[1]; // Короткий ID
+
+                elms = doc.select("div.entity-header__title-name a");
+                ret[2] = elms.get(0).text(); // Название турнира
+
+                String[] check = TourInfo.get(tour);
+                if(check != null) TourInfo.replace(tour, ret);
+                    else TourInfo.put(tour, ret);
+            } catch (Exception e) {
+                System.out.println();
+                System.out.println("ErrorURL: " + url);
+                System.out.println("----");
+                e.printStackTrace();
+            }
+        }
     }
 
-    static String getTourChampId(TournamentEnum tournament){
-        return switch (tournament) {
-            case RPL -> "_russiapl";
-            case CHAMPIONSLEAGUE -> "_ucl";
-            case WORLDCUP -> "_worldcup";
-            case KHL -> "_superleague";
-            case WHC -> "_whc";
-        };
+    public static String getSportNameByTour(String tournament) {
+        return Tournaments.get(tournament)[1];
+    }
+
+    static String getTourChampId(String tournament){
+        return Tournaments.get(tournament)[2];
     }
 
     static String transformDate(String date){
@@ -513,7 +537,8 @@ public class SportScoreParser {
     public String getMessageHeader(String icon, String title, String caption){
         String ret = "";
 
-        ret = "————————————————\n" + icon + "   <b>" + title + "</b>\n————————————————";
+        //ret = "————————————————\n" + icon + "   <b>" + title + "</b>\n————————————————";
+        ret = icon + "   <b>" + title + "</b>\n————————————————";
         if(!caption.isEmpty()) ret += "\n"+caption;
 
         return ret;
@@ -539,7 +564,7 @@ public class SportScoreParser {
         String[][] matches;
         int mcount = 0;
 
-        for (TournamentEnum tour : TournamentEnum.values()) {
+        for (String tour : Tournaments.keySet()) {
             file = getFilePath(tour, true, CalendarDataType.ALL);
 
             if(!file.isEmpty()) {
@@ -552,7 +577,7 @@ public class SportScoreParser {
 
                     for (String[] match : matches) {
                         mcount++;
-                        ret += "\n " + getMatchLine(match);
+                        ret += "\n " + getMatchLine(tour, match);
                     }
                 }
             }
@@ -565,7 +590,7 @@ public class SportScoreParser {
     public ArrayList<Object> getTournamentActualMatches(String tourNameStr){
         String ret = "";
         String option = tourNameStr.split("-")[1];
-        TournamentEnum tour = null;
+        String tour = "";
         String todayDate = getTodayDate();
         String file = "";
         String[][] matches;
@@ -574,12 +599,12 @@ public class SportScoreParser {
         tourNameStr = tourNameStr.split("-")[0];
 
         try {
-            tour = TournamentEnum.valueOf(tourNameStr);
+            tour = tourNameStr.toUpperCase();
         }catch(IllegalArgumentException e){
             ret = "Ошибка выбора турнира";
         }
 
-        if(tour != null) {
+        if(!tour.isEmpty()) {
             switch(option){
                 case "today": case "main":
                         file = getFilePath(tour, true, CalendarDataType.ALL);
@@ -606,11 +631,11 @@ public class SportScoreParser {
 
                     switch (option){
                         case "main":
-                                info = getTournamentActualMatches(tour.name()+"-mainlast");
+                                info = getTournamentActualMatches(tour.toLowerCase()+"-mainlast");
                                 ret = info.get(1).toString();
                             break;
                         case "mainlast":
-                                info = getTournamentActualMatches(tour.name()+"-mainnext");
+                                info = getTournamentActualMatches(tour.toLowerCase()+"-mainnext");
                                 ret = info.get(1).toString();
                             break;
                         case "mainnext":
@@ -633,7 +658,7 @@ public class SportScoreParser {
                             ret += "\n\uD83D\uDCC5  <u><b>" + (oldDate.equals(todayDate) ? "СЕГОДНЯ" : getNormDate(oldDate)) + "</b></u>";
                         }
 
-                        ret += "\n " + getMatchLine(match);
+                        ret += "\n " + getMatchLine(tour, match);
                     }
                 }
             }
@@ -646,7 +671,7 @@ public class SportScoreParser {
         return retlist;
     }
 
-    static String[][] getMatches(String filePath, TournamentEnum tourE, boolean getOnlyLive){
+    static String[][] getMatches(String filePath, String tourE, boolean getOnlyLive){
         File f = new File(filePath);
         String[][] ret = new String[0][0];
 
@@ -702,7 +727,7 @@ public class SportScoreParser {
         return ret;
     }
 
-    static String getMatchLine(String[] match){
+    static String getMatchLine(String tour, String[] match){
         String time;
         String liveMark;
         String group = "";
@@ -736,7 +761,7 @@ public class SportScoreParser {
 
         if(!match[11].isEmpty()) liveTxt += match[11]; // Live-текст
 
-        return String.format(getMatchLineTemplate(1, group, liveTxt), time, liveMark, group, matchTxt, liveTxt);
+        return String.format(getMatchLineTemplate(getTourTemplate(tour), group, liveTxt), time, liveMark, group, matchTxt, liveTxt);
     }
 
     static String getMatchLineTemplate(int template, String group, String liveTxt){
@@ -750,13 +775,12 @@ public class SportScoreParser {
                     ret += "\n";
                 }
                 case 2 -> ret = "%1$s %2$s %4$s  <i>" + (!liveTxt.isEmpty() ? "%5$s " : "") + "(%3$s)</i>";
+                case 3 -> ret = "%1$s %2$s %4$s  <i>" + (!liveTxt.isEmpty() ? "%5$s " : "") + "</i>"; // Без группы
             }
         }
 
         return ret;
     }
-
-
 
     static org.w3c.dom.Document getXMLDocument(String filePath){
         org.w3c.dom.Document ret = null;
@@ -774,8 +798,28 @@ public class SportScoreParser {
         return ret;
     }
 
+    void initTournaments(){
+        Object collection = null;
+
+        try{
+            JSONParser parser = new JSONParser();
+            collection = parser.parse(new FileReader(baseFolder + "bot-tournaments.json"));
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        JSONObject jsonObject = (JSONObject) collection;
+        JSONArray tournaments = (JSONArray) jsonObject.get("tournament");
+
+        for(Object o:tournaments){
+            JSONObject tour = (JSONObject) o;
+
+            Tournaments.put(tour.get("tour-name").toString(), new String[]{tour.get("tour-name").toString(), tour.get("sport-name").toString(), tour.get("tour-id").toString(), tour.get("template").toString()});
+        }
+    }
+
     static void initTourNames(){
-        for(TournamentEnum tour : TournamentEnum.values()) {
+        for (String tour : Tournaments.keySet()) {
             String filePath = getFilePath(tour, false, CalendarDataType.LAST);
 
             File f = new File(filePath);
@@ -788,7 +832,7 @@ public class SportScoreParser {
         }
     }
 
-    public String getTourName(TournamentEnum tour, boolean withEmo){
+    public String getTourName(String tour, boolean withEmo){
         String ret = TourNames.get(tour);
 
         if(ret == null) ret = tour.toString();
@@ -796,14 +840,18 @@ public class SportScoreParser {
         // Определим иконку для турнира
         if(withEmo) {
             String emo = "";
-            SportNameEnum sport = getSportNameByTour(tour);
+            String sport = getSportNameByTour(tour);
 
-            if (sport == SportNameEnum.FOOTBALL) emo = "⚽";
+            if (sport.equals("FOOTBALL")) emo = "⚽";
                 else emo = "\uD83C\uDFD2";
 
             ret = emo + "   " + ret;
         }
 
         return ret;
+    }
+
+    static Integer getTourTemplate(String tour){
+        return Integer.parseInt(Tournaments.get(tour)[3]);
     }
 }
