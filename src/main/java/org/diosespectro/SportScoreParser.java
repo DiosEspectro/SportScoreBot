@@ -142,7 +142,7 @@ public class SportScoreParser {
                 elms = doc.select("div._accordion[data-type="+dataType+"] > table.stat-results__table > tbody > tr"); // Получаем список матчей
 
             int matchesCount = elms.size();
-            String[][] matches = new String[matchesCount][21];
+            String[][] matches = new String[matchesCount][22];
 
             for(int i=0;i<matchesCount;i++){
                 String strtmp;
@@ -219,11 +219,22 @@ public class SportScoreParser {
                     }
                 }
             }
-
+            if(dType == CalendarDataType.LAST) matches = reverseArray(matches);
             saveMatchesToXML(tour, tourInfo, matches, false, dType);
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    static String[][] reverseArray(String[][] array){
+        int elements = array.length;
+        String[][] ret = new String[elements][];
+
+        for(int i=elements-1; i>=0; i--){
+            ret[i] = array[elements-1-i];
+        }
+
+        return ret;
     }
 
     static String getFilePath(String tour, boolean onlyToday, CalendarDataType dType){
@@ -279,7 +290,7 @@ public class SportScoreParser {
                 matchesroot.appendChild(match);
 
                 // Далее добавляем все параметры матча внутрь матча
-                for (int j = 0; j < 21; j++) {
+                for (int j = 0; j < 22; j++) {
                     if(dType != CalendarDataType.ALL && j >= 2 && j <= 6) continue;
                     String tagName = switch (j) {
                         case 0 -> "type";
@@ -303,6 +314,7 @@ public class SportScoreParser {
                         case 18 -> "score2ext";
                         case 19 -> "live";
                         case 20 -> "liveperiod";
+                        case 21 -> "important";
                         default -> "";
                     };
 
@@ -360,7 +372,7 @@ public class SportScoreParser {
                             int matchesCount = elms.size();
 
                             if (matchesCount > 0) {
-                                String[][] matches = new String[matchesCount][21];
+                                String[][] matches = new String[matchesCount][22];
                                 JSONObject match_more;
                                 JSONArray match_arr;
 
@@ -402,6 +414,7 @@ public class SportScoreParser {
                                     matches[i][7] = match_more.get("is_played").toString(); // played
                                     if(matches[i][7].equals("0")) // если матч не завершён, проверяем - идёт-ли матч прямо сейчас
                                         isLive = ((long)match_more.get("live") != 0);
+                                    matches[i][21] = match_more.get("important").toString(); // important
 
                                     matches[i][8] = match.get("link").toString(); // link
 
@@ -431,7 +444,7 @@ public class SportScoreParser {
                                 saveMatchesToXML(tour, tourInfo, matches, true, CalendarDataType.ALL);
                             }
                         } else {
-                            saveMatchesToXML(tour, tourInfo, new String[0][12], true, CalendarDataType.ALL);
+                            saveMatchesToXML(tour, tourInfo, new String[0][22], true, CalendarDataType.ALL);
                         }
                     }
                 }
@@ -573,7 +586,7 @@ public class SportScoreParser {
 
                 if(matchesCount > 0) {
                     if(!ret.isEmpty()) ret += "\n\n";
-                    ret += getTourName(tour, true);
+                    ret += getTourName(tour, true, false);
 
                     for (String[] match : matches) {
                         mcount++;
@@ -639,15 +652,15 @@ public class SportScoreParser {
                                 ret = info.get(1).toString();
                             break;
                         case "mainnext":
-                                ret = getTourName(tour, true) + "\n<i>"+nomatchTxt+"</i>\n";
+                                ret = getTourName(tour, true, false) + "\n<i>"+nomatchTxt+"</i>\n";
                             break;
                         default:
-                            ret = getTourName(tour, true) + "\n<i>" + caption + "</i>\n\n<i>"+nomatchTxt+"</i>\n";
+                            ret = getTourName(tour, true, false) + "\n<i>" + caption + "</i>\n\n<i>"+nomatchTxt+"</i>\n";
                             break;
                     }
                 }
                 else {
-                    ret = getMessageHeader("", getTourName(tour, true), caption);
+                    ret = getMessageHeader("", getTourName(tour, true, false), caption) + "\n";
 
                     String oldDate = "";
 
@@ -687,7 +700,7 @@ public class SportScoreParser {
 
             NodeList nodeList = calendar.getElementsByTagName("match");
 
-            ret = new String[nodeList.getLength()][12];
+            ret = new String[nodeList.getLength()][13];
 
             int m = -1;
             for (int i = 0; i < nodeList.getLength(); i++) {
@@ -695,9 +708,9 @@ public class SportScoreParser {
                 if (node.getNodeType() == Node.ELEMENT_NODE) {
                     org.w3c.dom.Element element = (org.w3c.dom.Element) node;
 
+                    String important =  element.getElementsByTagName("important").item(0).getTextContent();
                     String isLive =  element.getElementsByTagName("live").item(0).getTextContent();
                     if(getOnlyLive && isLive.isEmpty()) continue;
-
                     m++;
 
                     ret[m][0] = element.getElementsByTagName("id").item(0).getTextContent();
@@ -803,7 +816,7 @@ public class SportScoreParser {
 
         try{
             JSONParser parser = new JSONParser();
-            collection = parser.parse(new FileReader(baseFolder + "bot-tournaments.json"));
+            collection = parser.parse(new FileReader(baseFolder + "bot-tournaments.json", StandardCharsets.UTF_8));
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -814,7 +827,15 @@ public class SportScoreParser {
         for(Object o:tournaments){
             JSONObject tour = (JSONObject) o;
 
-            Tournaments.put(tour.get("tour-name").toString(), new String[]{tour.get("tour-name").toString(), tour.get("sport-name").toString(), tour.get("tour-id").toString(), tour.get("template").toString()});
+            Tournaments.put(tour.get("tour-name").toString(),
+                        new String[]{
+                                tour.get("tour-name").toString(),   // 0
+                                tour.get("sport-name").toString(),  // 1
+                                tour.get("tour-id").toString(),     // 2
+                                tour.get("template").toString(),    // 3
+                                tour.get("menu-name").toString(),   // 4
+                                tour.get("icon").toString()         // 5
+                        });
         }
     }
 
@@ -832,10 +853,14 @@ public class SportScoreParser {
         }
     }
 
-    public String getTourName(String tour, boolean withEmo){
-        String ret = TourNames.get(tour);
+    public String getTourName(String tour, boolean withEmo, boolean forMenu){
+        String ret;
+        if(forMenu){
+            ret = Tournaments.get(tour)[5] + " " + Tournaments.get(tour)[4];;
+        }
+        else ret = Tournaments.get(tour)[5] + " " + TourNames.get(tour);
 
-        if(ret == null) ret = tour.toString();
+        //if(ret == null) ret = tour.toString();
 
         // Определим иконку для турнира
         if(withEmo) {

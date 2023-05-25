@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <tournament>
-    <tourid>football-4993</tourid>
-    <touridshort>4993</touridshort>
-    <tourname>Лига чемпионов</tourname>
+    <tourid>football-4995</tourid>
+    <touridshort>4995</touridshort>
+    <tourname>Лига Европы</tourname>
     <matches>
         <match>
             <type>match</type>
-            <id>football-1034603</id>
+            <id>football-1035153</id>
             <played>0</played>
-            <link>/football/_ucl/tournament/4993/match/1034603/</link>
+            <link>/football/_europeleague/tournament/4995/match/1035153/</link>
             <group>Финал</group>
             <tourstr>1</tourstr>
-            <date>2023-06-10</date>
+            <date>2023-05-31</date>
             <time>22:00</time>
-            <team1>Манчестер Сити</team1>
-            <team2>Интер М</team2>
+            <team1>Севилья</team1>
+            <team2>Рома</team2>
             <score1/>
             <score2/>
             <score1ext/>
             <score2ext/>
             <live/>
             <liveperiod/>
+            <important/>
         </match>
     </matches>
 </tournament>

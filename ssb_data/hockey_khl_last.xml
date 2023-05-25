@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tournament>
+    <tourid>hockey-5255</tourid>
+    <touridshort>5255</touridshort>
+    <tourname>Фонбет КХЛ - плей-офф</tourname>
+    <matches>
+        <match>
+            <type>match</type>
+            <id>hockey-1075915</id>
+            <played>1</played>
+            <link>/hockey/_superleague/tournament/5255/match/1075915/</link>
+            <group>Финал - Восток</group>
+            <tourstr>5</tourstr>
+            <date>2023-04-09</date>
+            <time>17:00</time>
+            <team1>Ак Барс</team1>
+            <team2>Авангард</team2>
+            <score1>3</score1>
+            <score2>2</score2>
+            <score1ext>ОТ</score1ext>
+            <score2ext>ОТ</score2ext>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>hockey-1075901</id>
+            <played>1</played>
+            <link>/hockey/_superleague/tournament/5255/match/1075901/</link>
+            <group>Финал - Запад</group>
+            <tourstr>5</tourstr>
+            <date>2023-04-10</date>
+            <time>19:30</time>
+            <team1>СКА</team1>
+            <team2>ЦСКА</team2>
+            <score1>3</score1>
+            <score2>7</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>hockey-1075903</id>
+            <played>1</played>
+            <link>/hockey/_superleague/tournament/5255/match/1075903/</link>
+            <group>Финал - Запад</group>
+            <tourstr>6</tourstr>
+            <date>2023-04-12</date>
+            <time>19:00</time>
+            <team1>ЦСКА</team1>
+            <team2>СКА</team2>
+            <score1>3</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>hockey-1075711</id>
+            <played>1</played>
+            <link>/hockey/_superleague/tournament/5255/match/1075711/</link>
+            <group>Финал Чемпионата</group>
+            <tourstr>1</tourstr>
+            <date>2023-04-17</date>
+            <time>19:30</time>
+            <team1>Ак Барс</team1>
+            <team2>ЦСКА</team2>
+            <score1>4</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>hockey-1075713</id>
+            <played>1</played>
+            <link>/hockey/_superleague/tournament/5255/match/1075713/</link>
+            <group>Финал Чемпионата</group>
+            <tourstr>2</tourstr>
+            <date>2023-04-19</date>
+            <time>19:00</time>
+            <team1>Ак Барс</team1>
+            <team2>ЦСКА</team2>
+            <score1>0</score1>
+            <score2>3</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>hockey-1075715</id>
+            <played>1</played>
+            <link>/hockey/_superleague/tournament/5255/match/1075715/</link>
+            <group>Финал Чемпионата</group>
+            <tourstr>3</tourstr>
+            <date>2023-04-21</date>
+            <time>19:30</time>
+            <team1>ЦСКА</team1>
+            <team2>Ак Барс</team2>
+            <score1>3</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>hockey-1075717</id>
+            <played>1</played>
+            <link>/hockey/_superleague/tournament/5255/match/1075717/</link>
+            <group>Финал Чемпионата</group>
+            <tourstr>4</tourstr>
+            <date>2023-04-23</date>
+            <time>17:00</time>
+            <team1>ЦСКА</team1>
+            <team2>Ак Барс</team2>
+            <score1>2</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>hockey-1075719</id>
+            <played>1</played>
+            <link>/hockey/_superleague/tournament/5255/match/1075719/</link>
+            <group>Финал Чемпионата</group>
+            <tourstr>5</tourstr>
+            <date>2023-04-25</date>
+            <time>19:30</time>
+            <team1>Ак Барс</team1>
+            <team2>ЦСКА</team2>
+            <score1>2</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>hockey-1075721</id>
+            <played>1</played>
+            <link>/hockey/_superleague/tournament/5255/match/1075721/</link>
+            <group>Финал Чемпионата</group>
+            <tourstr>6</tourstr>
+            <date>2023-04-27</date>
+            <time>19:30</time>
+            <team1>ЦСКА</team1>
+            <team2>Ак Барс</team2>
+            <score1>0</score1>
+            <score2>3</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>hockey-1075723</id>
+            <played>1</played>
+            <link>/hockey/_superleague/tournament/5255/match/1075723/</link>
+            <group>Финал Чемпионата</group>
+            <tourstr>7</tourstr>
+            <date>2023-04-29</date>
+            <time>17:00</time>
+            <team1>Ак Барс</team1>
+            <team2>ЦСКА</team2>
+            <score1>2</score1>
+            <score2>3</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+    </matches>
+</tournament>

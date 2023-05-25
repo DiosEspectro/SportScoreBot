@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tournament>
+    <tourid>football-5025</tourid>
+    <touridshort>5025</touridshort>
+    <tourname>Англия - Премьер-лига</tourname>
+    <matches>
+        <match>
+            <type>match</type>
+            <id>football-1037847</id>
+            <round>group/27615</round>
+            <tour>37</tour>
+            <month>2023_05</month>
+            <team1id>232053</team1id>
+            <team2id>232035</team2id>
+            <played>0</played>
+            <link>/football/_england/tournament/5025/match/1037847/</link>
+            <group>Премьер-лига</group>
+            <tourstr>37</tourstr>
+            <date>2023-05-21</date>
+            <time>15:30</time>
+            <team1>Вест Хэм Юнайтед</team1>
+            <team2>Лидс Юнайтед</team2>
+            <score1/>
+            <score2/>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important>1</important>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1037833</id>
+            <round>group/27615</round>
+            <tour>37</tour>
+            <month>2023_05</month>
+            <team1id>232025</team1id>
+            <team2id>232049</team2id>
+            <played>0</played>
+            <link>/football/_england/tournament/5025/match/1037833/</link>
+            <group>Премьер-лига</group>
+            <tourstr>37</tourstr>
+            <date>2023-05-21</date>
+            <time>16:00</time>
+            <team1>Брайтон энд Хоув Альбион</team1>
+            <team2>Саутгемптон</team2>
+            <score1/>
+            <score2/>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important>0</important>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1037839</id>
+            <round>group/27615</round>
+            <tour>37</tour>
+            <month>2023_05</month>
+            <team1id>232041</team1id>
+            <team2id>232027</team2id>
+            <played>0</played>
+            <link>/football/_england/tournament/5025/match/1037839/</link>
+            <group>Премьер-лига</group>
+            <tourstr>37</tourstr>
+            <date>2023-05-21</date>
+            <time>18:00</time>
+            <team1>Манчестер Сити</team1>
+            <team2>Челси</team2>
+            <score1/>
+            <score2/>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important>1</important>
+        </match>
+    </matches>
+</tournament>

@@ -1,0 +1,4208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tournament>
+    <tourid>football-4995</tourid>
+    <touridshort>4995</touridshort>
+    <tourname>Лига Европы</tourname>
+    <matches>
+        <match>
+            <type>match</type>
+            <id>football-1034813</id>
+            <round>preliminary/27479</round>
+            <tour>1</tour>
+            <month>2022_08</month>
+            <team1id>233897</team1id>
+            <team2id>231467</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034813/</link>
+            <group>3-й квалификационный раунд</group>
+            <tourstr>1</tourstr>
+            <date>2022-08-04</date>
+            <time>19:00</time>
+            <team1>АЕК Ларнака (Кипр)</team1>
+            <team2>Партизан (Сербия)</team2>
+            <score1>2</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034803</id>
+            <round>preliminary/27479</round>
+            <tour>1</tour>
+            <month>2022_08</month>
+            <team1id>233909</team1id>
+            <team2id>233903</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034803/</link>
+            <group>3-й квалификационный раунд</group>
+            <tourstr>1</tourstr>
+            <date>2022-08-04</date>
+            <time>20:00</time>
+            <team1>Мальмё (Швеция)</team1>
+            <team2>Дюделанж (Люксембург)</team2>
+            <score1>3</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034815</id>
+            <round>preliminary/27479</round>
+            <tour>1</tour>
+            <month>2022_08</month>
+            <team1id>233919</team1id>
+            <team2id>231469</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034815/</link>
+            <group>3-й квалификационный раунд</group>
+            <tourstr>1</tourstr>
+            <date>2022-08-04</date>
+            <time>20:00</time>
+            <team1>Фенербахче (Турция)</team1>
+            <team2>Словацко (Чехия)</team2>
+            <score1>3</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034811</id>
+            <round>preliminary/27479</round>
+            <tour>1</tour>
+            <month>2022_08</month>
+            <team1id>233901</team1id>
+            <team2id>233899</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034811/</link>
+            <group>3-й квалификационный раунд</group>
+            <tourstr>1</tourstr>
+            <date>2022-08-04</date>
+            <time>21:15</time>
+            <team1>Марибор (Словения)</team1>
+            <team2>ХИК (Финляндия)</team2>
+            <score1>0</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034807</id>
+            <round>preliminary/27479</round>
+            <tour>1</tour>
+            <month>2022_08</month>
+            <team1id>233911</team1id>
+            <team2id>233913</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034807/</link>
+            <group>3-й квалификационный раунд</group>
+            <tourstr>1</tourstr>
+            <date>2022-08-04</date>
+            <time>21:45</time>
+            <team1>Линфилд (Северная Ирландия)</team1>
+            <team2>Цюрих (Швейцария)</team2>
+            <score1>0</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034805</id>
+            <round>preliminary/27479</round>
+            <tour>1</tour>
+            <month>2022_08</month>
+            <team1id>233905</team1id>
+            <team2id>233907</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034805/</link>
+            <group>3-й квалификационный раунд</group>
+            <tourstr>1</tourstr>
+            <date>2022-08-04</date>
+            <time>22:00</time>
+            <team1>Шэмрок Роверс (Ирландия)</team1>
+            <team2>Шкупи (Северная Македония)</team2>
+            <score1>3</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034809</id>
+            <round>preliminary/27479</round>
+            <tour>1</tour>
+            <month>2022_08</month>
+            <team1id>233915</team1id>
+            <team2id>233917</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034809/</link>
+            <group>3-й квалификационный раунд</group>
+            <tourstr>1</tourstr>
+            <date>2022-08-04</date>
+            <time>22:00</time>
+            <team1>Олимпиакос (Греция)</team1>
+            <team2>Слован Бр (Словакия)</team2>
+            <score1>1</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034819</id>
+            <round>preliminary/27479</round>
+            <tour>2</tour>
+            <month>2022_08</month>
+            <team1id>233907</team1id>
+            <team2id>233905</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034819/</link>
+            <group>3-й квалификационный раунд</group>
+            <tourstr>2</tourstr>
+            <date>2022-08-09</date>
+            <time>22:00</time>
+            <team1>Шкупи (Северная Македония)</team1>
+            <team2>Шэмрок Роверс (Ирландия)</team2>
+            <score1>1</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034825</id>
+            <round>preliminary/27479</round>
+            <tour>2</tour>
+            <month>2022_08</month>
+            <team1id>233899</team1id>
+            <team2id>233901</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034825/</link>
+            <group>3-й квалификационный раунд</group>
+            <tourstr>2</tourstr>
+            <date>2022-08-11</date>
+            <time>19:00</time>
+            <team1>ХИК (Финляндия)</team1>
+            <team2>Марибор (Словения)</team2>
+            <score1>1</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034821</id>
+            <round>preliminary/27479</round>
+            <tour>2</tour>
+            <month>2022_08</month>
+            <team1id>233913</team1id>
+            <team2id>233911</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034821/</link>
+            <group>3-й квалификационный раунд</group>
+            <tourstr>2</tourstr>
+            <date>2022-08-11</date>
+            <time>20:00</time>
+            <team1>Цюрих (Швейцария)</team1>
+            <team2>Линфилд (Северная Ирландия)</team2>
+            <score1>3</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034829</id>
+            <round>preliminary/27479</round>
+            <tour>2</tour>
+            <month>2022_08</month>
+            <team1id>231469</team1id>
+            <team2id>233919</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034829/</link>
+            <group>3-й квалификационный раунд</group>
+            <tourstr>2</tourstr>
+            <date>2022-08-11</date>
+            <time>20:00</time>
+            <team1>Словацко (Чехия)</team1>
+            <team2>Фенербахче (Турция)</team2>
+            <score1>1</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034817</id>
+            <round>preliminary/27479</round>
+            <tour>2</tour>
+            <month>2022_08</month>
+            <team1id>233903</team1id>
+            <team2id>233909</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034817/</link>
+            <group>3-й квалификационный раунд</group>
+            <tourstr>2</tourstr>
+            <date>2022-08-11</date>
+            <time>21:00</time>
+            <team1>Дюделанж (Люксембург)</team1>
+            <team2>Мальмё (Швеция)</team2>
+            <score1>2</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034823</id>
+            <round>preliminary/27479</round>
+            <tour>2</tour>
+            <month>2022_08</month>
+            <team1id>233917</team1id>
+            <team2id>233915</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034823/</link>
+            <group>3-й квалификационный раунд</group>
+            <tourstr>2</tourstr>
+            <date>2022-08-11</date>
+            <time>21:30</time>
+            <team1>Слован Бр (Словакия)</team1>
+            <team2>Олимпиакос (Греция)</team2>
+            <score1>2</score1>
+            <score2>2</score2>
+            <score1ext>3</score1ext>
+            <score2ext>4</score2ext>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034827</id>
+            <round>preliminary/27479</round>
+            <tour>2</tour>
+            <month>2022_08</month>
+            <team1id>231467</team1id>
+            <team2id>233897</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034827/</link>
+            <group>3-й квалификационный раунд</group>
+            <tourstr>2</tourstr>
+            <date>2022-08-11</date>
+            <time>22:00</time>
+            <team1>Партизан (Сербия)</team1>
+            <team2>АЕК Ларнака (Кипр)</team2>
+            <score1>2</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034839</id>
+            <round>preliminary/27481</round>
+            <tour>1</tour>
+            <month>2022_08</month>
+            <team1id>233899</team1id>
+            <team2id>231477</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034839/</link>
+            <group>Раунд плей-офф</group>
+            <tourstr>1</tourstr>
+            <date>2022-08-18</date>
+            <time>19:00</time>
+            <team1>ХИК (Финляндия)</team1>
+            <team2>Силькеборг (Дания)</team2>
+            <score1>1</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034843</id>
+            <round>preliminary/27481</round>
+            <tour>1</tour>
+            <month>2022_08</month>
+            <team1id>234991</team1id>
+            <team2id>233905</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034843/</link>
+            <group>Раунд плей-офф</group>
+            <tourstr>1</tourstr>
+            <date>2022-08-18</date>
+            <time>19:30</time>
+            <team1>Ференцварош (Венгрия)</team1>
+            <team2>Шэмрок Роверс (Ирландия)</team2>
+            <score1>4</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034837</id>
+            <round>preliminary/27481</round>
+            <tour>1</tour>
+            <month>2022_08</month>
+            <team1id>233913</team1id>
+            <team2id>231479</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034837/</link>
+            <group>Раунд плей-офф</group>
+            <tourstr>1</tourstr>
+            <date>2022-08-18</date>
+            <time>20:00</time>
+            <team1>Цюрих (Швейцария)</team1>
+            <team2>Хартс (Шотландия)</team2>
+            <score1>2</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034841</id>
+            <round>preliminary/27481</round>
+            <tour>1</tour>
+            <month>2022_08</month>
+            <team1id>233909</team1id>
+            <team2id>231473</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034841/</link>
+            <group>Раунд плей-офф</group>
+            <tourstr>1</tourstr>
+            <date>2022-08-18</date>
+            <time>20:00</time>
+            <team1>Мальмё (Швеция)</team1>
+            <team2>Сивасспор (Турция)</team2>
+            <score1>3</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034845</id>
+            <round>preliminary/27481</round>
+            <tour>1</tour>
+            <month>2022_08</month>
+            <team1id>234993</team1id>
+            <team2id>233915</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034845/</link>
+            <group>Раунд плей-офф</group>
+            <tourstr>1</tourstr>
+            <date>2022-08-18</date>
+            <time>20:00</time>
+            <team1>Аполлон Л (Кипр)</team1>
+            <team2>Олимпиакос (Греция)</team2>
+            <score1>1</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034847</id>
+            <round>preliminary/27481</round>
+            <tour>1</tour>
+            <month>2022_08</month>
+            <team1id>234995</team1id>
+            <team2id>234999</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034847/</link>
+            <group>Раунд плей-офф</group>
+            <tourstr>1</tourstr>
+            <date>2022-08-18</date>
+            <time>20:00</time>
+            <team1>Пюник (Армения)</team1>
+            <team2>Шериф (Молдавия)</team2>
+            <score1>0</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034849</id>
+            <round>preliminary/27481</round>
+            <tour>1</tour>
+            <month>2022_08</month>
+            <team1id>234997</team1id>
+            <team2id>235001</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034849/</link>
+            <group>Раунд плей-офф</group>
+            <tourstr>1</tourstr>
+            <date>2022-08-18</date>
+            <time>20:45</time>
+            <team1>Лудогорец (Болгария)</team1>
+            <team2>Жальгирис (Литва)</team2>
+            <score1>1</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034831</id>
+            <round>preliminary/27481</round>
+            <tour>1</tour>
+            <month>2022_08</month>
+            <team1id>231483</team1id>
+            <team2id>233897</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034831/</link>
+            <group>Раунд плей-офф</group>
+            <tourstr>1</tourstr>
+            <date>2022-08-18</date>
+            <time>21:00</time>
+            <team1>Днепр-1 (Украина)</team1>
+            <team2>АЕК Ларнака (Кипр)</team2>
+            <score1>1</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034833</id>
+            <round>preliminary/27481</round>
+            <tour>1</tour>
+            <month>2022_08</month>
+            <team1id>231471</team1id>
+            <team2id>231481</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034833/</link>
+            <group>Раунд плей-офф</group>
+            <tourstr>1</tourstr>
+            <date>2022-08-18</date>
+            <time>21:30</time>
+            <team1>Гент (Бельгия)</team1>
+            <team2>Омония (Кипр)</team2>
+            <score1>0</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034835</id>
+            <round>preliminary/27481</round>
+            <tour>1</tour>
+            <month>2022_08</month>
+            <team1id>231475</team1id>
+            <team2id>233919</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034835/</link>
+            <group>Раунд плей-офф</group>
+            <tourstr>1</tourstr>
+            <date>2022-08-18</date>
+            <time>22:00</time>
+            <team1>Аустрия В (Австрия)</team1>
+            <team2>Фенербахче (Турция)</team2>
+            <score1>0</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034851</id>
+            <round>preliminary/27481</round>
+            <tour>2</tour>
+            <month>2022_08</month>
+            <team1id>233897</team1id>
+            <team2id>231483</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034851/</link>
+            <group>Раунд плей-офф</group>
+            <tourstr>2</tourstr>
+            <date>2022-08-25</date>
+            <time>19:00</time>
+            <team1>АЕК Ларнака (Кипр)</team1>
+            <team2>Днепр-1 (Украина)</team2>
+            <score1>3</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034869</id>
+            <round>preliminary/27481</round>
+            <tour>2</tour>
+            <month>2022_08</month>
+            <team1id>235001</team1id>
+            <team2id>234997</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034869/</link>
+            <group>Раунд плей-офф</group>
+            <tourstr>2</tourstr>
+            <date>2022-08-25</date>
+            <time>19:00</time>
+            <team1>Жальгирис (Литва)</team1>
+            <team2>Лудогорец (Болгария)</team2>
+            <score1>3</score1>
+            <score2>3</score2>
+            <score1ext>ДВ</score1ext>
+            <score2ext>ДВ</score2ext>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034859</id>
+            <round>preliminary/27481</round>
+            <tour>2</tour>
+            <month>2022_08</month>
+            <team1id>231477</team1id>
+            <team2id>233899</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034859/</link>
+            <group>Раунд плей-офф</group>
+            <tourstr>2</tourstr>
+            <date>2022-08-25</date>
+            <time>19:30</time>
+            <team1>Силькеборг (Дания)</team1>
+            <team2>ХИК (Финляндия)</team2>
+            <score1>1</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034853</id>
+            <round>preliminary/27481</round>
+            <tour>2</tour>
+            <month>2022_08</month>
+            <team1id>231481</team1id>
+            <team2id>231471</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034853/</link>
+            <group>Раунд плей-офф</group>
+            <tourstr>2</tourstr>
+            <date>2022-08-25</date>
+            <time>20:00</time>
+            <team1>Омония (Кипр)</team1>
+            <team2>Гент (Бельгия)</team2>
+            <score1>2</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034855</id>
+            <round>preliminary/27481</round>
+            <tour>2</tour>
+            <month>2022_08</month>
+            <team1id>233919</team1id>
+            <team2id>231475</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034855/</link>
+            <group>Раунд плей-офф</group>
+            <tourstr>2</tourstr>
+            <date>2022-08-25</date>
+            <time>20:00</time>
+            <team1>Фенербахче (Турция)</team1>
+            <team2>Аустрия В (Австрия)</team2>
+            <score1>4</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034861</id>
+            <round>preliminary/27481</round>
+            <tour>2</tour>
+            <month>2022_08</month>
+            <team1id>231473</team1id>
+            <team2id>233909</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034861/</link>
+            <group>Раунд плей-офф</group>
+            <tourstr>2</tourstr>
+            <date>2022-08-25</date>
+            <time>20:00</time>
+            <team1>Сивасспор (Турция)</team1>
+            <team2>Мальмё (Швеция)</team2>
+            <score1>0</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034867</id>
+            <round>preliminary/27481</round>
+            <tour>2</tour>
+            <month>2022_08</month>
+            <team1id>234999</team1id>
+            <team2id>234995</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034867/</link>
+            <group>Раунд плей-офф</group>
+            <tourstr>2</tourstr>
+            <date>2022-08-25</date>
+            <time>20:00</time>
+            <team1>Шериф (Молдавия)</team1>
+            <team2>Пюник (Армения)</team2>
+            <score1>0</score1>
+            <score2>0</score2>
+            <score1ext>3</score1ext>
+            <score2ext>2</score2ext>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034857</id>
+            <round>preliminary/27481</round>
+            <tour>2</tour>
+            <month>2022_08</month>
+            <team1id>231479</team1id>
+            <team2id>233913</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034857/</link>
+            <group>Раунд плей-офф</group>
+            <tourstr>2</tourstr>
+            <date>2022-08-25</date>
+            <time>22:00</time>
+            <team1>Хартс (Шотландия)</team1>
+            <team2>Цюрих (Швейцария)</team2>
+            <score1>0</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034863</id>
+            <round>preliminary/27481</round>
+            <tour>2</tour>
+            <month>2022_08</month>
+            <team1id>233905</team1id>
+            <team2id>234991</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034863/</link>
+            <group>Раунд плей-офф</group>
+            <tourstr>2</tourstr>
+            <date>2022-08-25</date>
+            <time>22:00</time>
+            <team1>Шэмрок Роверс (Ирландия)</team1>
+            <team2>Ференцварош (Венгрия)</team2>
+            <score1>1</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034865</id>
+            <round>preliminary/27481</round>
+            <tour>2</tour>
+            <month>2022_08</month>
+            <team1id>233915</team1id>
+            <team2id>234993</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1034865/</link>
+            <group>Раунд плей-офф</group>
+            <tourstr>2</tourstr>
+            <date>2022-08-25</date>
+            <time>22:00</time>
+            <team1>Олимпиакос (Греция)</team1>
+            <team2>Аполлон Л (Кипр)</team2>
+            <score1>1</score1>
+            <score2>1</score2>
+            <score1ext>3</score1ext>
+            <score2ext>1</score2ext>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063715</id>
+            <round>group/27483</round>
+            <tour>1</tour>
+            <month>2022_09</month>
+            <team1id>233913</team1id>
+            <team2id>232599</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063715/</link>
+            <group>Группа A</group>
+            <tourstr>1</tourstr>
+            <date>2022-09-08</date>
+            <time>19:45</time>
+            <team1>Цюрих (Швейцария)</team1>
+            <team2>Арсенал (Англия)</team2>
+            <score1>1</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063717</id>
+            <round>group/27483</round>
+            <tour>1</tour>
+            <month>2022_09</month>
+            <team1id>235819</team1id>
+            <team2id>235821</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063717/</link>
+            <group>Группа A</group>
+            <tourstr>1</tourstr>
+            <date>2022-09-08</date>
+            <time>19:45</time>
+            <team1>ПСВ Эйндховен (Нидерланды)</team1>
+            <team2>Будё-Глимт (Норвегия)</team2>
+            <score1>1</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063721</id>
+            <round>group/27485</round>
+            <tour>1</tour>
+            <month>2022_09</month>
+            <team1id>233897</team1id>
+            <team2id>231495</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063721/</link>
+            <group>Группа B</group>
+            <tourstr>1</tourstr>
+            <date>2022-09-08</date>
+            <time>19:45</time>
+            <team1>АЕК Ларнака (Кипр)</team1>
+            <team2>Ренн (Франция)</team2>
+            <score1>1</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063729</id>
+            <round>group/27485</round>
+            <tour>1</tour>
+            <month>2022_09</month>
+            <team1id>233919</team1id>
+            <team2id>235751</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063729/</link>
+            <group>Группа B</group>
+            <tourstr>1</tourstr>
+            <date>2022-09-08</date>
+            <time>19:45</time>
+            <team1>Фенербахче (Турция)</team1>
+            <team2>Динамо К (Украина)</team2>
+            <score1>2</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063719</id>
+            <round>group/27487</round>
+            <tour>1</tour>
+            <month>2022_09</month>
+            <team1id>233899</team1id>
+            <team2id>231503</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063719/</link>
+            <group>Группа C</group>
+            <tourstr>1</tourstr>
+            <date>2022-09-08</date>
+            <time>19:45</time>
+            <team1>ХИК (Финляндия)</team1>
+            <team2>Бетис (Испания)</team2>
+            <score1>0</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063723</id>
+            <round>group/27487</round>
+            <tour>1</tour>
+            <month>2022_09</month>
+            <team1id>234997</team1id>
+            <team2id>231485</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063723/</link>
+            <group>Группа C</group>
+            <tourstr>1</tourstr>
+            <date>2022-09-08</date>
+            <time>19:45</time>
+            <team1>Лудогорец (Болгария)</team1>
+            <team2>Рома (Италия)</team2>
+            <score1>2</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063731</id>
+            <round>group/27489</round>
+            <tour>1</tour>
+            <month>2022_09</month>
+            <team1id>233909</team1id>
+            <team2id>231501</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063731/</link>
+            <group>Группа D</group>
+            <tourstr>1</tourstr>
+            <date>2022-09-08</date>
+            <time>19:45</time>
+            <team1>Мальмё (Швеция)</team1>
+            <team2>Брага (Португалия)</team2>
+            <score1>0</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063737</id>
+            <round>group/27489</round>
+            <tour>1</tour>
+            <month>2022_09</month>
+            <team1id>231499</team1id>
+            <team2id>235417</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063737/</link>
+            <group>Группа D</group>
+            <tourstr>1</tourstr>
+            <date>2022-09-08</date>
+            <time>19:45</time>
+            <team1>Унион (Германия)</team1>
+            <team2>Юнион (Бельгия)</team2>
+            <score1>0</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063725</id>
+            <round>group/27491</round>
+            <tour>1</tour>
+            <month>2022_09</month>
+            <team1id>231481</team1id>
+            <team2id>234999</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063725/</link>
+            <group>Группа E</group>
+            <tourstr>1</tourstr>
+            <date>2022-09-08</date>
+            <time>22:00</time>
+            <team1>Омония (Кипр)</team1>
+            <team2>Шериф (Молдавия)</team2>
+            <score1>0</score1>
+            <score2>3</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063727</id>
+            <round>group/27491</round>
+            <tour>1</tour>
+            <month>2022_09</month>
+            <team1id>231497</team1id>
+            <team2id>231487</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063727/</link>
+            <group>Группа E</group>
+            <tourstr>1</tourstr>
+            <date>2022-09-08</date>
+            <time>22:00</time>
+            <team1>Манчестер Юнайтед (Англия)</team1>
+            <team2>Реал Сосьедад (Испания)</team2>
+            <score1>0</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063739</id>
+            <round>group/27493</round>
+            <tour>1</tour>
+            <month>2022_09</month>
+            <team1id>231493</team1id>
+            <team2id>231507</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063739/</link>
+            <group>Группа F</group>
+            <tourstr>1</tourstr>
+            <date>2022-09-08</date>
+            <time>22:00</time>
+            <team1>Лацио (Италия)</team1>
+            <team2>Фейеноорд (Нидерланды)</team2>
+            <score1>4</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063749</id>
+            <round>group/27493</round>
+            <tour>1</tour>
+            <month>2022_09</month>
+            <team1id>235423</team1id>
+            <team2id>235419</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063749/</link>
+            <group>Группа F</group>
+            <tourstr>1</tourstr>
+            <date>2022-09-08</date>
+            <time>22:00</time>
+            <team1>Штурм (Австрия)</team1>
+            <team2>Мидтьюлланн (Дания)</team2>
+            <score1>1</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063733</id>
+            <round>group/27495</round>
+            <tour>1</tour>
+            <month>2022_09</month>
+            <team1id>231489</team1id>
+            <team2id>233915</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063733/</link>
+            <group>Группа G</group>
+            <tourstr>1</tourstr>
+            <date>2022-09-08</date>
+            <time>22:00</time>
+            <team1>Нант (Франция)</team1>
+            <team2>Олимпиакос (Греция)</team2>
+            <score1>2</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063735</id>
+            <round>group/27495</round>
+            <tour>1</tour>
+            <month>2022_09</month>
+            <team1id>231505</team1id>
+            <team2id>235749</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063735/</link>
+            <group>Группа G</group>
+            <tourstr>1</tourstr>
+            <date>2022-09-08</date>
+            <time>22:00</time>
+            <team1>Фрайбург (Германия)</team1>
+            <team2>Карабах (Азербайджан)</team2>
+            <score1>2</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063745</id>
+            <round>group/27497</round>
+            <tour>1</tour>
+            <month>2022_09</month>
+            <team1id>235753</team1id>
+            <team2id>235421</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063745/</link>
+            <group>Группа H</group>
+            <tourstr>1</tourstr>
+            <date>2022-09-08</date>
+            <time>22:00</time>
+            <team1>Црвена Звезда (Сербия)</team1>
+            <team2>Монако (Монако)</team2>
+            <score1>0</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063761</id>
+            <round>group/27497</round>
+            <tour>1</tour>
+            <month>2022_09</month>
+            <team1id>234991</team1id>
+            <team2id>235823</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063761/</link>
+            <group>Группа H</group>
+            <tourstr>1</tourstr>
+            <date>2022-09-08</date>
+            <time>22:00</time>
+            <team1>Ференцварош (Венгрия)</team1>
+            <team2>Трабзонспор (Турция)</team2>
+            <score1>3</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063741</id>
+            <round>group/27491</round>
+            <tour>2</tour>
+            <month>2022_09</month>
+            <team1id>234999</team1id>
+            <team2id>231497</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063741/</link>
+            <group>Группа E</group>
+            <tourstr>2</tourstr>
+            <date>2022-09-15</date>
+            <time>19:45</time>
+            <team1>Шериф (Молдавия)</team1>
+            <team2>Манчестер Юнайтед (Англия)</team2>
+            <score1>0</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063747</id>
+            <round>group/27491</round>
+            <tour>2</tour>
+            <month>2022_09</month>
+            <team1id>231487</team1id>
+            <team2id>231481</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063747/</link>
+            <group>Группа E</group>
+            <tourstr>2</tourstr>
+            <date>2022-09-15</date>
+            <time>19:45</time>
+            <team1>Реал Сосьедад (Испания)</team1>
+            <team2>Омония (Кипр)</team2>
+            <score1>2</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063751</id>
+            <round>group/27493</round>
+            <tour>2</tour>
+            <month>2022_09</month>
+            <team1id>235419</team1id>
+            <team2id>231493</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063751/</link>
+            <group>Группа F</group>
+            <tourstr>2</tourstr>
+            <date>2022-09-15</date>
+            <time>19:45</time>
+            <team1>Мидтьюлланн (Дания)</team1>
+            <team2>Лацио (Италия)</team2>
+            <score1>5</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063769</id>
+            <round>group/27493</round>
+            <tour>2</tour>
+            <month>2022_09</month>
+            <team1id>231507</team1id>
+            <team2id>235423</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063769/</link>
+            <group>Группа F</group>
+            <tourstr>2</tourstr>
+            <date>2022-09-15</date>
+            <time>19:45</time>
+            <team1>Фейеноорд (Нидерланды)</team1>
+            <team2>Штурм (Австрия)</team2>
+            <score1>6</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063743</id>
+            <round>group/27495</round>
+            <tour>2</tour>
+            <month>2022_09</month>
+            <team1id>235749</team1id>
+            <team2id>231489</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063743/</link>
+            <group>Группа G</group>
+            <tourstr>2</tourstr>
+            <date>2022-09-15</date>
+            <time>19:45</time>
+            <team1>Карабах (Азербайджан)</team1>
+            <team2>Нант (Франция)</team2>
+            <score1>3</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063755</id>
+            <round>group/27495</round>
+            <tour>2</tour>
+            <month>2022_09</month>
+            <team1id>233915</team1id>
+            <team2id>231505</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063755/</link>
+            <group>Группа G</group>
+            <tourstr>2</tourstr>
+            <date>2022-09-15</date>
+            <time>19:45</time>
+            <team1>Олимпиакос (Греция)</team1>
+            <team2>Фрайбург (Германия)</team2>
+            <score1>0</score1>
+            <score2>3</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063757</id>
+            <round>group/27497</round>
+            <tour>2</tour>
+            <month>2022_09</month>
+            <team1id>235823</team1id>
+            <team2id>235753</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063757/</link>
+            <group>Группа H</group>
+            <tourstr>2</tourstr>
+            <date>2022-09-15</date>
+            <time>19:45</time>
+            <team1>Трабзонспор (Турция)</team1>
+            <team2>Црвена Звезда (Сербия)</team2>
+            <score1>2</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063779</id>
+            <round>group/27497</round>
+            <tour>2</tour>
+            <month>2022_09</month>
+            <team1id>235421</team1id>
+            <team2id>234991</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063779/</link>
+            <group>Группа H</group>
+            <tourstr>2</tourstr>
+            <date>2022-09-15</date>
+            <time>19:45</time>
+            <team1>Монако (Монако)</team1>
+            <team2>Ференцварош (Венгрия)</team2>
+            <score1>0</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063753</id>
+            <round>group/27483</round>
+            <tour>2</tour>
+            <month>2022_09</month>
+            <team1id>235821</team1id>
+            <team2id>233913</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063753/</link>
+            <group>Группа A</group>
+            <tourstr>2</tourstr>
+            <date>2022-09-15</date>
+            <time>22:00</time>
+            <team1>Будё-Глимт (Норвегия)</team1>
+            <team2>Цюрих (Швейцария)</team2>
+            <score1>2</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063765</id>
+            <round>group/27485</round>
+            <tour>2</tour>
+            <month>2022_09</month>
+            <team1id>235751</team1id>
+            <team2id>233897</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063765/</link>
+            <group>Группа B</group>
+            <tourstr>2</tourstr>
+            <date>2022-09-15</date>
+            <time>22:00</time>
+            <team1>Динамо К (Украина)</team1>
+            <team2>АЕК Ларнака (Кипр)</team2>
+            <score1>0</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063783</id>
+            <round>group/27485</round>
+            <tour>2</tour>
+            <month>2022_09</month>
+            <team1id>231495</team1id>
+            <team2id>233919</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063783/</link>
+            <group>Группа B</group>
+            <tourstr>2</tourstr>
+            <date>2022-09-15</date>
+            <time>22:00</time>
+            <team1>Ренн (Франция)</team1>
+            <team2>Фенербахче (Турция)</team2>
+            <score1>2</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063759</id>
+            <round>group/27487</round>
+            <tour>2</tour>
+            <month>2022_09</month>
+            <team1id>231485</team1id>
+            <team2id>233899</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063759/</link>
+            <group>Группа C</group>
+            <tourstr>2</tourstr>
+            <date>2022-09-15</date>
+            <time>22:00</time>
+            <team1>Рома (Италия)</team1>
+            <team2>ХИК (Финляндия)</team2>
+            <score1>3</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063771</id>
+            <round>group/27487</round>
+            <tour>2</tour>
+            <month>2022_09</month>
+            <team1id>231503</team1id>
+            <team2id>234997</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063771/</link>
+            <group>Группа C</group>
+            <tourstr>2</tourstr>
+            <date>2022-09-15</date>
+            <time>22:00</time>
+            <team1>Бетис (Испания)</team1>
+            <team2>Лудогорец (Болгария)</team2>
+            <score1>3</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063773</id>
+            <round>group/27489</round>
+            <tour>2</tour>
+            <month>2022_09</month>
+            <team1id>235417</team1id>
+            <team2id>233909</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063773/</link>
+            <group>Группа D</group>
+            <tourstr>2</tourstr>
+            <date>2022-09-15</date>
+            <time>22:00</time>
+            <team1>Юнион (Бельгия)</team1>
+            <team2>Мальмё (Швеция)</team2>
+            <score1>3</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063793</id>
+            <round>group/27489</round>
+            <tour>2</tour>
+            <month>2022_09</month>
+            <team1id>231501</team1id>
+            <team2id>231499</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063793/</link>
+            <group>Группа D</group>
+            <tourstr>2</tourstr>
+            <date>2022-09-15</date>
+            <time>22:00</time>
+            <team1>Брага (Португалия)</team1>
+            <team2>Унион (Германия)</team2>
+            <score1>1</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063775</id>
+            <round>group/27483</round>
+            <tour>3</tour>
+            <month>2022_10</month>
+            <team1id>233913</team1id>
+            <team2id>235819</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063775/</link>
+            <group>Группа A</group>
+            <tourstr>3</tourstr>
+            <date>2022-10-06</date>
+            <time>19:45</time>
+            <team1>Цюрих (Швейцария)</team1>
+            <team2>ПСВ Эйндховен (Нидерланды)</team2>
+            <score1>1</score1>
+            <score2>5</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063767</id>
+            <round>group/27487</round>
+            <tour>3</tour>
+            <month>2022_10</month>
+            <team1id>233899</team1id>
+            <team2id>234997</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063767/</link>
+            <group>Группа C</group>
+            <tourstr>3</tourstr>
+            <date>2022-10-06</date>
+            <time>19:45</time>
+            <team1>ХИК (Финляндия)</team1>
+            <team2>Лудогорец (Болгария)</team2>
+            <score1>1</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063781</id>
+            <round>group/27489</round>
+            <tour>3</tour>
+            <month>2022_10</month>
+            <team1id>233909</team1id>
+            <team2id>231499</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063781/</link>
+            <group>Группа D</group>
+            <tourstr>3</tourstr>
+            <date>2022-10-06</date>
+            <time>19:45</time>
+            <team1>Мальмё (Швеция)</team1>
+            <team2>Унион (Германия)</team2>
+            <score1>0</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063789</id>
+            <round>group/27491</round>
+            <tour>3</tour>
+            <month>2022_10</month>
+            <team1id>231481</team1id>
+            <team2id>231497</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063789/</link>
+            <group>Группа E</group>
+            <tourstr>3</tourstr>
+            <date>2022-10-06</date>
+            <time>19:45</time>
+            <team1>Омония (Кипр)</team1>
+            <team2>Манчестер Юнайтед (Англия)</team2>
+            <score1>2</score1>
+            <score2>3</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063799</id>
+            <round>group/27491</round>
+            <tour>3</tour>
+            <month>2022_10</month>
+            <team1id>234999</team1id>
+            <team2id>231487</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063799/</link>
+            <group>Группа E</group>
+            <tourstr>3</tourstr>
+            <date>2022-10-06</date>
+            <time>19:45</time>
+            <team1>Шериф (Молдавия)</team1>
+            <team2>Реал Сосьедад (Испания)</team2>
+            <score1>0</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063777</id>
+            <round>group/27493</round>
+            <tour>3</tour>
+            <month>2022_10</month>
+            <team1id>235423</team1id>
+            <team2id>231493</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063777/</link>
+            <group>Группа F</group>
+            <tourstr>3</tourstr>
+            <date>2022-10-06</date>
+            <time>19:45</time>
+            <team1>Штурм (Австрия)</team1>
+            <team2>Лацио (Италия)</team2>
+            <score1>0</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063785</id>
+            <round>group/27497</round>
+            <tour>3</tour>
+            <month>2022_10</month>
+            <team1id>235753</team1id>
+            <team2id>234991</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063785/</link>
+            <group>Группа H</group>
+            <tourstr>3</tourstr>
+            <date>2022-10-06</date>
+            <time>19:45</time>
+            <team1>Црвена Звезда (Сербия)</team1>
+            <team2>Ференцварош (Венгрия)</team2>
+            <score1>4</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063809</id>
+            <round>group/27497</round>
+            <tour>3</tour>
+            <month>2022_10</month>
+            <team1id>235421</team1id>
+            <team2id>235823</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063809/</link>
+            <group>Группа H</group>
+            <tourstr>3</tourstr>
+            <date>2022-10-06</date>
+            <time>19:45</time>
+            <team1>Монако (Монако)</team1>
+            <team2>Трабзонспор (Турция)</team2>
+            <score1>3</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063791</id>
+            <round>group/27483</round>
+            <tour>3</tour>
+            <month>2022_10</month>
+            <team1id>232599</team1id>
+            <team2id>235821</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063791/</link>
+            <group>Группа A</group>
+            <tourstr>3</tourstr>
+            <date>2022-10-06</date>
+            <time>22:00</time>
+            <team1>Арсенал (Англия)</team1>
+            <team2>Будё-Глимт (Норвегия)</team2>
+            <score1>3</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063787</id>
+            <round>group/27485</round>
+            <tour>3</tour>
+            <month>2022_10</month>
+            <team1id>231495</team1id>
+            <team2id>235751</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063787/</link>
+            <group>Группа B</group>
+            <tourstr>3</tourstr>
+            <date>2022-10-06</date>
+            <time>22:00</time>
+            <team1>Ренн (Франция)</team1>
+            <team2>Динамо К (Украина)</team2>
+            <score1>2</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063795</id>
+            <round>group/27485</round>
+            <tour>3</tour>
+            <month>2022_10</month>
+            <team1id>233919</team1id>
+            <team2id>233897</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063795/</link>
+            <group>Группа B</group>
+            <tourstr>3</tourstr>
+            <date>2022-10-06</date>
+            <time>22:00</time>
+            <team1>Фенербахче (Турция)</team1>
+            <team2>АЕК Ларнака (Кипр)</team2>
+            <score1>2</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063817</id>
+            <round>group/27487</round>
+            <tour>3</tour>
+            <month>2022_10</month>
+            <team1id>231485</team1id>
+            <team2id>231503</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063817/</link>
+            <group>Группа C</group>
+            <tourstr>3</tourstr>
+            <date>2022-10-06</date>
+            <time>22:00</time>
+            <team1>Рома (Италия)</team1>
+            <team2>Бетис (Испания)</team2>
+            <score1>1</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063801</id>
+            <round>group/27489</round>
+            <tour>3</tour>
+            <month>2022_10</month>
+            <team1id>231501</team1id>
+            <team2id>235417</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063801/</link>
+            <group>Группа D</group>
+            <tourstr>3</tourstr>
+            <date>2022-10-06</date>
+            <time>22:00</time>
+            <team1>Брага (Португалия)</team1>
+            <team2>Юнион (Бельгия)</team2>
+            <score1>1</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063797</id>
+            <round>group/27493</round>
+            <tour>3</tour>
+            <month>2022_10</month>
+            <team1id>235419</team1id>
+            <team2id>231507</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063797/</link>
+            <group>Группа F</group>
+            <tourstr>3</tourstr>
+            <date>2022-10-06</date>
+            <time>22:00</time>
+            <team1>Мидтьюлланн (Дания)</team1>
+            <team2>Фейеноорд (Нидерланды)</team2>
+            <score1>2</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063803</id>
+            <round>group/27495</round>
+            <tour>3</tour>
+            <month>2022_10</month>
+            <team1id>231505</team1id>
+            <team2id>231489</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063803/</link>
+            <group>Группа G</group>
+            <tourstr>3</tourstr>
+            <date>2022-10-06</date>
+            <time>22:00</time>
+            <team1>Фрайбург (Германия)</team1>
+            <team2>Нант (Франция)</team2>
+            <score1>2</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063825</id>
+            <round>group/27495</round>
+            <tour>3</tour>
+            <month>2022_10</month>
+            <team1id>233915</team1id>
+            <team2id>235749</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063825/</link>
+            <group>Группа G</group>
+            <tourstr>3</tourstr>
+            <date>2022-10-06</date>
+            <time>22:00</time>
+            <team1>Олимпиакос (Греция)</team1>
+            <team2>Карабах (Азербайджан)</team2>
+            <score1>0</score1>
+            <score2>3</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063807</id>
+            <round>group/27483</round>
+            <tour>4</tour>
+            <month>2022_10</month>
+            <team1id>235821</team1id>
+            <team2id>232599</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063807/</link>
+            <group>Группа A</group>
+            <tourstr>4</tourstr>
+            <date>2022-10-13</date>
+            <time>19:45</time>
+            <team1>Будё-Глимт (Норвегия)</team1>
+            <team2>Арсенал (Англия)</team2>
+            <score1>0</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063805</id>
+            <round>group/27485</round>
+            <tour>4</tour>
+            <month>2022_10</month>
+            <team1id>233897</team1id>
+            <team2id>233919</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063805/</link>
+            <group>Группа B</group>
+            <tourstr>4</tourstr>
+            <date>2022-10-13</date>
+            <time>19:45</time>
+            <team1>АЕК Ларнака (Кипр)</team1>
+            <team2>Фенербахче (Турция)</team2>
+            <score1>1</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063811</id>
+            <round>group/27485</round>
+            <tour>4</tour>
+            <month>2022_10</month>
+            <team1id>235751</team1id>
+            <team2id>231495</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063811/</link>
+            <group>Группа B</group>
+            <tourstr>4</tourstr>
+            <date>2022-10-13</date>
+            <time>19:45</time>
+            <team1>Динамо К (Украина)</team1>
+            <team2>Ренн (Франция)</team2>
+            <score1>0</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063831</id>
+            <round>group/27487</round>
+            <tour>4</tour>
+            <month>2022_10</month>
+            <team1id>231503</team1id>
+            <team2id>231485</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063831/</link>
+            <group>Группа C</group>
+            <tourstr>4</tourstr>
+            <date>2022-10-13</date>
+            <time>19:45</time>
+            <team1>Бетис (Испания)</team1>
+            <team2>Рома (Италия)</team2>
+            <score1>1</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063813</id>
+            <round>group/27489</round>
+            <tour>4</tour>
+            <month>2022_10</month>
+            <team1id>235417</team1id>
+            <team2id>231501</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063813/</link>
+            <group>Группа D</group>
+            <tourstr>4</tourstr>
+            <date>2022-10-13</date>
+            <time>19:45</time>
+            <team1>Юнион (Бельгия)</team1>
+            <team2>Брага (Португалия)</team2>
+            <score1>3</score1>
+            <score2>3</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063815</id>
+            <round>group/27493</round>
+            <tour>4</tour>
+            <month>2022_10</month>
+            <team1id>231507</team1id>
+            <team2id>235419</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063815/</link>
+            <group>Группа F</group>
+            <tourstr>4</tourstr>
+            <date>2022-10-13</date>
+            <time>19:45</time>
+            <team1>Фейеноорд (Нидерланды)</team1>
+            <team2>Мидтьюлланн (Дания)</team2>
+            <score1>2</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063819</id>
+            <round>group/27495</round>
+            <tour>4</tour>
+            <month>2022_10</month>
+            <team1id>231489</team1id>
+            <team2id>231505</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063819/</link>
+            <group>Группа G</group>
+            <tourstr>4</tourstr>
+            <date>2022-10-13</date>
+            <time>19:45</time>
+            <team1>Нант (Франция)</team1>
+            <team2>Фрайбург (Германия)</team2>
+            <score1>0</score1>
+            <score2>4</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063839</id>
+            <round>group/27495</round>
+            <tour>4</tour>
+            <month>2022_10</month>
+            <team1id>235749</team1id>
+            <team2id>233915</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063839/</link>
+            <group>Группа G</group>
+            <tourstr>4</tourstr>
+            <date>2022-10-13</date>
+            <time>19:45</time>
+            <team1>Карабах (Азербайджан)</team1>
+            <team2>Олимпиакос (Греция)</team2>
+            <score1>0</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063821</id>
+            <round>group/27483</round>
+            <tour>4</tour>
+            <month>2022_10</month>
+            <team1id>235819</team1id>
+            <team2id>233913</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063821/</link>
+            <group>Группа A</group>
+            <tourstr>4</tourstr>
+            <date>2022-10-13</date>
+            <time>22:00</time>
+            <team1>ПСВ Эйндховен (Нидерланды)</team1>
+            <team2>Цюрих (Швейцария)</team2>
+            <score1>5</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063823</id>
+            <round>group/27487</round>
+            <tour>4</tour>
+            <month>2022_10</month>
+            <team1id>234997</team1id>
+            <team2id>233899</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063823/</link>
+            <group>Группа C</group>
+            <tourstr>4</tourstr>
+            <date>2022-10-13</date>
+            <time>22:00</time>
+            <team1>Лудогорец (Болгария)</team1>
+            <team2>ХИК (Финляндия)</team2>
+            <score1>2</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063829</id>
+            <round>group/27489</round>
+            <tour>4</tour>
+            <month>2022_10</month>
+            <team1id>231499</team1id>
+            <team2id>233909</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063829/</link>
+            <group>Группа D</group>
+            <tourstr>4</tourstr>
+            <date>2022-10-13</date>
+            <time>22:00</time>
+            <team1>Унион (Германия)</team1>
+            <team2>Мальмё (Швеция)</team2>
+            <score1>1</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063827</id>
+            <round>group/27491</round>
+            <tour>4</tour>
+            <month>2022_10</month>
+            <team1id>231487</team1id>
+            <team2id>234999</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063827/</link>
+            <group>Группа E</group>
+            <tourstr>4</tourstr>
+            <date>2022-10-13</date>
+            <time>22:00</time>
+            <team1>Реал Сосьедад (Испания)</team1>
+            <team2>Шериф (Молдавия)</team2>
+            <score1>3</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063849</id>
+            <round>group/27491</round>
+            <tour>4</tour>
+            <month>2022_10</month>
+            <team1id>231497</team1id>
+            <team2id>231481</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063849/</link>
+            <group>Группа E</group>
+            <tourstr>4</tourstr>
+            <date>2022-10-13</date>
+            <time>22:00</time>
+            <team1>Манчестер Юнайтед (Англия)</team1>
+            <team2>Омония (Кипр)</team2>
+            <score1>1</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063835</id>
+            <round>group/27493</round>
+            <tour>4</tour>
+            <month>2022_10</month>
+            <team1id>231493</team1id>
+            <team2id>235423</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063835/</link>
+            <group>Группа F</group>
+            <tourstr>4</tourstr>
+            <date>2022-10-13</date>
+            <time>22:00</time>
+            <team1>Лацио (Италия)</team1>
+            <team2>Штурм (Австрия)</team2>
+            <score1>2</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063833</id>
+            <round>group/27497</round>
+            <tour>4</tour>
+            <month>2022_10</month>
+            <team1id>235823</team1id>
+            <team2id>235421</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063833/</link>
+            <group>Группа H</group>
+            <tourstr>4</tourstr>
+            <date>2022-10-13</date>
+            <time>22:00</time>
+            <team1>Трабзонспор (Турция)</team1>
+            <team2>Монако (Монако)</team2>
+            <score1>4</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063857</id>
+            <round>group/27497</round>
+            <tour>4</tour>
+            <month>2022_10</month>
+            <team1id>234991</team1id>
+            <team2id>235753</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063857/</link>
+            <group>Группа H</group>
+            <tourstr>4</tourstr>
+            <date>2022-10-13</date>
+            <time>22:00</time>
+            <team1>Ференцварош (Венгрия)</team1>
+            <team2>Црвена Звезда (Сербия)</team2>
+            <score1>2</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063763</id>
+            <round>group/27483</round>
+            <tour>2</tour>
+            <month>2022_10</month>
+            <team1id>232599</team1id>
+            <team2id>235819</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063763/</link>
+            <group>Группа A</group>
+            <tourstr>2</tourstr>
+            <date>2022-10-20</date>
+            <time>20:00</time>
+            <team1>Арсенал (Англия)</team1>
+            <team2>ПСВ Эйндховен (Нидерланды)</team2>
+            <score1>1</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063837</id>
+            <round>group/27483</round>
+            <tour>5</tour>
+            <month>2022_10</month>
+            <team1id>233913</team1id>
+            <team2id>235821</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063837/</link>
+            <group>Группа A</group>
+            <tourstr>5</tourstr>
+            <date>2022-10-27</date>
+            <time>19:45</time>
+            <team1>Цюрих (Швейцария)</team1>
+            <team2>Будё-Глимт (Норвегия)</team2>
+            <score1>2</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063847</id>
+            <round>group/27483</round>
+            <tour>5</tour>
+            <month>2022_10</month>
+            <team1id>235819</team1id>
+            <team2id>232599</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063847/</link>
+            <group>Группа A</group>
+            <tourstr>5</tourstr>
+            <date>2022-10-27</date>
+            <time>19:45</time>
+            <team1>ПСВ Эйндховен (Нидерланды)</team1>
+            <team2>Арсенал (Англия)</team2>
+            <score1>2</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063843</id>
+            <round>group/27485</round>
+            <tour>5</tour>
+            <month>2022_10</month>
+            <team1id>233919</team1id>
+            <team2id>231495</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063843/</link>
+            <group>Группа B</group>
+            <tourstr>5</tourstr>
+            <date>2022-10-27</date>
+            <time>19:45</time>
+            <team1>Фенербахче (Турция)</team1>
+            <team2>Ренн (Франция)</team2>
+            <score1>3</score1>
+            <score2>3</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063867</id>
+            <round>group/27485</round>
+            <tour>5</tour>
+            <month>2022_10</month>
+            <team1id>233897</team1id>
+            <team2id>235751</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063867/</link>
+            <group>Группа B</group>
+            <tourstr>5</tourstr>
+            <date>2022-10-27</date>
+            <time>19:45</time>
+            <team1>АЕК Ларнака (Кипр)</team1>
+            <team2>Динамо К (Украина)</team2>
+            <score1>3</score1>
+            <score2>3</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063855</id>
+            <round>group/27487</round>
+            <tour>5</tour>
+            <month>2022_10</month>
+            <team1id>234997</team1id>
+            <team2id>231503</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063855/</link>
+            <group>Группа C</group>
+            <tourstr>5</tourstr>
+            <date>2022-10-27</date>
+            <time>19:45</time>
+            <team1>Лудогорец (Болгария)</team1>
+            <team2>Бетис (Испания)</team2>
+            <score1>0</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063851</id>
+            <round>group/27489</round>
+            <tour>5</tour>
+            <month>2022_10</month>
+            <team1id>233909</team1id>
+            <team2id>235417</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063851/</link>
+            <group>Группа D</group>
+            <tourstr>5</tourstr>
+            <date>2022-10-27</date>
+            <time>19:45</time>
+            <team1>Мальмё (Швеция)</team1>
+            <team2>Юнион (Бельгия)</team2>
+            <score1>0</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063875</id>
+            <round>group/27489</round>
+            <tour>5</tour>
+            <month>2022_10</month>
+            <team1id>231499</team1id>
+            <team2id>231501</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063875/</link>
+            <group>Группа D</group>
+            <tourstr>5</tourstr>
+            <date>2022-10-27</date>
+            <time>19:45</time>
+            <team1>Унион (Германия)</team1>
+            <team2>Брага (Португалия)</team2>
+            <score1>1</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063841</id>
+            <round>group/27493</round>
+            <tour>5</tour>
+            <month>2022_10</month>
+            <team1id>231493</team1id>
+            <team2id>235419</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063841/</link>
+            <group>Группа F</group>
+            <tourstr>5</tourstr>
+            <date>2022-10-27</date>
+            <time>19:45</time>
+            <team1>Лацио (Италия)</team1>
+            <team2>Мидтьюлланн (Дания)</team2>
+            <score1>2</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063859</id>
+            <round>group/27487</round>
+            <tour>5</tour>
+            <month>2022_10</month>
+            <team1id>233899</team1id>
+            <team2id>231485</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063859/</link>
+            <group>Группа C</group>
+            <tourstr>5</tourstr>
+            <date>2022-10-27</date>
+            <time>22:00</time>
+            <team1>ХИК (Финляндия)</team1>
+            <team2>Рома (Италия)</team2>
+            <score1>1</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063845</id>
+            <round>group/27491</round>
+            <tour>5</tour>
+            <month>2022_10</month>
+            <team1id>231497</team1id>
+            <team2id>234999</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063845/</link>
+            <group>Группа E</group>
+            <tourstr>5</tourstr>
+            <date>2022-10-27</date>
+            <time>22:00</time>
+            <team1>Манчестер Юнайтед (Англия)</team1>
+            <team2>Шериф (Молдавия)</team2>
+            <score1>3</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063865</id>
+            <round>group/27491</round>
+            <tour>5</tour>
+            <month>2022_10</month>
+            <team1id>231481</team1id>
+            <team2id>231487</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063865/</link>
+            <group>Группа E</group>
+            <tourstr>5</tourstr>
+            <date>2022-10-27</date>
+            <time>22:00</time>
+            <team1>Омония (Кипр)</team1>
+            <team2>Реал Сосьедад (Испания)</team2>
+            <score1>0</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063881</id>
+            <round>group/27493</round>
+            <tour>5</tour>
+            <month>2022_10</month>
+            <team1id>235423</team1id>
+            <team2id>231507</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063881/</link>
+            <group>Группа F</group>
+            <tourstr>5</tourstr>
+            <date>2022-10-27</date>
+            <time>22:00</time>
+            <team1>Штурм (Австрия)</team1>
+            <team2>Фейеноорд (Нидерланды)</team2>
+            <score1>1</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063853</id>
+            <round>group/27495</round>
+            <tour>5</tour>
+            <month>2022_10</month>
+            <team1id>231505</team1id>
+            <team2id>233915</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063853/</link>
+            <group>Группа G</group>
+            <tourstr>5</tourstr>
+            <date>2022-10-27</date>
+            <time>22:00</time>
+            <team1>Фрайбург (Германия)</team1>
+            <team2>Олимпиакос (Греция)</team2>
+            <score1>1</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063873</id>
+            <round>group/27495</round>
+            <tour>5</tour>
+            <month>2022_10</month>
+            <team1id>231489</team1id>
+            <team2id>235749</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063873/</link>
+            <group>Группа G</group>
+            <tourstr>5</tourstr>
+            <date>2022-10-27</date>
+            <time>22:00</time>
+            <team1>Нант (Франция)</team1>
+            <team2>Карабах (Азербайджан)</team2>
+            <score1>2</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063861</id>
+            <round>group/27497</round>
+            <tour>5</tour>
+            <month>2022_10</month>
+            <team1id>235753</team1id>
+            <team2id>235823</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063861/</link>
+            <group>Группа H</group>
+            <tourstr>5</tourstr>
+            <date>2022-10-27</date>
+            <time>22:00</time>
+            <team1>Црвена Звезда (Сербия)</team1>
+            <team2>Трабзонспор (Турция)</team2>
+            <score1>2</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063889</id>
+            <round>group/27497</round>
+            <tour>5</tour>
+            <month>2022_10</month>
+            <team1id>234991</team1id>
+            <team2id>235421</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063889/</link>
+            <group>Группа H</group>
+            <tourstr>5</tourstr>
+            <date>2022-10-27</date>
+            <time>22:00</time>
+            <team1>Ференцварош (Венгрия)</team1>
+            <team2>Монако (Монако)</team2>
+            <score1>1</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063863</id>
+            <round>group/27491</round>
+            <tour>6</tour>
+            <month>2022_11</month>
+            <team1id>231487</team1id>
+            <team2id>231497</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063863/</link>
+            <group>Группа E</group>
+            <tourstr>6</tourstr>
+            <date>2022-11-03</date>
+            <time>20:45</time>
+            <team1>Реал Сосьедад (Испания)</team1>
+            <team2>Манчестер Юнайтед (Англия)</team2>
+            <score1>0</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063879</id>
+            <round>group/27491</round>
+            <tour>6</tour>
+            <month>2022_11</month>
+            <team1id>234999</team1id>
+            <team2id>231481</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063879/</link>
+            <group>Группа E</group>
+            <tourstr>6</tourstr>
+            <date>2022-11-03</date>
+            <time>20:45</time>
+            <team1>Шериф (Молдавия)</team1>
+            <team2>Омония (Кипр)</team2>
+            <score1>1</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063869</id>
+            <round>group/27493</round>
+            <tour>6</tour>
+            <month>2022_11</month>
+            <team1id>235419</team1id>
+            <team2id>235423</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063869/</link>
+            <group>Группа F</group>
+            <tourstr>6</tourstr>
+            <date>2022-11-03</date>
+            <time>20:45</time>
+            <team1>Мидтьюлланн (Дания)</team1>
+            <team2>Штурм (Австрия)</team2>
+            <score1>2</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063895</id>
+            <round>group/27493</round>
+            <tour>6</tour>
+            <month>2022_11</month>
+            <team1id>231507</team1id>
+            <team2id>231493</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063895/</link>
+            <group>Группа F</group>
+            <tourstr>6</tourstr>
+            <date>2022-11-03</date>
+            <time>20:45</time>
+            <team1>Фейеноорд (Нидерланды)</team1>
+            <team2>Лацио (Италия)</team2>
+            <score1>1</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063871</id>
+            <round>group/27495</round>
+            <tour>6</tour>
+            <month>2022_11</month>
+            <team1id>233915</team1id>
+            <team2id>231489</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063871/</link>
+            <group>Группа G</group>
+            <tourstr>6</tourstr>
+            <date>2022-11-03</date>
+            <time>20:45</time>
+            <team1>Олимпиакос (Греция)</team1>
+            <team2>Нант (Франция)</team2>
+            <score1>0</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063887</id>
+            <round>group/27495</round>
+            <tour>6</tour>
+            <month>2022_11</month>
+            <team1id>235749</team1id>
+            <team2id>231505</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063887/</link>
+            <group>Группа G</group>
+            <tourstr>6</tourstr>
+            <date>2022-11-03</date>
+            <time>20:45</time>
+            <team1>Карабах (Азербайджан)</team1>
+            <team2>Фрайбург (Германия)</team2>
+            <score1>1</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063883</id>
+            <round>group/27497</round>
+            <tour>6</tour>
+            <month>2022_11</month>
+            <team1id>235823</team1id>
+            <team2id>234991</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063883/</link>
+            <group>Группа H</group>
+            <tourstr>6</tourstr>
+            <date>2022-11-03</date>
+            <time>20:45</time>
+            <team1>Трабзонспор (Турция)</team1>
+            <team2>Ференцварош (Венгрия)</team2>
+            <score1>1</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063901</id>
+            <round>group/27497</round>
+            <tour>6</tour>
+            <month>2022_11</month>
+            <team1id>235421</team1id>
+            <team2id>235753</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063901/</link>
+            <group>Группа H</group>
+            <tourstr>6</tourstr>
+            <date>2022-11-03</date>
+            <time>20:45</time>
+            <team1>Монако (Монако)</team1>
+            <team2>Црвена Звезда (Сербия)</team2>
+            <score1>4</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063877</id>
+            <round>group/27483</round>
+            <tour>6</tour>
+            <month>2022_11</month>
+            <team1id>232599</team1id>
+            <team2id>233913</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063877/</link>
+            <group>Группа A</group>
+            <tourstr>6</tourstr>
+            <date>2022-11-03</date>
+            <time>23:00</time>
+            <team1>Арсенал (Англия)</team1>
+            <team2>Цюрих (Швейцария)</team2>
+            <score1>1</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063893</id>
+            <round>group/27483</round>
+            <tour>6</tour>
+            <month>2022_11</month>
+            <team1id>235821</team1id>
+            <team2id>235819</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063893/</link>
+            <group>Группа A</group>
+            <tourstr>6</tourstr>
+            <date>2022-11-03</date>
+            <time>23:00</time>
+            <team1>Будё-Глимт (Норвегия)</team1>
+            <team2>ПСВ Эйндховен (Нидерланды)</team2>
+            <score1>1</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063891</id>
+            <round>group/27485</round>
+            <tour>6</tour>
+            <month>2022_11</month>
+            <team1id>235751</team1id>
+            <team2id>233919</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063891/</link>
+            <group>Группа B</group>
+            <tourstr>6</tourstr>
+            <date>2022-11-03</date>
+            <time>23:00</time>
+            <team1>Динамо К (Украина)</team1>
+            <team2>Фенербахче (Турция)</team2>
+            <score1>0</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063903</id>
+            <round>group/27485</round>
+            <tour>6</tour>
+            <month>2022_11</month>
+            <team1id>231495</team1id>
+            <team2id>233897</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063903/</link>
+            <group>Группа B</group>
+            <tourstr>6</tourstr>
+            <date>2022-11-03</date>
+            <time>23:00</time>
+            <team1>Ренн (Франция)</team1>
+            <team2>АЕК Ларнака (Кипр)</team2>
+            <score1>1</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063885</id>
+            <round>group/27487</round>
+            <tour>6</tour>
+            <month>2022_11</month>
+            <team1id>231503</team1id>
+            <team2id>233899</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063885/</link>
+            <group>Группа C</group>
+            <tourstr>6</tourstr>
+            <date>2022-11-03</date>
+            <time>23:00</time>
+            <team1>Бетис (Испания)</team1>
+            <team2>ХИК (Финляндия)</team2>
+            <score1>3</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063899</id>
+            <round>group/27487</round>
+            <tour>6</tour>
+            <month>2022_11</month>
+            <team1id>231485</team1id>
+            <team2id>234997</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063899/</link>
+            <group>Группа C</group>
+            <tourstr>6</tourstr>
+            <date>2022-11-03</date>
+            <time>23:00</time>
+            <team1>Рома (Италия)</team1>
+            <team2>Лудогорец (Болгария)</team2>
+            <score1>3</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063897</id>
+            <round>group/27489</round>
+            <tour>6</tour>
+            <month>2022_11</month>
+            <team1id>235417</team1id>
+            <team2id>231499</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063897/</link>
+            <group>Группа D</group>
+            <tourstr>6</tourstr>
+            <date>2022-11-03</date>
+            <time>23:00</time>
+            <team1>Юнион (Бельгия)</team1>
+            <team2>Унион (Германия)</team2>
+            <score1>0</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1063905</id>
+            <round>group/27489</round>
+            <tour>6</tour>
+            <month>2022_11</month>
+            <team1id>231501</team1id>
+            <team2id>233909</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1063905/</link>
+            <group>Группа D</group>
+            <tourstr>6</tourstr>
+            <date>2022-11-03</date>
+            <time>23:00</time>
+            <team1>Брага (Португалия)</team1>
+            <team2>Мальмё (Швеция)</team2>
+            <score1>2</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1075259</id>
+            <round>playoff/27499</round>
+            <tour>1</tour>
+            <month>2023_02</month>
+            <team1id>237397</team1id>
+            <team2id>231497</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1075259/</link>
+            <group>1/16 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-02-16</date>
+            <time>20:45</time>
+            <team1>Барселона (Испания)</team1>
+            <team2>Манчестер Юнайтед (Англия)</team2>
+            <score1>2</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1075263</id>
+            <round>playoff/27499</round>
+            <tour>1</tour>
+            <month>2023_02</month>
+            <team1id>237393</team1id>
+            <team2id>231499</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1075263/</link>
+            <group>1/16 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-02-16</date>
+            <time>20:45</time>
+            <team1>Аякс (Нидерланды)</team1>
+            <team2>Унион (Германия)</team2>
+            <score1>0</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1075265</id>
+            <round>playoff/27499</round>
+            <tour>1</tour>
+            <month>2023_02</month>
+            <team1id>237403</team1id>
+            <team2id>231495</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1075265/</link>
+            <group>1/16 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-02-16</date>
+            <time>20:45</time>
+            <team1>Шахтёр (Украина)</team1>
+            <team2>Ренн (Франция)</team2>
+            <score1>2</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1075267</id>
+            <round>playoff/27499</round>
+            <tour>1</tour>
+            <month>2023_02</month>
+            <team1id>237401</team1id>
+            <team2id>231485</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1075267/</link>
+            <group>1/16 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-02-16</date>
+            <time>20:45</time>
+            <team1>Ред Булл Зальцбург (Австрия)</team1>
+            <team2>Рома (Италия)</team2>
+            <score1>1</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1075261</id>
+            <round>playoff/27499</round>
+            <tour>1</tour>
+            <month>2023_02</month>
+            <team1id>237407</team1id>
+            <team2id>231489</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1075261/</link>
+            <group>1/16 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-02-16</date>
+            <time>23:00</time>
+            <team1>Ювентус (Италия)</team1>
+            <team2>Нант (Франция)</team2>
+            <score1>1</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1075269</id>
+            <round>playoff/27499</round>
+            <tour>1</tour>
+            <month>2023_02</month>
+            <team1id>237405</team1id>
+            <team2id>235819</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1075269/</link>
+            <group>1/16 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-02-16</date>
+            <time>23:00</time>
+            <team1>Севилья (Испания)</team1>
+            <team2>ПСВ Эйндховен (Нидерланды)</team2>
+            <score1>3</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1075271</id>
+            <round>playoff/27499</round>
+            <tour>1</tour>
+            <month>2023_02</month>
+            <team1id>237399</team1id>
+            <team2id>235419</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1075271/</link>
+            <group>1/16 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-02-16</date>
+            <time>23:00</time>
+            <team1>Спортинг (Португалия)</team1>
+            <team2>Мидтьюлланн (Дания)</team2>
+            <score1>1</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1075273</id>
+            <round>playoff/27499</round>
+            <tour>1</tour>
+            <month>2023_02</month>
+            <team1id>237395</team1id>
+            <team2id>235421</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1075273/</link>
+            <group>1/16 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-02-16</date>
+            <time>23:00</time>
+            <team1>Байер (Германия)</team1>
+            <team2>Монако (Монако)</team2>
+            <score1>2</score1>
+            <score2>3</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035083</id>
+            <round>playoff/27499</round>
+            <tour>2</tour>
+            <month>2023_02</month>
+            <team1id>231489</team1id>
+            <team2id>237407</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035083/</link>
+            <group>1/16 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-02-23</date>
+            <time>20:45</time>
+            <team1>Нант (Франция)</team1>
+            <team2>Ювентус (Италия)</team2>
+            <score1>0</score1>
+            <score2>3</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035085</id>
+            <round>playoff/27499</round>
+            <tour>2</tour>
+            <month>2023_02</month>
+            <team1id>235419</team1id>
+            <team2id>237399</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035085/</link>
+            <group>1/16 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-02-23</date>
+            <time>20:45</time>
+            <team1>Мидтьюлланн (Дания)</team1>
+            <team2>Спортинг (Португалия)</team2>
+            <score1>0</score1>
+            <score2>4</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035091</id>
+            <round>playoff/27499</round>
+            <tour>2</tour>
+            <month>2023_02</month>
+            <team1id>235421</team1id>
+            <team2id>237395</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035091/</link>
+            <group>1/16 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-02-23</date>
+            <time>20:45</time>
+            <team1>Монако (Монако)</team1>
+            <team2>Байер (Германия)</team2>
+            <score1>2</score1>
+            <score2>3</score2>
+            <score1ext>3</score1ext>
+            <score2ext>5</score2ext>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035093</id>
+            <round>playoff/27499</round>
+            <tour>2</tour>
+            <month>2023_02</month>
+            <team1id>235819</team1id>
+            <team2id>237405</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035093/</link>
+            <group>1/16 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-02-23</date>
+            <time>20:45</time>
+            <team1>ПСВ Эйндховен (Нидерланды)</team1>
+            <team2>Севилья (Испания)</team2>
+            <score1>2</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035081</id>
+            <round>playoff/27499</round>
+            <tour>2</tour>
+            <month>2023_02</month>
+            <team1id>231497</team1id>
+            <team2id>237397</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035081/</link>
+            <group>1/16 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-02-23</date>
+            <time>23:00</time>
+            <team1>Манчестер Юнайтед (Англия)</team1>
+            <team2>Барселона (Испания)</team2>
+            <score1>2</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035087</id>
+            <round>playoff/27499</round>
+            <tour>2</tour>
+            <month>2023_02</month>
+            <team1id>231495</team1id>
+            <team2id>237403</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035087/</link>
+            <group>1/16 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-02-23</date>
+            <time>23:00</time>
+            <team1>Ренн (Франция)</team1>
+            <team2>Шахтёр (Украина)</team2>
+            <score1>3</score1>
+            <score2>1</score2>
+            <score1ext>4</score1ext>
+            <score2ext>5</score2ext>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035089</id>
+            <round>playoff/27499</round>
+            <tour>2</tour>
+            <month>2023_02</month>
+            <team1id>231499</team1id>
+            <team2id>237393</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035089/</link>
+            <group>1/16 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-02-23</date>
+            <time>23:00</time>
+            <team1>Унион (Германия)</team1>
+            <team2>Аякс (Нидерланды)</team2>
+            <score1>3</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035095</id>
+            <round>playoff/27499</round>
+            <tour>2</tour>
+            <month>2023_02</month>
+            <team1id>231485</team1id>
+            <team2id>237401</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035095/</link>
+            <group>1/16 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-02-23</date>
+            <time>23:00</time>
+            <team1>Рома (Италия)</team1>
+            <team2>Ред Булл Зальцбург (Австрия)</team2>
+            <score1>2</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035097</id>
+            <round>playoff/27501</round>
+            <tour>1</tour>
+            <month>2023_03</month>
+            <team1id>231499</team1id>
+            <team2id>235417</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035097/</link>
+            <group>1/8 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-03-09</date>
+            <time>20:45</time>
+            <team1>Унион (Германия)</team1>
+            <team2>Юнион (Бельгия)</team2>
+            <score1>3</score1>
+            <score2>3</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035103</id>
+            <round>playoff/27501</round>
+            <tour>1</tour>
+            <month>2023_03</month>
+            <team1id>237395</team1id>
+            <team2id>234991</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035103/</link>
+            <group>1/8 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-03-09</date>
+            <time>20:45</time>
+            <team1>Байер (Германия)</team1>
+            <team2>Ференцварош (Венгрия)</team2>
+            <score1>2</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035105</id>
+            <round>playoff/27501</round>
+            <tour>1</tour>
+            <month>2023_03</month>
+            <team1id>237399</team1id>
+            <team2id>232599</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035105/</link>
+            <group>1/8 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-03-09</date>
+            <time>20:45</time>
+            <team1>Спортинг (Португалия)</team1>
+            <team2>Арсенал (Англия)</team2>
+            <score1>2</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035109</id>
+            <round>playoff/27501</round>
+            <tour>1</tour>
+            <month>2023_03</month>
+            <team1id>231485</team1id>
+            <team2id>231487</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035109/</link>
+            <group>1/8 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-03-09</date>
+            <time>20:45</time>
+            <team1>Рома (Италия)</team1>
+            <team2>Реал Сосьедад (Испания)</team2>
+            <score1>2</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035099</id>
+            <round>playoff/27501</round>
+            <tour>1</tour>
+            <month>2023_03</month>
+            <team1id>237405</team1id>
+            <team2id>233919</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035099/</link>
+            <group>1/8 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-03-09</date>
+            <time>23:00</time>
+            <team1>Севилья (Испания)</team1>
+            <team2>Фенербахче (Турция)</team2>
+            <score1>2</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035101</id>
+            <round>playoff/27501</round>
+            <tour>1</tour>
+            <month>2023_03</month>
+            <team1id>237407</team1id>
+            <team2id>231505</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035101/</link>
+            <group>1/8 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-03-09</date>
+            <time>23:00</time>
+            <team1>Ювентус (Италия)</team1>
+            <team2>Фрайбург (Германия)</team2>
+            <score1>1</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035107</id>
+            <round>playoff/27501</round>
+            <tour>1</tour>
+            <month>2023_03</month>
+            <team1id>231497</team1id>
+            <team2id>231503</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035107/</link>
+            <group>1/8 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-03-09</date>
+            <time>23:00</time>
+            <team1>Манчестер Юнайтед (Англия)</team1>
+            <team2>Бетис (Испания)</team2>
+            <score1>4</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035111</id>
+            <round>playoff/27501</round>
+            <tour>1</tour>
+            <month>2023_03</month>
+            <team1id>237403</team1id>
+            <team2id>231507</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035111/</link>
+            <group>1/8 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-03-09</date>
+            <time>23:00</time>
+            <team1>Шахтёр (Украина)</team1>
+            <team2>Фейеноорд (Нидерланды)</team2>
+            <score1>1</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035115</id>
+            <round>playoff/27501</round>
+            <tour>2</tour>
+            <month>2023_03</month>
+            <team1id>233919</team1id>
+            <team2id>237405</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035115/</link>
+            <group>1/8 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-03-16</date>
+            <time>20:45</time>
+            <team1>Фенербахче (Турция)</team1>
+            <team2>Севилья (Испания)</team2>
+            <score1>1</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035117</id>
+            <round>playoff/27501</round>
+            <tour>2</tour>
+            <month>2023_03</month>
+            <team1id>231505</team1id>
+            <team2id>237407</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035117/</link>
+            <group>1/8 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-03-16</date>
+            <time>20:45</time>
+            <team1>Фрайбург (Германия)</team1>
+            <team2>Ювентус (Италия)</team2>
+            <score1>0</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035123</id>
+            <round>playoff/27501</round>
+            <tour>2</tour>
+            <month>2023_03</month>
+            <team1id>231503</team1id>
+            <team2id>231497</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035123/</link>
+            <group>1/8 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-03-16</date>
+            <time>20:45</time>
+            <team1>Бетис (Испания)</team1>
+            <team2>Манчестер Юнайтед (Англия)</team2>
+            <score1>0</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035127</id>
+            <round>playoff/27501</round>
+            <tour>2</tour>
+            <month>2023_03</month>
+            <team1id>231507</team1id>
+            <team2id>237403</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035127/</link>
+            <group>1/8 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-03-16</date>
+            <time>20:45</time>
+            <team1>Фейеноорд (Нидерланды)</team1>
+            <team2>Шахтёр (Украина)</team2>
+            <score1>7</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035113</id>
+            <round>playoff/27501</round>
+            <tour>2</tour>
+            <month>2023_03</month>
+            <team1id>235417</team1id>
+            <team2id>231499</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035113/</link>
+            <group>1/8 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-03-16</date>
+            <time>23:00</time>
+            <team1>Юнион (Бельгия)</team1>
+            <team2>Унион (Германия)</team2>
+            <score1>3</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035119</id>
+            <round>playoff/27501</round>
+            <tour>2</tour>
+            <month>2023_03</month>
+            <team1id>234991</team1id>
+            <team2id>237395</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035119/</link>
+            <group>1/8 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-03-16</date>
+            <time>23:00</time>
+            <team1>Ференцварош (Венгрия)</team1>
+            <team2>Байер (Германия)</team2>
+            <score1>0</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035121</id>
+            <round>playoff/27501</round>
+            <tour>2</tour>
+            <month>2023_03</month>
+            <team1id>232599</team1id>
+            <team2id>237399</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035121/</link>
+            <group>1/8 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-03-16</date>
+            <time>23:00</time>
+            <team1>Арсенал (Англия)</team1>
+            <team2>Спортинг (Португалия)</team2>
+            <score1>1</score1>
+            <score2>1</score2>
+            <score1ext>3</score1ext>
+            <score2ext>5</score2ext>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035125</id>
+            <round>playoff/27501</round>
+            <tour>2</tour>
+            <month>2023_03</month>
+            <team1id>231487</team1id>
+            <team2id>231485</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035125/</link>
+            <group>1/8 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-03-16</date>
+            <time>23:00</time>
+            <team1>Реал Сосьедад (Испания)</team1>
+            <team2>Рома (Италия)</team2>
+            <score1>0</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035135</id>
+            <round>playoff/27503</round>
+            <tour>1</tour>
+            <month>2023_04</month>
+            <team1id>231507</team1id>
+            <team2id>231485</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035135/</link>
+            <group>1/4 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-04-13</date>
+            <time>19:45</time>
+            <team1>Фейеноорд (Нидерланды)</team1>
+            <team2>Рома (Италия)</team2>
+            <score1>1</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035129</id>
+            <round>playoff/27503</round>
+            <tour>1</tour>
+            <month>2023_04</month>
+            <team1id>231497</team1id>
+            <team2id>237405</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035129/</link>
+            <group>1/4 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-04-13</date>
+            <time>22:00</time>
+            <team1>Манчестер Юнайтед (Англия)</team1>
+            <team2>Севилья (Испания)</team2>
+            <score1>2</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035131</id>
+            <round>playoff/27503</round>
+            <tour>1</tour>
+            <month>2023_04</month>
+            <team1id>237407</team1id>
+            <team2id>237399</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035131/</link>
+            <group>1/4 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-04-13</date>
+            <time>22:00</time>
+            <team1>Ювентус (Италия)</team1>
+            <team2>Спортинг (Португалия)</team2>
+            <score1>1</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035133</id>
+            <round>playoff/27503</round>
+            <tour>1</tour>
+            <month>2023_04</month>
+            <team1id>237395</team1id>
+            <team2id>235417</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035133/</link>
+            <group>1/4 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-04-13</date>
+            <time>22:00</time>
+            <team1>Байер (Германия)</team1>
+            <team2>Юнион (Бельгия)</team2>
+            <score1>1</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035137</id>
+            <round>playoff/27503</round>
+            <tour>2</tour>
+            <month>2023_04</month>
+            <team1id>237405</team1id>
+            <team2id>231497</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035137/</link>
+            <group>1/4 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-04-20</date>
+            <time>22:00</time>
+            <team1>Севилья (Испания)</team1>
+            <team2>Манчестер Юнайтед (Англия)</team2>
+            <score1>3</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035139</id>
+            <round>playoff/27503</round>
+            <tour>2</tour>
+            <month>2023_04</month>
+            <team1id>237399</team1id>
+            <team2id>237407</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035139/</link>
+            <group>1/4 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-04-20</date>
+            <time>22:00</time>
+            <team1>Спортинг (Португалия)</team1>
+            <team2>Ювентус (Италия)</team2>
+            <score1>1</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035141</id>
+            <round>playoff/27503</round>
+            <tour>2</tour>
+            <month>2023_04</month>
+            <team1id>235417</team1id>
+            <team2id>237395</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035141/</link>
+            <group>1/4 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-04-20</date>
+            <time>22:00</time>
+            <team1>Юнион (Бельгия)</team1>
+            <team2>Байер (Германия)</team2>
+            <score1>1</score1>
+            <score2>4</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035143</id>
+            <round>playoff/27503</round>
+            <tour>2</tour>
+            <month>2023_04</month>
+            <team1id>231485</team1id>
+            <team2id>231507</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035143/</link>
+            <group>1/4 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-04-20</date>
+            <time>22:00</time>
+            <team1>Рома (Италия)</team1>
+            <team2>Фейеноорд (Нидерланды)</team2>
+            <score1>4</score1>
+            <score2>1</score2>
+            <score1ext>ДВ</score1ext>
+            <score2ext>ДВ</score2ext>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035145</id>
+            <round>playoff/27505</round>
+            <tour>1</tour>
+            <month>2023_05</month>
+            <team1id>237407</team1id>
+            <team2id>237405</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035145/</link>
+            <group>1/2 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-05-11</date>
+            <time>22:00</time>
+            <team1>Ювентус (Италия)</team1>
+            <team2>Севилья (Испания)</team2>
+            <score1>1</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035147</id>
+            <round>playoff/27505</round>
+            <tour>1</tour>
+            <month>2023_05</month>
+            <team1id>231485</team1id>
+            <team2id>237395</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035147/</link>
+            <group>1/2 финала</group>
+            <tourstr>1</tourstr>
+            <date>2023-05-11</date>
+            <time>22:00</time>
+            <team1>Рома (Италия)</team1>
+            <team2>Байер (Германия)</team2>
+            <score1>1</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035149</id>
+            <round>playoff/27505</round>
+            <tour>2</tour>
+            <month>2023_05</month>
+            <team1id>237405</team1id>
+            <team2id>237407</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035149/</link>
+            <group>1/2 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-05-18</date>
+            <time>22:00</time>
+            <team1>Севилья (Испания)</team1>
+            <team2>Ювентус (Италия)</team2>
+            <score1>2</score1>
+            <score2>1</score2>
+            <score1ext>ДВ</score1ext>
+            <score2ext>ДВ</score2ext>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035151</id>
+            <round>playoff/27505</round>
+            <tour>2</tour>
+            <month>2023_05</month>
+            <team1id>237395</team1id>
+            <team2id>231485</team2id>
+            <played>1</played>
+            <link>/football/_europeleague/tournament/4995/match/1035151/</link>
+            <group>1/2 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-05-18</date>
+            <time>22:00</time>
+            <team1>Байер (Германия)</team1>
+            <team2>Рома (Италия)</team2>
+            <score1>0</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1035153</id>
+            <round>playoff/27507</round>
+            <tour>1</tour>
+            <month>2023_05</month>
+            <team1id>237405</team1id>
+            <team2id>231485</team2id>
+            <played>0</played>
+            <link>/football/_europeleague/tournament/4995/match/1035153/</link>
+            <group>Финал</group>
+            <tourstr>1</tourstr>
+            <date>2023-05-31</date>
+            <time>22:00</time>
+            <team1>Севилья (Испания)</team1>
+            <team2>Рома (Италия)</team2>
+            <score1/>
+            <score2/>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+    </matches>
+</tournament>

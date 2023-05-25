@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tournament>
+    <tourid>football-5057</tourid>
+    <touridshort>5057</touridshort>
+    <tourname>Италия - Серия А</tourname>
+    <matches>
+        <match>
+            <type>match</type>
+            <id>football-1045947</id>
+            <round>group/27705</round>
+            <tour>36</tour>
+            <month>2023_05</month>
+            <team1id>232535</team1id>
+            <team2id>232549</team2id>
+            <played>0</played>
+            <link>/football/_italy/tournament/5057/match/1045947/</link>
+            <group>Серия А</group>
+            <tourstr>36</tourstr>
+            <date>2023-05-21</date>
+            <time>13:30</time>
+            <team1>Лечче</team1>
+            <team2>Специя</team2>
+            <score1/>
+            <score2/>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important>0</important>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1045955</id>
+            <round>group/27705</round>
+            <tour>36</tour>
+            <month>2023_05</month>
+            <team1id>232551</team1id>
+            <team2id>232527</team2id>
+            <played>0</played>
+            <link>/football/_italy/tournament/5057/match/1045955/</link>
+            <group>Серия А</group>
+            <tourstr>36</tourstr>
+            <date>2023-05-21</date>
+            <time>16:00</time>
+            <team1>Торино</team1>
+            <team2>Фиорентина</team2>
+            <score1/>
+            <score2/>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important>1</important>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1045957</id>
+            <round>group/27705</round>
+            <tour>36</tour>
+            <month>2023_05</month>
+            <team1id>232539</team1id>
+            <team2id>232529</team2id>
+            <played>0</played>
+            <link>/football/_italy/tournament/5057/match/1045957/</link>
+            <group>Серия А</group>
+            <tourstr>36</tourstr>
+            <date>2023-05-21</date>
+            <time>19:00</time>
+            <team1>Наполи</team1>
+            <team2>Интер М</team2>
+            <score1/>
+            <score2/>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important>1</important>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1045959</id>
+            <round>group/27705</round>
+            <tour>36</tour>
+            <month>2023_05</month>
+            <team1id>232553</team1id>
+            <team2id>232533</team2id>
+            <played>0</played>
+            <link>/football/_italy/tournament/5057/match/1045959/</link>
+            <group>Серия А</group>
+            <tourstr>36</tourstr>
+            <date>2023-05-21</date>
+            <time>21:45</time>
+            <team1>Удинезе</team1>
+            <team2>Лацио</team2>
+            <score1/>
+            <score2/>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important>1</important>
+        </match>
+    </matches>
+</tournament>

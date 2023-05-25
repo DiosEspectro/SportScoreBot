@@ -6,6 +6,42 @@
     <matches>
         <match>
             <type>match</type>
+            <id>football-1034599</id>
+            <played>1</played>
+            <link>/football/_ucl/tournament/4993/match/1034599/</link>
+            <group>1/2 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-05-17</date>
+            <time>22:00</time>
+            <team1>Манчестер Сити</team1>
+            <team2>Реал Мадрид</team2>
+            <score1>4</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>football-1034601</id>
+            <played>1</played>
+            <link>/football/_ucl/tournament/4993/match/1034601/</link>
+            <group>1/2 финала</group>
+            <tourstr>2</tourstr>
+            <date>2023-05-16</date>
+            <time>22:00</time>
+            <team1>Интер М</team1>
+            <team2>Милан</team2>
+            <score1>1</score1>
+            <score2>0</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+        </match>
+        <match>
+            <type>match</type>
             <id>football-1034597</id>
             <played>1</played>
             <link>/football/_ucl/tournament/4993/match/1034597/</link>
@@ -143,42 +179,6 @@
             <team2>Челси</team2>
             <score1>2</score1>
             <score2>0</score2>
-            <score1ext/>
-            <score2ext/>
-            <live/>
-            <liveperiod/>
-        </match>
-        <match>
-            <type>match</type>
-            <id>football-1034579</id>
-            <played>1</played>
-            <link>/football/_ucl/tournament/4993/match/1034579/</link>
-            <group>1/4 финала</group>
-            <tourstr>1</tourstr>
-            <date>2023-04-11</date>
-            <time>22:00</time>
-            <team1>Манчестер Сити</team1>
-            <team2>Бавария</team2>
-            <score1>3</score1>
-            <score2>0</score2>
-            <score1ext/>
-            <score2ext/>
-            <live/>
-            <liveperiod/>
-        </match>
-        <match>
-            <type>match</type>
-            <id>football-1034585</id>
-            <played>1</played>
-            <link>/football/_ucl/tournament/4993/match/1034585/</link>
-            <group>1/4 финала</group>
-            <tourstr>1</tourstr>
-            <date>2023-04-11</date>
-            <time>22:00</time>
-            <team1>Бенфика</team1>
-            <team2>Интер М</team2>
-            <score1>0</score1>
-            <score2>2</score2>
             <score1ext/>
             <score2ext/>
             <live/>

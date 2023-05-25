@@ -21,6 +21,7 @@
             <score2ext/>
             <live/>
             <liveperiod/>
+            <important/>
         </match>
     </matches>
 </tournament>

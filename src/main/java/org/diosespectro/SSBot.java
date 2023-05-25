@@ -24,6 +24,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.InputStreamReader;
 import java.net.URL;
+import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -119,7 +120,7 @@ public class SSBot extends TelegramLongPollingBot {
             tourButtons.add(
                     Arrays.asList(
                             InlineKeyboardButton.builder()
-                                    .text(ssParser.getTourName(tour, true))
+                                    .text(ssParser.getTourName(tour, true, true))
                                     .callbackData(tour.toLowerCase() + "-" + "main")
                                     .build()
                     )
@@ -276,12 +277,24 @@ public class SSBot extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
         if(update.hasMessage()) {
+            ByteBuffer buffer;
             var msg = update.getMessage();
             var user = msg.getFrom();
             var id = user.getId();
             var userName = user.getUserName();
-            var userFN = user.getFirstName();
-            var userLN = user.getLastName();
+
+            String userFN = user.getFirstName();
+            if(userFN != null && !userFN.isEmpty()) {
+                buffer = StandardCharsets.UTF_8.encode(userFN);
+                userFN = StandardCharsets.UTF_8.decode(buffer).toString();
+            }
+
+            String userLN = user.getLastName();
+            if(userLN != null && !userLN.isEmpty()) {
+                buffer = StandardCharsets.UTF_8.encode(userLN);
+                userLN = StandardCharsets.UTF_8.decode(buffer).toString();
+            }
+
             var txt = msg.getText();
 
             if(msg.isCommand()) {
@@ -348,11 +361,11 @@ public class SSBot extends TelegramLongPollingBot {
 
             jsonUsers.put(Long.toString(id), newUser);
             usersFileUpdate(UserFile);
-            sendMessage2Admins("Новый пользователь: <b>" + userName + "</b>\nВсего пользователей: " + (jsonUsers.size()) + "\n#newuser");
+            sendMessage2Admins("Новый пользователь: <b>" + userN + "</b>\nВсего пользователей: " + (jsonUsers.size()) + "\n#newuser");
         }
         else {
-            String user = (String) userInfo.get("username");
-            String lastaction = (String) userInfo.get("last-action");
+            //String user = (String) userInfo.get("username");
+            //String lastaction = (String) userInfo.get("last-action");
             userInfo.replace("username", userN);
             userInfo.replace("last-action", timeStamp);
             usersFileUpdate(UserFile);
@@ -554,8 +567,11 @@ public class SSBot extends TelegramLongPollingBot {
                 newKb.setReplyMarkup(keyboardM2.get(tour));
                 */
                 String text = info.get(1).toString();
+                /*
                 sendText(id, text);
                 sendMenu(id, "Отобразить другие матчи турнира:", keyboardM2.get(tour));
+                 */
+                sendMenu(id, text, keyboardM2.get(tour));
             }catch(TelegramApiException e){
                 e.printStackTrace();
             }
@@ -567,18 +583,18 @@ public class SSBot extends TelegramLongPollingBot {
             case "menu" -> sendMenu(id, mainMenuText, keyboardM1);
             case "tours" -> sendMenu(id, ssParser.getMessageHeader("\uD83C\uDFC6", "Турниры", "Выберите турнир:"), keyboardMTours);
             case "today" -> {
-                sendText(id, ssParser.getTodayMatches(false));
-                sendMenu(id, "Варианты действий:", keyboardMBack);
+                //sendText(id, ssParser.getTodayMatches(false));
+                //sendMenu(id, "Варианты действий:", keyboardMBack);
+                sendMenu(id, ssParser.getTodayMatches(false), keyboardMBack);
             }
             case "live" -> {
-                sendText(id, ssParser.getTodayMatches(true));
-                sendMenu(id, "Варианты действий:", keyboardMLive);
+                //sendText(id, ssParser.getTodayMatches(true));
+                //sendMenu(id, "Варианты действий:", keyboardMLive);
+                sendMenu(id, ssParser.getTodayMatches(true), keyboardMLive);
             }
             case "about" -> {
-                sendText(id, ssParser.getMessageHeader("❔", "О боте", "") +
-                            "\nДанный бот показывает результаты только тех турниров, которые перечислены в разделе \"Турниры\". " +
-                            "В будущем будут добавлены дополнительные популярные турниры.");
-                sendMenu(id, "Варианты действий:", keyboardMBack);
+                sendMenu(id, ssParser.getMessageHeader("❔", "О боте", "Данный бот показывает результаты только тех турниров, которые перечислены в разделе 'Турниры'.\n" +
+                            "В будущем будут добавлены дополнительные популярные турниры."), keyboardMBack);
             }
         }
     }

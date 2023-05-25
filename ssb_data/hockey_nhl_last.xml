@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tournament>
+    <tourid>hockey-5297</tourid>
+    <touridshort>5297</touridshort>
+    <tourname>НХЛ - плей-офф</tourname>
+    <matches>
+        <match>
+            <type>match</type>
+            <id>hockey-1084257</id>
+            <played>1</played>
+            <link>/hockey/_nhl/tournament/5297/match/1084257/</link>
+            <group>Финал - Восток</group>
+            <tourstr>2</tourstr>
+            <date>2023-05-21</date>
+            <time>03:00</time>
+            <team1>Каролина Харрикейнз</team1>
+            <team2>Флорида Пантерз</team2>
+            <score1>1</score1>
+            <score2>2</score2>
+            <score1ext>ОТ</score1ext>
+            <score2ext>ОТ</score2ext>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>hockey-1084269</id>
+            <played>1</played>
+            <link>/hockey/_nhl/tournament/5297/match/1084269/</link>
+            <group>Финал - Запад</group>
+            <tourstr>1</tourstr>
+            <date>2023-05-20</date>
+            <time>03:30</time>
+            <team1>Вегас Голден Найтс</team1>
+            <team2>Даллас Старз</team2>
+            <score1>4</score1>
+            <score2>3</score2>
+            <score1ext>ОТ</score1ext>
+            <score2ext>ОТ</score2ext>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>hockey-1084255</id>
+            <played>1</played>
+            <link>/hockey/_nhl/tournament/5297/match/1084255/</link>
+            <group>Финал - Восток</group>
+            <tourstr>1</tourstr>
+            <date>2023-05-19</date>
+            <time>03:00</time>
+            <team1>Каролина Харрикейнз</team1>
+            <team2>Флорида Пантерз</team2>
+            <score1>2</score1>
+            <score2>3</score2>
+            <score1ext>ОТ</score1ext>
+            <score2ext>ОТ</score2ext>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>hockey-1084247</id>
+            <played>1</played>
+            <link>/hockey/_nhl/tournament/5297/match/1084247/</link>
+            <group>1/2 финала - Запад</group>
+            <tourstr>7</tourstr>
+            <date>2023-05-16</date>
+            <time>03:00</time>
+            <team1>Даллас Старз</team1>
+            <team2>Сиэтл Кракен</team2>
+            <score1>2</score1>
+            <score2>1</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>hockey-1084245</id>
+            <played>1</played>
+            <link>/hockey/_nhl/tournament/5297/match/1084245/</link>
+            <group>1/2 финала - Запад</group>
+            <tourstr>6</tourstr>
+            <date>2023-05-15</date>
+            <time>05:00</time>
+            <team1>Эдмонтон Ойлерз</team1>
+            <team2>Вегас Голден Найтс</team2>
+            <score1>2</score1>
+            <score2>5</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>hockey-1084243</id>
+            <played>1</played>
+            <link>/hockey/_nhl/tournament/5297/match/1084243/</link>
+            <group>1/2 финала - Запад</group>
+            <tourstr>6</tourstr>
+            <date>2023-05-14</date>
+            <time>02:00</time>
+            <team1>Сиэтл Кракен</team1>
+            <team2>Даллас Старз</team2>
+            <score1>6</score1>
+            <score2>3</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>hockey-1084241</id>
+            <played>1</played>
+            <link>/hockey/_nhl/tournament/5297/match/1084241/</link>
+            <group>1/2 финала - Запад</group>
+            <tourstr>5</tourstr>
+            <date>2023-05-13</date>
+            <time>05:00</time>
+            <team1>Вегас Голден Найтс</team1>
+            <team2>Эдмонтон Ойлерз</team2>
+            <score1>4</score1>
+            <score2>3</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>hockey-1084213</id>
+            <played>1</played>
+            <link>/hockey/_nhl/tournament/5297/match/1084213/</link>
+            <group>1/2 финала - Восток</group>
+            <tourstr>5</tourstr>
+            <date>2023-05-13</date>
+            <time>02:00</time>
+            <team1>Торонто Мэйпл Лифс</team1>
+            <team2>Флорида Пантерз</team2>
+            <score1>2</score1>
+            <score2>3</score2>
+            <score1ext>ОТ</score1ext>
+            <score2ext>ОТ</score2ext>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>hockey-1084239</id>
+            <played>1</played>
+            <link>/hockey/_nhl/tournament/5297/match/1084239/</link>
+            <group>1/2 финала - Запад</group>
+            <tourstr>5</tourstr>
+            <date>2023-05-12</date>
+            <time>04:30</time>
+            <team1>Даллас Старз</team1>
+            <team2>Сиэтл Кракен</team2>
+            <score1>5</score1>
+            <score2>2</score2>
+            <score1ext/>
+            <score2ext/>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+        <match>
+            <type>match</type>
+            <id>hockey-1084215</id>
+            <played>1</played>
+            <link>/hockey/_nhl/tournament/5297/match/1084215/</link>
+            <group>1/2 финала - Восток</group>
+            <tourstr>5</tourstr>
+            <date>2023-05-12</date>
+            <time>02:00</time>
+            <team1>Каролина Харрикейнз</team1>
+            <team2>Нью-Джерси Дэвилз</team2>
+            <score1>3</score1>
+            <score2>2</score2>
+            <score1ext>ОТ</score1ext>
+            <score2ext>ОТ</score2ext>
+            <live/>
+            <liveperiod/>
+            <important/>
+        </match>
+    </matches>
+</tournament>

@@ -1,0 +1,52 @@
+{
+	"tournament": [
+		{
+			"tour-name": "RPL",
+			"sport-name": "FOOTBALL",
+			"tour-id": "_russiapl",
+			"menu-name": "РПЛ",
+			"icon": "🇷🇺",
+			"template": 3
+		},
+		{
+			"tour-name": "CHAMPIONSLEAGUE",
+			"sport-name": "FOOTBALL",
+			"tour-id": "_ucl",
+			"menu-name": "Лига Чемпионов",
+			"icon": "🏆",
+			"template": 1
+		},
+		{
+			"tour-name": "EUROLEAGUE",
+			"sport-name": "FOOTBALL",
+			"tour-id": "_europeleague",
+			"menu-name": "Лига Европы",
+			"icon": "🇪🇺",
+			"template": 1
+		},
+		{
+			"tour-name": "WORLDCUP",
+			"sport-name": "FOOTBALL",
+			"tour-id": "_worldcup",
+			"menu-name": "Чемпионат Мира",
+			"icon": "🌐",
+			"template": 1
+		},
+		{
+			"tour-name": "KHL",
+			"sport-name": "HOCKEY",
+			"tour-id": "_superleague",
+			"menu-name": "КХЛ",
+			"icon": "🇷🇺",
+			"template": 1
+		},
+		{
+			"tour-name": "WHC",
+			"sport-name": "HOCKEY",
+			"tour-id": "_whc",
+			"menu-name": "Чемпионат Мира",
+			"icon": "🌐",
+			"template": 1
+		}
+	]
+}
