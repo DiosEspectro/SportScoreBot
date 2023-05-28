@@ -344,7 +344,7 @@ public class SSBot extends TelegramLongPollingBot {
         }
 
         String userN ;
-        if(userName != null) userN = userName;
+        if(userName != null) userN = "@" + userName;
             else if(userFN != null) userN = userFN + (userLN != null ? " " + userLN : "");
                 else if(userLN != null) userN = userLN;
                     else userN = "<unknown>";
@@ -466,23 +466,6 @@ public class SSBot extends TelegramLongPollingBot {
     }
 
     private void buttonTap(Long id, String queryId, String data, int msgId, String chatId) {
-        /*
-        EditMessageText newTxt = EditMessageText.builder()
-                .chatId(id.toString())
-                .messageId(msgId).text("").build();
-
-        EditMessageReplyMarkup newKb = EditMessageReplyMarkup.builder()
-                .chatId(id.toString()).messageId(msgId).build();
-
-        if(data.equals("next")) {
-            newTxt.setText("MENU 2");
-            newKb.setReplyMarkup(keyboardM2);
-        } else if(data.equals("back")) {
-            newTxt.setText("MENU 1");
-            newKb.setReplyMarkup(keyboardM1);
-        }
-        */
-
         DeleteMessage deleteMessage = new DeleteMessage(chatId, msgId);
 
         AnswerCallbackQuery close = AnswerCallbackQuery.builder()
@@ -502,32 +485,10 @@ public class SSBot extends TelegramLongPollingBot {
                 execute(close);
                 execute(deleteMessage);
                 runContent(id, data);
-                //sendMenu(id, ssParser.getMessageHeader("\uD83C\uDFC6", "Турниры", "Выберите турнир:"), keyboardMTours);
             }catch(TelegramApiException e){
                 e.printStackTrace();
             }
         }
-        /*
-        else if(data.equals("today")) {
-            try {
-                execute(close);
-                execute(deleteMessage);
-                sendText(id, ssParser.getTodayMatches(false));
-                sendMenu(id, "Варианты действий:", keyboardMBack);
-            }catch(TelegramApiException e){
-                e.printStackTrace();
-            }
-        }
-        else if(data.equals("live")) {
-            try {
-                execute(close);
-                execute(deleteMessage);
-                sendText(id, ssParser.getTodayMatches(true));
-                sendMenu(id, "Варианты действий:", keyboardMLive);
-            }catch(TelegramApiException e){
-                e.printStackTrace();
-            }
-        }*/
         else if(data.equals("live-refresh")) {
             try {
                 EditMessageText newTxt = EditMessageText.builder()
@@ -556,21 +517,9 @@ public class SSBot extends TelegramLongPollingBot {
             try {
                 execute(close);
                 execute(deleteMessage);
-                //execute(newTxt);
-                //execute(newKb);
                 ArrayList<Object> info = ssParser.getTournamentActualMatches(data);
                 String tour = (String) info.get(0);
-
-                /*
-                EditMessageReplyMarkup newKb = EditMessageReplyMarkup.builder()
-                        .chatId(id.toString()).messageId(msgId).build();
-                newKb.setReplyMarkup(keyboardM2.get(tour));
-                */
                 String text = info.get(1).toString();
-                /*
-                sendText(id, text);
-                sendMenu(id, "Отобразить другие матчи турнира:", keyboardM2.get(tour));
-                 */
                 sendMenu(id, text, keyboardM2.get(tour));
             }catch(TelegramApiException e){
                 e.printStackTrace();
@@ -583,13 +532,9 @@ public class SSBot extends TelegramLongPollingBot {
             case "menu" -> sendMenu(id, mainMenuText, keyboardM1);
             case "tours" -> sendMenu(id, ssParser.getMessageHeader("\uD83C\uDFC6", "Турниры", "Выберите турнир:"), keyboardMTours);
             case "today" -> {
-                //sendText(id, ssParser.getTodayMatches(false));
-                //sendMenu(id, "Варианты действий:", keyboardMBack);
                 sendMenu(id, ssParser.getTodayMatches(false), keyboardMBack);
             }
             case "live" -> {
-                //sendText(id, ssParser.getTodayMatches(true));
-                //sendMenu(id, "Варианты действий:", keyboardMLive);
                 sendMenu(id, ssParser.getTodayMatches(true), keyboardMLive);
             }
             case "about" -> {

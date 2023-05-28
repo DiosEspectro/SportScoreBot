@@ -860,8 +860,6 @@ public class SportScoreParser {
         }
         else ret = Tournaments.get(tour)[5] + " " + TourNames.get(tour);
 
-        //if(ret == null) ret = tour.toString();
-
         // Определим иконку для турнира
         if(withEmo) {
             String emo = "";
